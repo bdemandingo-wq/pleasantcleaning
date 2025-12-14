@@ -29,7 +29,7 @@ const StickyCallButton = () => {
     >
       <Button
         size="lg"
-        className="w-full md:w-auto bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-elevated font-semibold text-lg py-6 px-8"
+        className="w-full md:w-auto bg-secondary text-secondary-foreground shadow-elevated font-semibold text-lg py-6 px-8"
         asChild
       >
         <a 
@@ -37,7 +37,7 @@ const StickyCallButton = () => {
           className="flex items-center justify-center gap-3"
           aria-label={`Call TIDYWISE now at ${phoneNumber}`}
         >
-          <Phone className="w-5 h-5 animate-pulse" aria-hidden="true" />
+          <Phone className="w-5 h-5" aria-hidden="true" />
           <span>Call Now: {phoneNumber}</span>
         </a>
       </Button>
