@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ArrowLeft, User, Mail, Phone, Home, MapPin, MessageSquare, PawPrint } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 interface BookingState {
   sqft: number;
@@ -19,7 +21,9 @@ interface BookingState {
 const BookingForm = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { toast } = useToast();
   const booking = location.state as BookingState | null;
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -47,14 +51,55 @@ const BookingForm = () => {
     );
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    navigate("/confirmation", {
-      state: {
-        ...booking,
-        ...formData,
-      },
-    });
+    setIsSubmitting(true);
+
+    try {
+      // Send confirmation emails
+      const { data, error } = await supabase.functions.invoke("send-booking-confirmation", {
+        body: {
+          customerName: formData.name,
+          customerEmail: formData.email,
+          customerPhone: formData.phone,
+          address: formData.address,
+          beds: formData.beds,
+          baths: formData.baths,
+          specialInstructions: `${formData.accessInstructions}\n\nFocus Areas: ${formData.focusAreas}`,
+          petInfo: formData.hasPets !== "no" ? `${formData.hasPets} - ${formData.petDetails}` : "No pets",
+          serviceType: booking.serviceType,
+          sqft: booking.sqft,
+          frequency: booking.frequency,
+          addOns: booking.addOns,
+          totalPrice: booking.totalPrice,
+        },
+      });
+
+      if (error) {
+        console.error("Error sending email:", error);
+        toast({
+          title: "Booking submitted",
+          description: "Your booking was received but we couldn't send a confirmation email.",
+          variant: "destructive",
+        });
+      }
+
+      navigate("/confirmation", {
+        state: {
+          ...booking,
+          ...formData,
+        },
+      });
+    } catch (error) {
+      console.error("Error:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -289,9 +334,8 @@ const BookingForm = () => {
                 </div>
               </div>
 
-              {/* Submit */}
-              <Button type="submit" size="lg" className="w-full">
-                Confirm Booking
+              <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Confirm Booking"}
               </Button>
 
               <p className="text-center text-sm text-muted-foreground">
