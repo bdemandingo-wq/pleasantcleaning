@@ -146,10 +146,12 @@ const BookingForm = () => {
             <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mb-8 flex gap-3">
               <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-500 flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-amber-800 dark:text-amber-400">Need Same-Day Cleaning?</p>
+                <p className="font-display font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wide">
+                  For Same / Next Day Cleaning?
+                </p>
                 <p className="text-sm text-amber-700 dark:text-amber-500">
-                  For same-day appointments, please call us directly at{" "}
-                  <a href="tel:+15615551234" className="font-semibold underline">(561) 555-1234</a>{" "}
+                  Please call us directly at{" "}
+                  <a href="tel:+15615718725" className="font-semibold underline">(561) 571-8725</a>{" "}
                   instead of booking online.
                 </p>
               </div>
