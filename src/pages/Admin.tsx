@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { LogOut, Calendar, DollarSign, Users, Clock, RefreshCw } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-optimized.webp";
 
 type BookingStatus = "pending" | "confirmed" | "in_progress" | "completed" | "cancelled";
 
