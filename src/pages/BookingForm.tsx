@@ -66,8 +66,42 @@ const BookingForm = () => {
     setIsSubmitting(true);
 
     try {
+      const bookingData = {
+        customer_name: formData.name,
+        customer_email: formData.email,
+        customer_phone: formData.phone,
+        address: formData.address,
+        beds: formData.beds,
+        baths: formData.baths,
+        sqft: booking.sqft,
+        service_type: booking.serviceType,
+        frequency: booking.frequency,
+        add_ons: booking.addOns,
+        total_price: parseFloat(booking.totalPrice),
+        preferred_date: preferredDate ? format(preferredDate, "EEEE, MMMM d, yyyy") : "Not specified",
+        special_instructions: `${formData.accessInstructions}\n\nFocus Areas: ${formData.focusAreas}`.trim() || null,
+        pet_info: formData.hasPets !== "no" ? `${formData.hasPets} - ${formData.petDetails}` : null,
+        status: "pending" as const,
+      };
+
+      // Save booking to database
+      const { error: dbError } = await supabase
+        .from("bookings")
+        .insert(bookingData);
+
+      if (dbError) {
+        console.error("Database error:", dbError);
+        toast({
+          title: "Error",
+          description: "Failed to save booking. Please try again.",
+          variant: "destructive",
+        });
+        setIsSubmitting(false);
+        return;
+      }
+
       // Send confirmation emails
-      const { data, error } = await supabase.functions.invoke("send-booking-confirmation", {
+      const { error } = await supabase.functions.invoke("send-booking-confirmation", {
         body: {
           customerName: formData.name,
           customerEmail: formData.email,
@@ -88,11 +122,7 @@ const BookingForm = () => {
 
       if (error) {
         console.error("Error sending email:", error);
-        toast({
-          title: "Booking submitted",
-          description: "Your booking was received but we couldn't send a confirmation email.",
-          variant: "destructive",
-        });
+        // Continue to confirmation even if email fails - booking is saved
       }
 
       navigate("/confirmation", {
