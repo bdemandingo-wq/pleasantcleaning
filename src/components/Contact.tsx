@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Service Area",
-    value: "Broward County & Palm Beach County",
+    value: "Broward, Palm Beach & Miami-Dade",
     subtitle: "South Florida",
   },
 ];

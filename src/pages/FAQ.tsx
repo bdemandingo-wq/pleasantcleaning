@@ -30,7 +30,7 @@ const faqs = [
       },
       {
         q: "Do you offer commercial cleaning?",
-        a: "We focus primarily on residential cleaning, but we do take on commercial projects on a case-by-case basis. Contact us to discuss your commercial cleaning needs."
+        a: "Yes! We offer both residential and commercial cleaning services. Contact us to discuss your commercial cleaning needs and get a custom quote."
       }
     ]
   },

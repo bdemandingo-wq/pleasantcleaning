@@ -17,3 +17,6 @@ port = 54323
 
 [functions.send-booking-confirmation]
 verify_jwt = false
+
+[functions.send-cleaner-application-notification]
+verify_jwt = false
