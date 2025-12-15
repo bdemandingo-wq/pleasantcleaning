@@ -50,7 +50,7 @@ const TrustBadges = ({ variant = "light", showReview = false }: TrustBadgesProps
               <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
             ))}
           </div>
-          <span>"Best cleaning service in South Florida!" - Maria G.</span>
+          <span>Rated 5 stars by 100+ happy customers</span>
         </div>
       )}
     </div>
