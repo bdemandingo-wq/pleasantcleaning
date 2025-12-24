@@ -30,9 +30,9 @@ const Hero = () => {
         </div>
 
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-background mb-6 animate-fade-in">
-          Transform Your Home
+          Cleaners Near Me
           <br />
-          Into a Sanctuary
+          <span className="text-3xl md:text-4xl lg:text-5xl">South Florida's Trusted Cleaning Service</span>
         </h1>
         <p className="text-background/90 text-lg md:text-xl max-w-2xl mx-auto mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           South Florida's most trusted cleaning service.

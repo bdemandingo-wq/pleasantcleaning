@@ -11,13 +11,14 @@ import AIChatbot from "@/components/AIChatbot";
 import ServiceAreaLinks from "@/components/seo/ServiceAreaLinks";
 import SEOSchema from "@/components/seo/SEOSchema";
 import StickyCallButton from "@/components/seo/StickyCallButton";
+import GoogleMapEmbed from "@/components/seo/GoogleMapEmbed";
 
 const Index = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="South Florida Cleaning Services | TIDYWISE"
-        pageDescription="South Florida's best cleaning service. Broward, Miami-Dade & Palm Beach County. Licensed & insured. Same-day quotes. Call (561) 571-8725!"
+        pageTitle="Cleaners Near Me | South Florida Cleaning Services | TIDYWISE"
+        pageDescription="Looking for cleaners near me? TIDYWISE serves Broward, Miami-Dade & Palm Beach County. Licensed & insured professional cleaners. Same-day quotes. Call (561) 571-8725!"
         canonicalUrl="https://tidywisecleaning.com"
         pageType="home"
       />
@@ -29,6 +30,7 @@ const Index = () => {
         <WhyChooseUs />
         <Testimonials />
         <ServiceAreaLinks />
+        <GoogleMapEmbed />
         <BlogPreview />
         <Contact />
         <Footer />
