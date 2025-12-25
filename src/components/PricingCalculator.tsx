@@ -165,18 +165,24 @@ const PricingCalculator = () => {
             {/* Property Size Slider */}
             <div className="space-y-4">
               <div className="flex justify-between items-center">
-                <Label className="text-base font-medium">Property Size</Label>
-                <span className="text-lg font-bold text-primary">{sqft[0].toLocaleString()} sq ft</span>
+                <Label htmlFor="property-size-slider" className="text-base font-medium">Property Size</Label>
+                <span className="text-lg font-bold text-primary" aria-live="polite">{sqft[0].toLocaleString()} sq ft</span>
               </div>
               <Slider
+                id="property-size-slider"
                 value={sqft}
                 onValueChange={setSqft}
                 min={500}
                 max={10000}
                 step={100}
                 className="w-full"
+                aria-label="Property size in square feet"
+                aria-valuemin={500}
+                aria-valuemax={10000}
+                aria-valuenow={sqft[0]}
+                aria-valuetext={`${sqft[0].toLocaleString()} square feet`}
               />
-              <div className="flex justify-between text-sm text-muted-foreground">
+              <div className="flex justify-between text-sm text-muted-foreground" aria-hidden="true">
                 <span>500 sq ft</span>
                 <span>10,000 sq ft</span>
               </div>
@@ -184,9 +190,9 @@ const PricingCalculator = () => {
 
             {/* Service Type */}
             <div className="space-y-2">
-              <Label className="text-base font-medium">Service Type</Label>
+              <Label htmlFor="service-type-select" className="text-base font-medium">Service Type</Label>
               <Select value={serviceType} onValueChange={setServiceType}>
-                <SelectTrigger>
+                <SelectTrigger id="service-type-select" aria-label="Select service type">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
@@ -201,9 +207,9 @@ const PricingCalculator = () => {
 
             {/* Frequency */}
             <div className="space-y-2">
-              <Label className="text-base font-medium">Frequency</Label>
+              <Label htmlFor="frequency-select" className="text-base font-medium">Frequency</Label>
               <Select value={frequency} onValueChange={setFrequency}>
-                <SelectTrigger>
+                <SelectTrigger id="frequency-select" aria-label="Select cleaning frequency">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>

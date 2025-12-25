@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
@@ -82,30 +83,39 @@ const Contact = () => {
           <Card className="shadow-elevated animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <CardContent className="p-6">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
+                <div className="space-y-2">
+                  <Label htmlFor="contact-name">Your Name</Label>
                   <Input
+                    id="contact-name"
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
+                    aria-required="true"
                   />
                 </div>
-                <div>
+                <div className="space-y-2">
+                  <Label htmlFor="contact-email">Your Email</Label>
                   <Input
+                    id="contact-email"
                     type="email"
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
+                    aria-required="true"
                   />
                 </div>
-                <div>
+                <div className="space-y-2">
+                  <Label htmlFor="contact-message">Your Message</Label>
                   <Textarea
+                    id="contact-message"
                     placeholder="Your Message"
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
+                    aria-required="true"
                   />
                 </div>
                 <Button type="submit" size="lg" className="w-full font-semibold">
