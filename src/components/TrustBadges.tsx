@@ -26,8 +26,8 @@ interface TrustBadgesProps {
 
 const TrustBadges = ({ variant = "light", showReview = false }: TrustBadgesProps) => {
   const textColor = variant === "dark" ? "text-foreground" : "text-background";
-  const bgColor = variant === "dark" ? "bg-muted" : "bg-background/10";
-  const mutedColor = variant === "dark" ? "text-muted-foreground" : "text-background/80";
+  const bgColor = variant === "dark" ? "bg-muted" : "bg-background/20";
+  const mutedColor = variant === "dark" ? "text-muted-foreground" : "text-background";
   
   return (
     <div className="space-y-4">

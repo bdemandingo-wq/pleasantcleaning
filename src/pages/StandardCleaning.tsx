@@ -218,7 +218,7 @@ const StandardCleaning = () => {
             <h2 className="font-display text-3xl font-bold mb-4">
               Ready for Regular Cleaning?
             </h2>
-            <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            <p className="text-primary-foreground mb-8 max-w-xl mx-auto">
               Join hundreds of happy South Florida homeowners who trust TIDYWISE for their cleaning needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

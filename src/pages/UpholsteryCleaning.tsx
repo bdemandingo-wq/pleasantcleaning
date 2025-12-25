@@ -186,7 +186,7 @@ const UpholsteryCleaning = () => {
             <h2 className="font-display text-3xl font-bold mb-4">
               Get Your Custom Upholstery Cleaning Quote
             </h2>
-            <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            <p className="text-primary-foreground mb-8 max-w-xl mx-auto">
               Pricing depends on furniture type, fabric, and condition. 
               Contact us for a personalized quote for your specific needs.
             </p>

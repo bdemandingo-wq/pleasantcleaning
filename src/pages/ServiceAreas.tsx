@@ -170,7 +170,7 @@ const ServiceAreas = () => {
             <h2 className="font-display text-3xl font-bold mb-4">
               Ready to Book Your Cleaning?
             </h2>
-            <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            <p className="text-primary-foreground mb-8 max-w-xl mx-auto">
               Get a free quote in minutes. Response time: 15 minutes or less!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

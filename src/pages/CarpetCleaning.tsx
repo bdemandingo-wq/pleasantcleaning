@@ -158,7 +158,7 @@ const CarpetCleaning = () => {
             <h2 className="font-display text-3xl font-bold mb-4">
               Get Your Custom Carpet Cleaning Quote
             </h2>
-            <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            <p className="text-primary-foreground mb-8 max-w-xl mx-auto">
               Every carpet is unique. Contact us for a personalized quote based on 
               your carpet type, size, and cleaning needs.
             </p>

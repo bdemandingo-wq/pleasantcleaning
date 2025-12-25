@@ -15,8 +15,8 @@ const Hero = () => {
           backgroundImage: `url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`,
         }}
       />
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-foreground/50" />
+      {/* Overlay - increased opacity for better text contrast */}
+      <div className="absolute inset-0 bg-foreground/70" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
@@ -35,7 +35,7 @@ const Hero = () => {
           <br />
           <span className="text-3xl md:text-4xl lg:text-5xl">South Florida's Trusted Cleaning Service</span>
         </p>
-        <p className="text-background/90 text-lg md:text-xl max-w-2xl mx-auto mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <p className="text-background text-lg md:text-xl max-w-2xl mx-auto mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           South Florida's most trusted cleaning service.
         </p>
         <p className="text-background text-xl md:text-2xl font-semibold max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -73,9 +73,9 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 rounded-full border-2 border-background/50 flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-background/50 rounded-full animate-pulse" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" aria-hidden="true">
+        <div className="w-6 h-10 rounded-full border-2 border-background flex items-start justify-center p-2">
+          <div className="w-1 h-2 bg-background rounded-full animate-pulse" />
         </div>
       </div>
     </section>

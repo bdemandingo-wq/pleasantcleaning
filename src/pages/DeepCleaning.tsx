@@ -169,7 +169,7 @@ const DeepCleaning = () => {
             <h2 className="font-display text-3xl font-bold mb-4">
               Ready for a Deep Clean?
             </h2>
-            <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+            <p className="text-primary-foreground mb-8 max-w-xl mx-auto">
               Experience the TIDYWISE difference. Serving Broward, Palm Beach, and Miami-Dade counties.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
