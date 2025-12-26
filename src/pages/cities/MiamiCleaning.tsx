@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOSchema from "@/components/seo/SEOSchema";
+import CityPageNavigation from "@/components/seo/CityPageNavigation";
 
 const MiamiCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Miami FL | TIDYWISE"
+        pageTitle="Miami House Cleaning | Brickell, Wynwood, Coconut Grove | TIDYWISE"
         pageDescription="Miami FL house & condo cleaning you can count on. Brickell, Wynwood, Coconut Grove & Little Havana. Same-day availability. Book now!"
         canonicalUrl="https://tidywisecleaning.com/miami-cleaning"
         pageType="county"
@@ -77,6 +78,45 @@ const MiamiCleaning = () => {
           </div>
         </section>
 
+        {/* Why Choose TIDYWISE in Miami */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-8">
+              Why Miami Residents Choose TIDYWISE
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Condo Specialists</h3>
+                <p className="text-muted-foreground text-sm">
+                  From Brickell high-rises to Coconut Grove estates, we understand Miami living. Our teams are building-approved and familiar with condo regulations.
+                </p>
+              </div>
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Bilingual Teams</h3>
+                <p className="text-muted-foreground text-sm">
+                  Our Miami cleaning teams are bilingual (English/Spanish), ensuring clear communication and excellent service for all our clients.
+                </p>
+              </div>
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Humidity Experts</h3>
+                <p className="text-muted-foreground text-sm">
+                  Miami humidity means mold risk. Our eco-friendly products and techniques help prevent mold growth while keeping your home fresh and clean.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <CityPageNavigation currentCity="Miami" county="miami-dade" />
         <Footer />
       </main>
     </>

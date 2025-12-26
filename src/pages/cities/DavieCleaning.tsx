@@ -9,7 +9,7 @@ const DavieCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Davie FL | TIDYWISE"
+        pageTitle="Davie FL Home Cleaning | Nova Southeastern Area | TIDYWISE"
         pageDescription="Davie FL home cleaning near Nova Southeastern. Pine Island Ridge & Rolling Hills residents love our attention to detail. Insured cleaners. Book now!"
         canonicalUrl="https://tidywisecleaning.com/davie-cleaning"
         pageType="county"

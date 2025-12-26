@@ -9,7 +9,7 @@ const PalmBeachGardensCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Palm Beach Gardens FL | TIDYWISE"
+        pageTitle="Palm Beach Gardens Luxury Cleaning | PGA National | TIDYWISE"
         pageDescription="Palm Beach Gardens FL luxury home cleaning. PGA National, The Gardens & Frenchman's Creek. White-glove service with meticulous attention. Book today!"
         canonicalUrl="https://tidywisecleaning.com/palm-beach-gardens-cleaning"
         pageType="county"

@@ -9,7 +9,7 @@ const SunriseCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Sunrise FL | TIDYWISE"
+        pageTitle="Sunrise FL Cleaning | Sawgrass Mills, Sunrise Lakes | TIDYWISE"
         pageDescription="Sunrise FL reliable cleaning near Sawgrass Mills. Sunrise Lakes & Welleby specialists. Weekly maintenance or one-time deep cleans. Get your quote today!"
         canonicalUrl="https://tidywisecleaning.com/sunrise-cleaning"
         pageType="county"

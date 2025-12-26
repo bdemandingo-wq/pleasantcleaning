@@ -9,7 +9,7 @@ const JupiterCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Jupiter FL | TIDYWISE"
+        pageTitle="Jupiter FL Coastal Home Cleaning | Abacoa | TIDYWISE"
         pageDescription="Jupiter FL coastal home cleaning specialists. Abacoa, Jupiter Inlet & The Bluffs. Eco-friendly products safe for pets & kids. Call (561) 571-8725!"
         canonicalUrl="https://tidywisecleaning.com/jupiter-cleaning"
         pageType="county"

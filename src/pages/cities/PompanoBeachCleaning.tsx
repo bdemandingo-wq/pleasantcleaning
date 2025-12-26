@@ -9,7 +9,7 @@ const PompanoBeachCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Pompano Beach | TIDYWISE"
+        pageTitle="Pompano Beach Cleaning | Lighthouse Point, Palm Aire | TIDYWISE"
         pageDescription="Pompano Beach FL coastal home cleaning. Lighthouse Point, Palm Aire & Cypress Creek. Salt-air safe cleaning methods. Free estimates available!"
         canonicalUrl="https://tidywisecleaning.com/pompano-beach-cleaning"
         pageType="county"

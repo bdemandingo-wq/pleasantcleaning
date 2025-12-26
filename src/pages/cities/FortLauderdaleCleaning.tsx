@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOSchema from "@/components/seo/SEOSchema";
+import CityPageNavigation from "@/components/seo/CityPageNavigation";
 
 const FortLauderdaleCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Fort Lauderdale | TIDYWISE"
+        pageTitle="Fort Lauderdale House Cleaning | Las Olas, Victoria Park | TIDYWISE"
         pageDescription="Best cleaning in Fort Lauderdale. Licensed & insured house cleaning. Same-day quotes. Serving Las Olas, Victoria Park, Rio Vista. Call (561) 571-8725!"
         canonicalUrl="https://tidywisecleaning.com/fort-lauderdale-cleaning"
         pageType="county"
@@ -77,6 +78,45 @@ const FortLauderdaleCleaning = () => {
           </div>
         </section>
 
+        {/* Why Choose TIDYWISE in Fort Lauderdale */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-8">
+              Why Fort Lauderdale Residents Choose TIDYWISE
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Local Expertise</h3>
+                <p className="text-muted-foreground text-sm">
+                  We understand Fort Lauderdale homes, from beachfront condos to historic Victoria Park properties. Our cleaners know the unique challenges of South Florida living.
+                </p>
+              </div>
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Flexible Scheduling</h3>
+                <p className="text-muted-foreground text-sm">
+                  Book weekly, bi-weekly, or one-time cleanings that fit your schedule. Same-day availability for urgent cleaning needs throughout Fort Lauderdale.
+                </p>
+              </div>
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Satisfaction Guaranteed</h3>
+                <p className="text-muted-foreground text-sm">
+                  Not happy? We will re-clean for free. Our Fort Lauderdale customers consistently rate us 5 stars for quality and reliability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <CityPageNavigation currentCity="Fort Lauderdale" county="broward" />
         <Footer />
       </main>
     </>

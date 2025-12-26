@@ -9,7 +9,7 @@ const PlantationCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Plantation FL | TIDYWISE"
+        pageTitle="Plantation FL Trusted Home Cleaning | Jacaranda | TIDYWISE"
         pageDescription="Plantation FL trusted home cleaning since 2020. Jacaranda, Plantation Acres & Central Park. Standard & deep cleaning options. Get 10% off first clean!"
         canonicalUrl="https://tidywisecleaning.com/plantation-cleaning"
         pageType="county"

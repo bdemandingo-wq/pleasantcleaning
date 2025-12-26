@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOSchema from "@/components/seo/SEOSchema";
+import CityPageNavigation from "@/components/seo/CityPageNavigation";
 
 const BocaRatonCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Top-Rated Cleaning Boca Raton | TIDYWISE"
+        pageTitle="Boca Raton House Cleaning | Mizner Park, Royal Palm | TIDYWISE"
         pageDescription="Top-rated cleaning Boca Raton. Professional house & condo cleaning. Serving Mizner Park, Royal Palm, Boca West. Licensed & insured. Call (561) 571-8725!"
         canonicalUrl="https://tidywisecleaning.com/boca-raton-cleaning"
         pageType="county"
@@ -77,6 +78,45 @@ const BocaRatonCleaning = () => {
           </div>
         </section>
 
+        {/* Why Choose TIDYWISE in Boca Raton */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-8">
+              Why Boca Raton Residents Choose TIDYWISE
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Country Club Standards</h3>
+                <p className="text-muted-foreground text-sm">
+                  Boca Raton is known for elegance. Our cleaners deliver white-glove service that meets the standards of Boca West, Broken Sound, and other premier communities.
+                </p>
+              </div>
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Seasonal Flexibility</h3>
+                <p className="text-muted-foreground text-sm">
+                  Whether you are a year-round resident or snowbird, we offer flexible scheduling to match your Boca Raton lifestyle and seasonal needs.
+                </p>
+              </div>
+              <div className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground mb-2">Trusted & Vetted</h3>
+                <p className="text-muted-foreground text-sm">
+                  Every TIDYWISE cleaner is background-checked, insured, and trained to handle luxury properties with care and discretion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <CityPageNavigation currentCity="Boca Raton" county="palm-beach" />
         <Footer />
       </main>
     </>

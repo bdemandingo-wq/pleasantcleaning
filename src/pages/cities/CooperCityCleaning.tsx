@@ -9,7 +9,7 @@ const CooperCityCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Cooper City FL | TIDYWISE"
+        pageTitle="Cooper City Family Home Cleaning | Embassy Lakes | TIDYWISE"
         pageDescription="Cooper City FL family-focused home cleaning. Rock Creek, Embassy Lakes & Country Glen. Kid-safe & pet-friendly products. Schedule today!"
         canonicalUrl="https://tidywisecleaning.com/cooper-city-cleaning"
         pageType="county"

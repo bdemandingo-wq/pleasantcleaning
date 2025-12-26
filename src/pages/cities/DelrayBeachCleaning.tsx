@@ -9,7 +9,7 @@ const DelrayBeachCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best Cleaning Service Delray Beach FL | TIDYWISE"
+        pageTitle="Delray Beach House Cleaning | Atlantic Ave Area | TIDYWISE"
         pageDescription="Delray Beach FL professional house cleaning. Atlantic Avenue, Tropic Isle & Lake Ida residents trust TIDYWISE. Recurring or one-time cleans. Get a quote!"
         canonicalUrl="https://tidywisecleaning.com/delray-beach-cleaning"
         pageType="county"
