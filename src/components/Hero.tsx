@@ -29,14 +29,11 @@ const Hero = () => {
           <span className="text-sm font-medium text-background">Booking Available Today</span>
         </div>
 
-        <h1 className="sr-only">Cleaners Near Me</h1>
-        <p className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-background mb-6 animate-fade-in" aria-hidden="true">
-          Cleaners Near Me
-          <br />
-          <span className="text-3xl md:text-4xl lg:text-5xl">South Florida's Trusted Cleaning Service</span>
-        </p>
-        <p className="text-background text-lg md:text-xl max-w-2xl mx-auto mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          South Florida's most trusted cleaning service.
+        <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-background mb-6 animate-fade-in">
+          TIDYWISE House Cleaning Services in Fort Lauderdale, Boca Raton & West Palm Beach
+        </h1>
+        <p className="text-background text-lg md:text-xl max-w-3xl mx-auto mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          Professional residential & commercial cleaning in Hollywood, Coral Springs, Deerfield Beach, Pompano Beach, Delray Beach, Boynton Beach & 30+ cities across Broward, Miami-Dade & Palm Beach County.
         </p>
         <p className="text-background text-xl md:text-2xl font-semibold max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
           For Every Budget, For Every Space, For You.
