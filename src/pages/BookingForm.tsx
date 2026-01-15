@@ -97,6 +97,37 @@ const BookingForm = () => {
         return;
       }
 
+      // Send booking data to external CRM webhook
+      try {
+        const nameParts = formData.name.trim().split(' ');
+        const firstName = nameParts[0] || '';
+        const lastName = nameParts.slice(1).join(' ') || '';
+        
+        await fetch('https://slwfkaqczvwvvvavkgpr.supabase.co/functions/v1/external-booking-webhook', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            first_name: firstName,
+            last_name: lastName,
+            email: formData.email,
+            phone: formData.phone,
+            address: formData.address,
+            city: '',
+            state: 'FL',
+            zip_code: '',
+            service_name: booking.serviceType,
+            scheduled_at: preferredDate ? preferredDate.toISOString() : new Date().toISOString(),
+            total_amount: parseFloat(booking.totalPrice),
+            bedrooms: formData.beds,
+            bathrooms: formData.baths,
+            notes: `${formData.accessInstructions}\n\nFocus Areas: ${formData.focusAreas}\n\nPet Info: ${formData.hasPets !== "no" ? `${formData.hasPets} - ${formData.petDetails}` : "No pets"}`
+          })
+        });
+      } catch (webhookError) {
+        console.error("External webhook error:", webhookError);
+        // Continue even if webhook fails - booking is saved locally
+      }
+
       // Send confirmation emails
       const { error } = await supabase.functions.invoke("send-booking-confirmation", {
         body: {
