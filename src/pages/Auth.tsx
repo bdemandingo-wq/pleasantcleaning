@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
-import { ArrowLeft, Mail, Lock, User } from "lucide-react";
+import { ArrowLeft, Mail, Lock, User, Phone } from "lucide-react";
 import logo from "@/assets/logo-optimized.webp";
 
 const emailSchema = z.string().email("Please enter a valid email address");
@@ -17,6 +17,9 @@ const passwordSchema = z.string().min(6, "Password must be at least 6 characters
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isForgotPassword, setIsForgotPassword] = useState(false);
+  const [resetStep, setResetStep] = useState<"email" | "otp" | "newPassword">("email");
+  const [otpCode, setOtpCode] = useState("");
+  const [newPassword, setNewPassword] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
@@ -50,7 +53,7 @@ const Auth = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleForgotPassword = async (e: React.FormEvent) => {
+  const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
     const emailResult = emailSchema.safeParse(email);
     if (!emailResult.success) {
@@ -59,14 +62,44 @@ const Auth = () => {
     }
     setIsSubmitting(true);
     try {
-      const { error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/auth`,
+      const { data, error } = await supabase.functions.invoke("sms-password-reset", {
+        body: { action: "send", email },
       });
       if (error) {
-        toast({ title: "Error", description: error.message, variant: "destructive" });
+        toast({ title: "Error", description: "Failed to send reset code", variant: "destructive" });
       } else {
-        toast({ title: "Check your email", description: "A password reset link has been sent." });
+        toast({ title: "Code sent!", description: "Check your phone for the 6-digit code." });
+        setResetStep("otp");
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleVerifyOtp = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (otpCode.length !== 6) {
+      toast({ title: "Invalid code", description: "Please enter the 6-digit code.", variant: "destructive" });
+      return;
+    }
+    const pwResult = passwordSchema.safeParse(newPassword);
+    if (!pwResult.success) {
+      setErrors({ password: pwResult.error.errors[0].message });
+      return;
+    }
+    setIsSubmitting(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("sms-password-reset", {
+        body: { action: "verify", email, otp: otpCode, newPassword },
+      });
+      if (error || data?.error) {
+        toast({ title: "Error", description: data?.error || "Invalid or expired code", variant: "destructive" });
+      } else {
+        toast({ title: "Password reset!", description: "You can now sign in with your new password." });
         setIsForgotPassword(false);
+        setResetStep("email");
+        setOtpCode("");
+        setNewPassword("");
       }
     } finally {
       setIsSubmitting(false);
@@ -148,46 +181,105 @@ const Auth = () => {
                 {isForgotPassword ? "Reset Password" : isLogin ? "Admin Login" : "Create Account"}
               </h1>
               <p className="text-muted-foreground">
-                {isForgotPassword ? "Enter your email to receive a reset link" : isLogin ? "Sign in to manage bookings" : "Create your account"}
+                {isForgotPassword
+                  ? resetStep === "email"
+                    ? "Enter your email to receive a code via SMS"
+                    : "Enter the code and your new password"
+                  : isLogin ? "Sign in to manage bookings" : "Create your account"}
               </p>
             </div>
 
             {isForgotPassword ? (
-              <form onSubmit={handleForgotPassword} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="admin@tidywise.com"
-                      className="pl-10"
-                      value={email}
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                        setErrors((prev) => ({ ...prev, email: undefined }));
-                      }}
-                      required
-                    />
+              resetStep === "email" ? (
+                <form onSubmit={handleSendOtp} className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <div className="relative">
+                      <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                      <Input
+                        id="email"
+                        type="email"
+                        placeholder="admin@tidywise.com"
+                        className="pl-10"
+                        value={email}
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                          setErrors((prev) => ({ ...prev, email: undefined }));
+                        }}
+                        required
+                      />
+                    </div>
+                    {errors.email && (
+                      <p className="text-sm text-destructive">{errors.email}</p>
+                    )}
                   </div>
-                  {errors.email && (
-                    <p className="text-sm text-destructive">{errors.email}</p>
-                  )}
-                </div>
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? "Please wait..." : "Send Reset Link"}
-                </Button>
-                <div className="text-center">
-                  <button
-                    type="button"
-                    onClick={() => { setIsForgotPassword(false); setErrors({}); }}
-                    className="text-sm text-primary hover:underline"
-                  >
-                    Back to login
-                  </button>
-                </div>
-              </form>
+                  <Button type="submit" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Sending..." : "Send SMS Code"}
+                  </Button>
+                  <div className="text-center">
+                    <button
+                      type="button"
+                      onClick={() => { setIsForgotPassword(false); setResetStep("email"); setErrors({}); }}
+                      className="text-sm text-primary hover:underline"
+                    >
+                      Back to login
+                    </button>
+                  </div>
+                </form>
+              ) : (
+                <form onSubmit={handleVerifyOtp} className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="otp">6-Digit Code</Label>
+                    <div className="relative">
+                      <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                      <Input
+                        id="otp"
+                        type="text"
+                        inputMode="numeric"
+                        maxLength={6}
+                        placeholder="123456"
+                        className="pl-10 text-center tracking-widest text-lg"
+                        value={otpCode}
+                        onChange={(e) => setOtpCode(e.target.value.replace(/\D/g, ""))}
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="newPassword">New Password</Label>
+                    <div className="relative">
+                      <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                      <Input
+                        id="newPassword"
+                        type="password"
+                        placeholder="••••••••"
+                        className="pl-10"
+                        value={newPassword}
+                        onChange={(e) => {
+                          setNewPassword(e.target.value);
+                          setErrors((prev) => ({ ...prev, password: undefined }));
+                        }}
+                        required
+                      />
+                    </div>
+                    {errors.password && (
+                      <p className="text-sm text-destructive">{errors.password}</p>
+                    )}
+                  </div>
+                  <Button type="submit" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Resetting..." : "Reset Password"}
+                  </Button>
+                  <div className="text-center">
+                    <button
+                      type="button"
+                      onClick={() => { setResetStep("email"); setOtpCode(""); setNewPassword(""); }}
+                      className="text-sm text-primary hover:underline"
+                    >
+                      Resend code
+                    </button>
+                  </div>
+                </form>
+              )
             ) : (
               <>
                 <form onSubmit={handleSubmit} className="space-y-4">
