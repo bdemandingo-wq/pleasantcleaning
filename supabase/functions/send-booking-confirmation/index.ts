@@ -2,6 +2,8 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+const OPENPHONE_API_KEY = Deno.env.get("OPENPHONE_API_KEY");
+const OPENPHONE_PHONE_NUMBER_ID = "PNr7XukuaV";
 
 // Restrict CORS to specific origins
 const ALLOWED_ORIGINS = [
@@ -288,8 +290,47 @@ const handler = async (req: Request): Promise<Response> => {
     const customerEmailData = await customerEmailRes.json();
     console.log("Customer email response:", customerEmailData);
 
+    // Send SMS confirmation to customer
+    let smsResult = null;
+    if (OPENPHONE_API_KEY && booking.customerPhone) {
+      try {
+        // Format phone number - ensure it starts with +1 for US numbers
+        let phoneNumber = booking.customerPhone.replace(/\D/g, '');
+        if (phoneNumber.length === 10) {
+          phoneNumber = '+1' + phoneNumber;
+        } else if (!phoneNumber.startsWith('+')) {
+          phoneNumber = '+' + phoneNumber;
+        }
+
+        const smsContent = `✅ TIDYWISE Booking Confirmed!\n\n📅 Date: ${booking.preferredDate}\n🧽 Service: ${booking.serviceType}\n📍 Address: ${booking.address}\n🏠 ${booking.beds} bed, ${booking.baths} bath (${booking.sqft.toLocaleString()} sq ft)\n🔄 Frequency: ${booking.frequency}\n💰 Total: $${booking.totalPrice}\n\nPlease be home for the final walkthrough.\n\nThank you for choosing TIDYWISE! 💙`;
+
+        const smsResponse = await fetch("https://api.openphone.com/v1/messages", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: OPENPHONE_API_KEY,
+          },
+          body: JSON.stringify({
+            content: smsContent,
+            from: OPENPHONE_PHONE_NUMBER_ID,
+            to: [phoneNumber],
+          }),
+        });
+
+        if (smsResponse.ok) {
+          smsResult = await smsResponse.json();
+          console.log("SMS confirmation sent to customer:", phoneNumber);
+        } else {
+          const errText = await smsResponse.text();
+          console.error("Failed to send SMS to customer:", errText);
+        }
+      } catch (smsError) {
+        console.error("SMS sending error:", smsError);
+      }
+    }
+
     return new Response(
-      JSON.stringify({ success: true, ownerEmail: ownerEmailData, customerEmail: customerEmailData }),
+      JSON.stringify({ success: true, ownerEmail: ownerEmailData, customerEmail: customerEmailData, sms: smsResult }),
       {
         status: 200,
         headers: { "Content-Type": "application/json", ...corsHeaders },
