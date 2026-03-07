@@ -38,7 +38,7 @@ const DeepCleaning = () => {
         pageTitle="Deep Cleaning Services South Florida | TIDYWISE"
         pageDescription="Professional deep cleaning services in South Florida. Inside appliances, baseboards, detailed cleaning. Broward, Palm Beach, Miami-Dade. Call (561) 571-8725!"
         canonicalUrl="https://tidywisecleaning.com/deep-cleaning"
-        pageType="home"
+        pageType="service"
         county="South Florida"
       />
       <main className="min-h-screen">

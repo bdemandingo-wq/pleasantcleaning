@@ -6,6 +6,13 @@ interface SEOSchemaProps {
   canonicalUrl: string;
   pageType?: 'home' | 'county' | 'blog' | 'service';
   county?: string;
+  /** Blog-specific fields for BlogPosting schema */
+  blogMeta?: {
+    datePublished?: string;
+    dateModified?: string;
+    readTime?: string;
+    category?: string;
+  };
 }
 
 const SEOSchema = ({ 
@@ -13,7 +20,8 @@ const SEOSchema = ({
   pageDescription, 
   canonicalUrl,
   pageType = 'home',
-  county
+  county,
+  blogMeta
 }: SEOSchemaProps) => {
   const businessName = "TIDYWISE Cleaning Services";
   const businessAddress = {
@@ -184,6 +192,53 @@ const SEOSchema = ({
     ]
   } : null;
 
+  const blogPostingSchema = pageType === 'blog' ? {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": pageTitle,
+    "description": pageDescription,
+    "url": canonicalUrl,
+    "image": `${website}/og-image.webp`,
+    "datePublished": blogMeta?.datePublished || "2025-01-15",
+    "dateModified": blogMeta?.dateModified || blogMeta?.datePublished || "2025-01-15",
+    "author": {
+      "@type": "Organization",
+      "name": businessName,
+      "url": website
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": businessName,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${website}/logo.webp`
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalUrl
+    },
+    ...(blogMeta?.category && { "articleSection": blogMeta.category }),
+    ...(blogMeta?.readTime && { "timeRequired": `PT${blogMeta.readTime.replace(/\D/g, '')}M` })
+  } : null;
+
+  const serviceSchema = pageType === 'service' ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": pageTitle.replace(' | TIDYWISE', ''),
+    "description": pageDescription,
+    "url": canonicalUrl,
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": `${website}/#organization`
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Broward County, Florida" },
+      { "@type": "AdministrativeArea", "name": "Miami-Dade County, Florida" },
+      { "@type": "AdministrativeArea", "name": "Palm Beach County, Florida" }
+    ]
+  } : null;
+
   return (
     <Helmet>
       <title>{pageTitle}</title>
@@ -194,7 +249,7 @@ const SEOSchema = ({
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={pageType === 'blog' ? 'article' : 'website'} />
       <meta property="og:image" content={`${website}/og-image.webp`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -223,6 +278,16 @@ const SEOSchema = ({
       {breadcrumbSchema && (
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+      )}
+      {blogPostingSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(blogPostingSchema)}
+        </script>
+      )}
+      {serviceSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       )}
     </Helmet>

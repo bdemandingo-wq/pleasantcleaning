@@ -53,7 +53,7 @@ const StandardCleaning = () => {
         pageTitle="Standard House Cleaning Services South Florida | TIDYWISE"
         pageDescription="Professional standard house cleaning in South Florida. Weekly, bi-weekly, monthly service. Affordable rates. Broward, Palm Beach, Miami-Dade. Call (561) 571-8725!"
         canonicalUrl="https://tidywisecleaning.com/standard-cleaning"
-        pageType="home"
+        pageType="service"
         county="South Florida"
       />
       <main className="min-h-screen">

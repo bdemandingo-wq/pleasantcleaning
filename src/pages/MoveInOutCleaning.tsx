@@ -42,7 +42,7 @@ const MoveInOutCleaning = () => {
         pageTitle="Move In/Out Cleaning Services South Florida | TIDYWISE"
         pageDescription="Professional move in/out cleaning in South Florida. Get your deposit back! Inside appliances, cabinets, deep clean. Call (561) 571-8725 for free quote!"
         canonicalUrl="https://tidywisecleaning.com/move-in-out-cleaning"
-        pageType="home"
+        pageType="service"
         county="South Florida"
       />
       <main className="min-h-screen">
