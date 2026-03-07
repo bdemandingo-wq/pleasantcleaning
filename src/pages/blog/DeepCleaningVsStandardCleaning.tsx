@@ -14,6 +14,7 @@ const DeepCleaningVsStandardCleaning = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/deep-cleaning-vs-standard-cleaning"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-01-20", readTime: "8 min", category: "Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

@@ -14,6 +14,7 @@ const MoldPreventionFlorida = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/mold-prevention-florida-homes"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-04-15", readTime: "7 min", category: "Tips" }}
       />
       <main className="min-h-screen">
         <Navbar />

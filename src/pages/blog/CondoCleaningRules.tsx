@@ -14,6 +14,7 @@ const CondoCleaningRules = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/condo-cleaning-rules-south-florida"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-04-10", readTime: "6 min", category: "Local Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

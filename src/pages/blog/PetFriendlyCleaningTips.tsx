@@ -14,6 +14,7 @@ const PetFriendlyCleaningTips = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/pet-friendly-cleaning-tips"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-01-25", readTime: "7 min", category: "Tips" }}
       />
       <main className="min-h-screen">
         <Navbar />

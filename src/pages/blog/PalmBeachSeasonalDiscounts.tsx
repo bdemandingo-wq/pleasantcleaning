@@ -14,6 +14,7 @@ const PalmBeachSeasonalDiscounts = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/palm-beach-seasonal-discounts"
         pageType="blog"
         county="Palm Beach County"
+        blogMeta={{ datePublished: "2025-01-10", readTime: "5 min", category: "Local Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

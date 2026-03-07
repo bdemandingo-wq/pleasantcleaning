@@ -14,6 +14,7 @@ const MiamiPermitRules = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/miami-permit-rules"
         pageType="blog"
         county="Miami-Dade County"
+        blogMeta={{ datePublished: "2025-01-10", readTime: "6 min", category: "Local Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

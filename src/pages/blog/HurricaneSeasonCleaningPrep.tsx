@@ -14,6 +14,7 @@ const HurricaneSeasonCleaningPrep = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/hurricane-season-cleaning-prep"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-05-01", readTime: "8 min", category: "Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

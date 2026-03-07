@@ -14,6 +14,7 @@ const EcoFriendlyCleaningProducts = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/eco-friendly-cleaning-products"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-02-10", readTime: "6 min", category: "Tips" }}
       />
       <main className="min-h-screen">
         <Navbar />

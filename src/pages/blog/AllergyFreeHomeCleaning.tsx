@@ -14,6 +14,7 @@ const AllergyFreeHomeCleaning = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/allergy-free-home-cleaning"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-02-20", readTime: "6 min", category: "Tips" }}
       />
       <main className="min-h-screen">
         <Navbar />

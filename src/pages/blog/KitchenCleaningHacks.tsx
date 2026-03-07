@@ -14,6 +14,7 @@ const KitchenCleaningHacks = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/kitchen-cleaning-hacks"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-03-15", readTime: "6 min", category: "Tips" }}
       />
       <main className="min-h-screen">
         <Navbar />

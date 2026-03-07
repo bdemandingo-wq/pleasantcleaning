@@ -14,6 +14,7 @@ const HolidayCleaningChecklist = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/holiday-cleaning-checklist"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-11-15", readTime: "5 min", category: "Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

@@ -14,6 +14,7 @@ const BrowardCostGuide = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/broward-cost-guide"
         pageType="blog"
         county="Broward County"
+        blogMeta={{ datePublished: "2025-01-05", readTime: "6 min", category: "Local Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

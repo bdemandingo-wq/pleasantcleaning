@@ -14,6 +14,7 @@ const PostConstructionCleaningGuide = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/post-construction-cleaning-guide"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-04-01", readTime: "7 min", category: "Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />

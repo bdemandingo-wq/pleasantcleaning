@@ -14,6 +14,7 @@ const AirbnbTurnoverCleaningTips = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/airbnb-turnover-cleaning-tips"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-03-20", readTime: "7 min", category: "Tips" }}
       />
       <main className="min-h-screen">
         <Navbar />

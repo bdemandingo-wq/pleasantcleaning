@@ -14,6 +14,7 @@ const SpringCleaningGuide = () => {
         canonicalUrl="https://tidywisecleaning.com/blog/spring-cleaning-guide-south-florida"
         pageType="blog"
         county="South Florida"
+        blogMeta={{ datePublished: "2025-03-01", readTime: "6 min", category: "Guides" }}
       />
       <main className="min-h-screen">
         <Navbar />
