@@ -110,7 +110,7 @@ const Services = () => {
               className="block group"
             >
               <Card
-                className="h-full border-t-4 border-t-primary/20 border-border/50 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg group-hover:border-t-secondary opacity-0 animate-fade-in"
+                className="h-full border-t-4 border-t-primary/20 border-border/50 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg group-hover:border-t-primary opacity-0 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader className="relative">

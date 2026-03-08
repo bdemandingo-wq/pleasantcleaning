@@ -64,7 +64,7 @@ const HowItWorks = () => {
         <div className="text-center">
           <Button
             size="lg"
-            className="bg-success text-success-foreground hover:bg-success/90 font-semibold text-lg px-10 py-6 group hover:scale-[1.02] transition-all"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold text-lg px-10 py-6 group hover:scale-[1.02] transition-all"
             asChild
           >
             <a href="#booking" className="flex items-center gap-2">
