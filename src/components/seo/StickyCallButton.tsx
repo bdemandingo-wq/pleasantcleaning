@@ -53,7 +53,7 @@ const StickyCallButton = () => {
       <div className="hidden md:block">
         <Button
           size="lg"
-          className="bg-info text-info-foreground shadow-elevated font-semibold text-lg py-6 px-8 hover:scale-105 transition-transform"
+          className="bg-primary text-primary-foreground shadow-elevated font-semibold text-lg py-6 px-8 hover:scale-105 transition-transform"
           asChild
         >
           <a 
