@@ -101,10 +101,10 @@ const Hero = () => {
         style={{ transform: "translateX(-50%)" }}
         aria-hidden="true"
       >
-        <a href="#social-proof" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+        <a href="#social-proof" className="flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors">
           <span className="text-sm font-medium">See pricing & services</span>
-          <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2 animate-bounce">
-            <div className="w-1 h-2 bg-muted-foreground/50 rounded-full" />
+          <div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2 animate-bounce">
+            <div className="w-1 h-2 bg-white/50 rounded-full" />
           </div>
         </a>
       </div>
