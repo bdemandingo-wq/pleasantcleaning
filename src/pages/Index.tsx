@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 // Lazy load below-the-fold components
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
-const ComparisonTable = lazy(() => import("@/components/ComparisonTable"));
+
 const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const HomeFAQ = lazy(() => import("@/components/HomeFAQ"));
@@ -45,7 +45,7 @@ const Index = () => {
         <Services />
         <LazySection minHeight={350}><HowItWorks /></LazySection>
         <PricingCalculator />
-        <LazySection minHeight={200}><ComparisonTable /></LazySection>
+        
         <LazySection minHeight={400}><WhyChooseUs /></LazySection>
         <LazySection minHeight={400}><Testimonials /></LazySection>
         <LazySection minHeight={400}><HomeFAQ /></LazySection>
