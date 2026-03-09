@@ -51,11 +51,15 @@ const StandardCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Standard House Cleaning Services South Florida | TIDYWISE"
-        pageDescription="Professional standard house cleaning in South Florida. Weekly, bi-weekly, monthly service. Affordable rates. Broward, Palm Beach, Miami-Dade. Call (561) 571-8725!"
+        pageTitle="Standard House Cleaning South Florida | From $150 | TIDYWISE"
+        pageDescription="Affordable standard house cleaning in Fort Lauderdale, Boca Raton & Miami. Starting at $150. Vacuuming, mopping, kitchen & bathroom cleaning. Book online or call (561) 571-8725."
         canonicalUrl="https://tidywisecleaning.com/standard-cleaning"
         pageType="service"
         county="South Florida"
+        breadcrumbs={[
+          { name: "Home", url: "https://tidywisecleaning.com" },
+          { name: "Standard Cleaning", url: "https://tidywisecleaning.com/standard-cleaning" }
+        ]}
       />
       <main className="min-h-screen">
         <Navbar />
