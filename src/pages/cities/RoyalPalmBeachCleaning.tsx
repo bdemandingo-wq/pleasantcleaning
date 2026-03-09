@@ -78,6 +78,7 @@ const RoyalPalmBeachCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/royal-palm-beach-cleaning" pageType="city" cityName="Royal Palm Beach" />
         <Footer />
       </main>
     </>

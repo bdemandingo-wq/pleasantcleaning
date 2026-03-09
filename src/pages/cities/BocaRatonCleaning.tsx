@@ -117,7 +117,7 @@ const BocaRatonCleaning = () => {
           </div>
         </section>
 
-        <CityPageNavigation currentCity="Boca Raton" county="palm-beach" />
+        <RelatedLinks currentPage="/boca-raton-cleaning" pageType="city" cityName="Boca Raton" />
         <Footer />
       </main>
     </>

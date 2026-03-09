@@ -78,6 +78,7 @@ const AventuraCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/aventura-cleaning" pageType="city" cityName="Aventura" />
         <Footer />
       </main>
     </>

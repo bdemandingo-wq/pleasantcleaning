@@ -117,7 +117,7 @@ const MiamiCleaning = () => {
           </div>
         </section>
 
-        <CityPageNavigation currentCity="Miami" county="miami-dade" />
+        <RelatedLinks currentPage="/miami-cleaning" pageType="city" cityName="Miami" />
         <Footer />
       </main>
     </>

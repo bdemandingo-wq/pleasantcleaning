@@ -78,6 +78,7 @@ const NorthMiamiBeachCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/north-miami-beach-cleaning" pageType="city" cityName="North Miami Beach" />
         <Footer />
       </main>
     </>

@@ -117,7 +117,7 @@ const FortLauderdaleCleaning = () => {
           </div>
         </section>
 
-        <CityPageNavigation currentCity="Fort Lauderdale" county="broward" />
+        <RelatedLinks currentPage="/fort-lauderdale-cleaning" pageType="city" cityName="Fort Lauderdale" />
         <Footer />
       </main>
     </>
