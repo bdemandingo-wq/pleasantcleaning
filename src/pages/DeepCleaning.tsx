@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOSchema from "@/components/seo/SEOSchema";
 import StickyCallButton from "@/components/seo/StickyCallButton";
+import RelatedLinks from "@/components/seo/RelatedLinks";
 
 const DeepCleaning = () => {
   const included = [
@@ -35,11 +36,15 @@ const DeepCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Deep Cleaning Services South Florida | TIDYWISE"
-        pageDescription="Professional deep cleaning services in South Florida. Inside appliances, baseboards, detailed cleaning. Broward, Palm Beach, Miami-Dade. Call (561) 571-8725!"
+        pageTitle="Deep Cleaning Service Fort Lauderdale & South Florida | TIDYWISE"
+        pageDescription="Professional deep cleaning in South Florida starting at $250. Baseboards, inside cabinets, appliances & more. Highly-rated, eco-friendly cleaners. Instant quote online."
         canonicalUrl="https://tidywisecleaning.com/deep-cleaning"
         pageType="service"
         county="South Florida"
+        breadcrumbs={[
+          { name: "Home", url: "https://tidywisecleaning.com" },
+          { name: "Deep Cleaning", url: "https://tidywisecleaning.com/deep-cleaning" }
+        ]}
       />
       <main className="min-h-screen">
         <Navbar />
@@ -183,6 +188,7 @@ const DeepCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/deep-cleaning" pageType="service" />
         <Footer />
         <StickyCallButton />
       </main>

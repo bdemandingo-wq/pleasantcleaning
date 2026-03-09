@@ -1,8 +1,10 @@
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
 
 User-agent: Twitterbot
 Allow: /
@@ -10,8 +12,24 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
 User-agent: *
 Allow: /
 Disallow: /admin
+Disallow: /auth
+Disallow: /customer-portal
+Disallow: /my-bookings
+Disallow: /contractor-rate-sheet
+Disallow: /confirmation
+Disallow: /*?*
+Disallow: /*.json$
 
-Sitemap: https://tidywisecleaning.com/sitemap.xml
+Sitemap: https://tidywisecleaning.com/sitemap-index.xml

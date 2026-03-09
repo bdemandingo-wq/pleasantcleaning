@@ -1,0 +1,13 @@
+{
+  "name": "TIDYWISE Cleaning Services",
+  "short_name": "TIDYWISE",
+  "description": "Professional house cleaning in South Florida",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1A56DB",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

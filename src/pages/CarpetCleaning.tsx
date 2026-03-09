@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOSchema from "@/components/seo/SEOSchema";
 import StickyCallButton from "@/components/seo/StickyCallButton";
+import RelatedLinks from "@/components/seo/RelatedLinks";
 import { Button } from "@/components/ui/button";
 
 const CarpetCleaning = () => {
@@ -31,6 +32,10 @@ const CarpetCleaning = () => {
         canonicalUrl="https://tidywisecleaning.com/carpet-cleaning"
         pageType="service"
         county="South Florida"
+        breadcrumbs={[
+          { name: "Home", url: "https://tidywisecleaning.com" },
+          { name: "Carpet Cleaning", url: "https://tidywisecleaning.com/carpet-cleaning" }
+        ]}
       />
       <main className="min-h-screen">
         <Navbar />
@@ -176,6 +181,7 @@ const CarpetCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/carpet-cleaning" pageType="service" />
         <Footer />
         <StickyCallButton />
       </main>

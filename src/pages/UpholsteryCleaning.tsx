@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOSchema from "@/components/seo/SEOSchema";
 import StickyCallButton from "@/components/seo/StickyCallButton";
+import RelatedLinks from "@/components/seo/RelatedLinks";
 import { Button } from "@/components/ui/button";
 
 const UpholsteryCleaning = () => {
@@ -35,11 +36,15 @@ const UpholsteryCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Upholstery Cleaning Services Near Me | South Florida | TIDYWISE"
+        pageTitle="Upholstery Cleaning Near Me | South Florida | TIDYWISE"
         pageDescription="Professional upholstery and furniture cleaning in Broward, Miami-Dade & Palm Beach County. Sofa, chair & fabric cleaning. Get a custom quote today!"
         canonicalUrl="https://tidywisecleaning.com/upholstery-cleaning"
         pageType="service"
         county="South Florida"
+        breadcrumbs={[
+          { name: "Home", url: "https://tidywisecleaning.com" },
+          { name: "Upholstery Cleaning", url: "https://tidywisecleaning.com/upholstery-cleaning" }
+        ]}
       />
       <main className="min-h-screen">
         <Navbar />
@@ -204,6 +209,7 @@ const UpholsteryCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/upholstery-cleaning" pageType="service" />
         <Footer />
         <StickyCallButton />
       </main>
