@@ -165,7 +165,7 @@ const handler = async (req: Request): Promise<Response> => {
       status: 200,
       headers: {
         "Content-Type": "application/json",
-        ...corsHeaders,
+        ...getCorsHeaders(req),
       },
     });
   } catch (error: any) {
