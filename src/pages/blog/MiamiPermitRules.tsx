@@ -123,6 +123,8 @@ const MiamiPermitRules = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/miami-permit-rules" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

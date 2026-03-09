@@ -115,6 +115,8 @@ const BrowardCostGuide = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/broward-cost-guide" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

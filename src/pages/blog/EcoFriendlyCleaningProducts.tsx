@@ -118,6 +118,8 @@ const EcoFriendlyCleaningProducts = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/eco-friendly-cleaning-products" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

@@ -138,6 +138,8 @@ const CondoCleaningRules = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/condo-cleaning-rules-south-florida" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

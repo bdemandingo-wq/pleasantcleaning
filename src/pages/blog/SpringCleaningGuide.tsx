@@ -125,6 +125,8 @@ const SpringCleaningGuide = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/spring-cleaning-guide-south-florida" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

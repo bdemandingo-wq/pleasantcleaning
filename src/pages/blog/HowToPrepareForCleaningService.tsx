@@ -180,6 +180,8 @@ const HowToPrepareForCleaningService = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/how-to-prepare-for-cleaning-service" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

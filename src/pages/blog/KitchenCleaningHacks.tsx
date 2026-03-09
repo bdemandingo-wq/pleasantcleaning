@@ -143,6 +143,8 @@ const KitchenCleaningHacks = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/kitchen-cleaning-hacks" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

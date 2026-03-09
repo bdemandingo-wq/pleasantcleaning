@@ -121,6 +121,8 @@ const AllergyFreeHomeCleaning = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/allergy-free-home-cleaning" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

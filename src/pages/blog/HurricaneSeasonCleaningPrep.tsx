@@ -167,6 +167,8 @@ const HurricaneSeasonCleaningPrep = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/hurricane-season-cleaning-prep" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

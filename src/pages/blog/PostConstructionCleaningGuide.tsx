@@ -152,6 +152,8 @@ const PostConstructionCleaningGuide = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/post-construction-cleaning-guide" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

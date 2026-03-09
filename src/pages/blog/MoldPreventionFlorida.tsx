@@ -140,6 +140,8 @@ const MoldPreventionFlorida = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/mold-prevention-florida-homes" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

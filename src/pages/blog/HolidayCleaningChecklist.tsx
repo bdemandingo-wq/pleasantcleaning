@@ -126,6 +126,8 @@ const HolidayCleaningChecklist = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/holiday-cleaning-checklist" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

@@ -152,6 +152,8 @@ const PetFriendlyCleaningTips = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/pet-friendly-cleaning-tips" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

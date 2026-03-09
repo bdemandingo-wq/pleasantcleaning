@@ -143,6 +143,8 @@ const AirbnbTurnoverCleaningTips = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/airbnb-turnover-cleaning-tips" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

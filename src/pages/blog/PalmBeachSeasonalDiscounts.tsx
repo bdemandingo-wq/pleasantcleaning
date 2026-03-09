@@ -127,6 +127,8 @@ const PalmBeachSeasonalDiscounts = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/palm-beach-seasonal-discounts" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

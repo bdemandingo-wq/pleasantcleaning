@@ -140,6 +140,8 @@ const BathroomDeepCleaningGuide = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/bathroom-deep-cleaning-guide" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

@@ -146,6 +146,8 @@ const AiBlogPost = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage={`/blog/ai/${slug}`} pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

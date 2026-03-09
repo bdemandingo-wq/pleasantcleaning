@@ -178,6 +178,8 @@ const MoveInOutCleaningChecklist = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/move-in-out-cleaning-checklist" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>
