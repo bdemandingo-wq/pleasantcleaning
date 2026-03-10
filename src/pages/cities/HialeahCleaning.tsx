@@ -10,7 +10,7 @@ const HialeahCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Hialeah House Cleaning FL | TIDYWISE"
+        pageTitle="Hialeah House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Hialeah FL bilingual cleaning services. Hialeah Gardens, Palm Springs & Miami Lakes. Affordable weekly or bi-weekly plans. Llámanos hoy!"
         canonicalUrl="https://tidywisecleaning.com/hialeah-cleaning"
         pageType="county"
