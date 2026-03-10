@@ -11,7 +11,7 @@ const WestPalmBeachCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Cleaning Services West Palm Beach | TIDYWISE"
+        pageTitle="West Palm Beach House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Professional cleaning West Palm Beach. House & condo cleaning in Clematis, Northwood, El Cid. Licensed & insured. Call (561) 571-8725 for free quote!"
         canonicalUrl="https://tidywisecleaning.com/west-palm-beach-cleaning"
         pageType="county"

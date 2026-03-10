@@ -11,7 +11,7 @@ const MiamiCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Miami House & Condo Cleaning | TIDYWISE"
+        pageTitle="Miami House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Miami FL house & condo cleaning you can count on. Brickell, Wynwood, Coconut Grove & Little Havana. Same-day availability. Book now!"
         canonicalUrl="https://tidywisecleaning.com/miami-cleaning"
         pageType="county"

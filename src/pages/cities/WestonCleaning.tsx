@@ -10,7 +10,7 @@ const WestonCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Weston House Cleaning FL | TIDYWISE"
+        pageTitle="Weston House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Weston FL premium residential cleaning. Weston Hills, Savanna & The Ridges experts. Pet-safe products. Background-checked cleaners. Schedule today!"
         canonicalUrl="https://tidywisecleaning.com/weston-cleaning"
         pageType="county"

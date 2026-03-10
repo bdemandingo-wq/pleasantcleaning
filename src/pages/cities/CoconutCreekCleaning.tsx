@@ -10,7 +10,7 @@ const CoconutCreekCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Coconut Creek House Cleaning FL | TIDYWISE"
+        pageTitle="Coconut Creek House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Coconut Creek FL professional home cleaning. Wynmoor community specialists. Palm Beach Farms & Cypress Bend. Licensed & insured. Schedule today!"
         canonicalUrl="https://tidywisecleaning.com/coconut-creek-cleaning"
         pageType="county"
