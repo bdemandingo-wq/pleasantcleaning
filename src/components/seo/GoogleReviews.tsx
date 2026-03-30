@@ -5,14 +5,14 @@ const reviews = [
     id: 1,
     name: "Ashleigh Craig",
     rating: 5,
-    text: "I used Tidywise to do a deep clean of my home, and I couldn't be happier with the results! From the moment I booked, the communication was professional and prompt. The team arrived on time, fully equipped, and ready to work. They paid attention to every detail—baseboards, windows, inside appliances—nothing was missed. My home looked and smelled amazing afterward. Highly recommend!",
+    text: "I used Point Polish Cleaners to do a deep clean of my home, and I couldn't be happier with the results! From the moment I booked, the communication was professional and prompt. The team arrived on time, fully equipped, and ready to work. They paid attention to every detail—baseboards, windows, inside appliances—nothing was missed. My home looked and smelled amazing afterward. Highly recommend!",
     date: "2 weeks ago",
   },
   {
     id: 2,
     name: "Sallie Sutherland",
     rating: 5,
-    text: "I had an emergency due to ductwork installation that went wrong. Tidy Wise in less than 12 hours got two women to my home over a holiday weekend. They were the most efficient, fast, capable young women I've ever met. It really saved my day. Saved my home. PS: Joe sent Roxi & Yesenia!",
+    text: "I had an emergency due to ductwork installation that went wrong. Point Polish in less than 12 hours got two women to my home over a holiday weekend. They were the most efficient, fast, capable young women I've ever met. It really saved my day. Saved my home!",
     date: "1 month ago",
   },
   {
@@ -46,7 +46,7 @@ const GoogleReviews = () => {
             ))}
           </div>
           <p className="text-muted-foreground">
-            Rated <strong>4.9/5</strong> by over 100+ happy customers in South Florida
+            Rated <strong>4.9/5</strong> by over 100+ happy customers in Jacksonville, FL
           </p>
         </div>
 

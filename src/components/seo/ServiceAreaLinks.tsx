@@ -3,19 +3,19 @@ import { MapPin } from "lucide-react";
 
 const serviceAreas = [
   {
-    county: "Broward County",
-    slug: "/broward-county-cleaning",
-    cities: ["Fort Lauderdale", "Coral Springs", "Hollywood", "Pompano Beach", "Deerfield Beach"],
+    county: "Jacksonville Metro",
+    slug: "/service-areas",
+    cities: ["Jacksonville", "Mandarin", "Southside", "Arlington", "Riverside"],
   },
   {
-    county: "Miami-Dade County",
-    slug: "/miami-dade-cleaning",
-    cities: ["Miami", "Miami Beach", "Hialeah", "Coral Gables", "Aventura"],
+    county: "The Beaches",
+    slug: "/service-areas",
+    cities: ["Jacksonville Beach", "Atlantic Beach", "Neptune Beach", "Ponte Vedra Beach"],
   },
   {
-    county: "Palm Beach County",
-    slug: "/palm-beach-county-cleaning",
-    cities: ["West Palm Beach", "Boca Raton", "Delray Beach", "Boynton Beach", "Jupiter"],
+    county: "Greater Jacksonville",
+    slug: "/service-areas",
+    cities: ["Orange Park", "Fleming Island", "San Marco"],
   },
 ];
 
@@ -28,9 +28,8 @@ const ServiceAreaLinks = () => {
             Professional Cleaning Services Near You
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            TIDYWISE provides <Link to="/broward-county-cleaning" className="text-primary hover:underline">Broward County cleaning services</Link>, 
-            <Link to="/miami-dade-cleaning" className="text-primary hover:underline ml-1">Miami-Dade cleaning services</Link>, and 
-            <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline ml-1">Palm Beach County cleaning services</Link>. 
+            Point Polish Cleaners provides professional cleaning services throughout 
+            <Link to="/service-areas" className="text-primary hover:underline ml-1">Jacksonville and surrounding areas</Link>. 
             Licensed, insured, and ready to transform your space.
           </p>
         </div>
@@ -55,7 +54,7 @@ const ServiceAreaLinks = () => {
                 Top-rated cleaning services in {area.cities.slice(0, 3).join(", ")}, and more.
               </p>
               <span className="text-primary font-medium text-sm group-hover:underline">
-                View {area.county} Services →
+                View Services →
               </span>
             </Link>
           ))}

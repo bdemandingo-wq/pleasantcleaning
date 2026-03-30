@@ -7,15 +7,15 @@ import StickyCallButton from "@/components/seo/StickyCallButton";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 import AuthorBio from "@/components/seo/AuthorBio";
 
-const MiamiPermitRules = () => {
+const JacksonvillePermitRules = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Cleaning Permit Rules Miami-Dade 2025 | TIDYWISE"
-        pageDescription="Miami-Dade cleaning permit rules for 2025. Condo requirements, HOA policies, and what to know before hiring a cleaning service in Miami. Free consultation!"
-        canonicalUrl="https://tidywisecleaning.com/blog/miami-permit-rules"
+        pageTitle="Cleaning Permit Rules Jacksonville 2025 | Point Polish Cleaners"
+        pageDescription="Jacksonville cleaning permit rules for 2025. Condo requirements, HOA policies, and what to know before hiring a cleaning service in Jacksonville. Free consultation!"
+        canonicalUrl="https://pointpolishcleaners.com/blog/miami-permit-rules"
         pageType="blog"
-        county="Miami-Dade County"
+        county="Duval County"
         blogMeta={{ datePublished: "2025-01-10", readTime: "6 min", category: "Local Guides" }}
       />
       <main className="min-h-screen">
@@ -23,9 +23,9 @@ const MiamiPermitRules = () => {
         
         <article className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
-            <Link to="/miami-dade-cleaning" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
+            <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
               <ArrowLeft className="w-4 h-4" />
-              Back to Miami-Dade Cleaning
+              Back to Jacksonville Cleaning
             </Link>
 
             <header className="mb-12">
@@ -41,23 +41,23 @@ const MiamiPermitRules = () => {
               </div>
               
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Permit Rules for Cleaning Services in Miami-Dade
+                Permit Rules for Cleaning Services in Jacksonville
               </h1>
               
               <p className="text-lg text-muted-foreground">
-                Living in a Miami condo or HOA community? Here's what you need to know about 
-                <Link to="/miami-dade-cleaning" className="text-primary hover:underline mx-1">hiring cleaning services in Miami-Dade County</Link>.
+                Living in a Jacksonville condo or HOA community? Here's what you need to know about 
+                <Link to="/service-areas" className="text-primary hover:underline mx-1">hiring cleaning services in Duval County</Link>.
               </p>
             </header>
 
             <div className="prose prose-lg max-w-none">
               <h2 className="font-display text-2xl font-bold text-foreground mt-8 mb-4">
-                Condo Building Requirements in Miami
+                Condo Building Requirements in Jacksonville
               </h2>
               <p className="text-muted-foreground mb-6">
-                Many Miami condos require cleaning services to be registered with building management. 
-                At TIDYWISE, we handle this for you—we're registered with major buildings throughout 
-                <Link to="/miami-dade-cleaning" className="text-primary hover:underline mx-1">Miami-Dade County</Link>.
+                Many Jacksonville condos require cleaning services to be registered with building management. 
+                At Point Polish Cleaners, we handle this for you—we're registered with major buildings throughout 
+                <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval County</Link>.
               </p>
 
               <div className="bg-muted p-6 rounded-xl mb-8">
@@ -75,15 +75,15 @@ const MiamiPermitRules = () => {
               </h2>
               <p className="text-muted-foreground mb-6">
                 Upscale neighborhoods in Coral Gables and Aventura often have specific HOA rules. 
-                Our <Link to="/miami-dade-cleaning" className="text-primary hover:underline">professional cleaning team</Link> is experienced 
+                Our <Link to="/service-areas" className="text-primary hover:underline">professional cleaning team</Link> is experienced 
                 with these communities and follows all guidelines.
               </p>
 
               <h2 className="font-display text-2xl font-bold text-foreground mt-8 mb-4">
-                Miami-Dade Business Requirements
+                Jacksonville Business Requirements
               </h2>
               <p className="text-muted-foreground mb-6">
-                Professional cleaning services in Miami-Dade must have:
+                Professional cleaning services in Jacksonville must have:
               </p>
               <ul className="space-y-2 text-muted-foreground mb-8">
                 <li>• Local business tax receipt</li>
@@ -91,7 +91,7 @@ const MiamiPermitRules = () => {
                 <li>• Workers' compensation (for employees)</li>
               </ul>
               <p className="text-muted-foreground mb-6">
-                TIDYWISE meets all <a href="https://www.miamidade.gov" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Miami-Dade County</a> requirements 
+                Point Polish Cleaners meets all <a href="https://www.coj.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Duval County</a> requirements 
                 and is fully licensed, bonded, and insured.
               </p>
 
@@ -110,13 +110,13 @@ const MiamiPermitRules = () => {
                   Need Help with Your Building's Requirements?
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Our team is experienced with Miami condos and HOA communities. Call <a href="tel:+15615718725" className="text-primary font-semibold">(561) 571-8725</a> or 
+                  Our team is experienced with Jacksonville condos and HOA communities. Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link> for 
-                  <Link to="/miami-dade-cleaning" className="text-primary hover:underline ml-1">Miami-Dade cleaning services</Link>.
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">Jacksonville cleaning services</Link>.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Also serving <Link to="/broward-county-cleaning" className="text-primary hover:underline">Broward County</Link> and 
-                  <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline ml-1">Palm Beach County</Link>.
+                  Also serving <Link to="/service-areas" className="text-primary hover:underline">Duval County</Link> and 
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">St. Johns County</Link>.
                 </p>
               </div>
             </div>
@@ -132,4 +132,4 @@ const MiamiPermitRules = () => {
   );
 };
 
-export default MiamiPermitRules;
+export default JacksonvillePermitRules;

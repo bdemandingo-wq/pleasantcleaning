@@ -28,9 +28,11 @@ const applicationSchema = z.object({
 type ApplicationFormData = z.infer<typeof applicationSchema>;
 
 const workAreaOptions = [
-  { id: "broward", label: "Broward County" },
-  { id: "palm-beach", label: "Palm Beach County" },
-  { id: "miami-dade", label: "Miami Dade County" },
+  { id: "jacksonville", label: "Jacksonville" },
+  { id: "jax-beach", label: "Jacksonville Beach / Beaches" },
+  { id: "ponte-vedra", label: "Ponte Vedra / St. Johns County" },
+  { id: "mandarin", label: "Mandarin / Southside" },
+  { id: "riverside", label: "Riverside / Avondale" },
 ];
 
 const CleanerApplication = () => {
@@ -179,8 +181,8 @@ const CleanerApplication = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="TIDYWISE Logo" className="h-10 w-auto" />
-              <span className="font-display text-xl font-bold text-foreground">TIDYWISE</span>
+              <img src={logo} alt="Point Polish Cleaners Logo" className="h-10 w-auto" />
+              <span className="font-display text-xl font-bold text-foreground">Point Polish Cleaners</span>
             </Link>
           </div>
         </div>
@@ -199,7 +201,7 @@ const CleanerApplication = () => {
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-display">Join Our Team</CardTitle>
             <CardDescription>
-              Apply to become a TIDYWISE cleaning professional
+              Apply to become a Point Polish Cleaners cleaning professional
             </CardDescription>
           </CardHeader>
           <CardContent>

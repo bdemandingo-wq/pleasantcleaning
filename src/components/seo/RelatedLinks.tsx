@@ -16,19 +16,12 @@ const services = [
 ];
 
 const topCities = [
-  { name: "Fort Lauderdale", link: "/fort-lauderdale-cleaning" },
-  { name: "Boca Raton", link: "/boca-raton-cleaning" },
-  { name: "West Palm Beach", link: "/west-palm-beach-cleaning" },
-  { name: "Miami", link: "/miami-cleaning" },
-  { name: "Hollywood", link: "/hollywood-cleaning" },
-  { name: "Coral Springs", link: "/coral-springs-cleaning" },
-  { name: "Pompano Beach", link: "/pompano-beach-cleaning" },
-];
-
-const counties = [
-  { name: "Broward County", link: "/broward-county-cleaning" },
-  { name: "Palm Beach County", link: "/palm-beach-county-cleaning" },
-  { name: "Miami-Dade County", link: "/miami-dade-cleaning" },
+  { name: "Jacksonville", link: "/jacksonville-cleaning" },
+  { name: "Jacksonville Beach", link: "/jacksonville-beach-cleaning" },
+  { name: "Ponte Vedra Beach", link: "/ponte-vedra-beach-cleaning" },
+  { name: "Mandarin", link: "/mandarin-cleaning" },
+  { name: "Riverside", link: "/riverside-cleaning" },
+  { name: "Southside", link: "/southside-cleaning" },
 ];
 
 const blogPosts = [
@@ -40,21 +33,19 @@ const blogPosts = [
   { name: "Bathroom Deep Cleaning Guide", link: "/blog/bathroom-deep-cleaning-guide" },
 ];
 
-const RelatedLinks = ({ currentPage, pageType, county, cityName }: RelatedLinksProps) => {
+const RelatedLinks = ({ currentPage, pageType, cityName }: RelatedLinksProps) => {
   const filteredServices = services.filter(s => s.link !== currentPage);
   const filteredCities = topCities.filter(c => c.link !== currentPage);
   const filteredBlogs = blogPosts.filter(b => b.link !== currentPage).slice(0, 3);
-  const filteredCounties = counties.filter(c => c.link !== currentPage);
 
   return (
     <section className="py-12 bg-muted/50">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="font-display text-2xl font-bold text-foreground mb-6">
-          Explore More TIDYWISE Services
+          Explore More Point Polish Cleaners Services
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Services Column */}
           <div>
             <h3 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">
               {pageType === 'city' && cityName ? `Cleaning Services in ${cityName}` : 'Our Services'}
@@ -70,20 +61,12 @@ const RelatedLinks = ({ currentPage, pageType, county, cityName }: RelatedLinksP
             </ul>
           </div>
 
-          {/* Cities/Areas Column */}
           <div>
             <h3 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">
               Service Areas
             </h3>
             <ul className="space-y-2">
-              {filteredCounties.map(c => (
-                <li key={c.link}>
-                  <Link to={c.link} className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">
-                    {c.name}
-                  </Link>
-                </li>
-              ))}
-              {filteredCities.slice(0, 4).map(city => (
+              {filteredCities.slice(0, 5).map(city => (
                 <li key={city.link}>
                   <Link to={city.link} className="text-muted-foreground hover:text-primary transition-colors text-sm">
                     {city.name} cleaning service
@@ -92,13 +75,12 @@ const RelatedLinks = ({ currentPage, pageType, county, cityName }: RelatedLinksP
               ))}
               <li>
                 <Link to="/service-areas" className="text-primary hover:underline text-sm font-medium">
-                  View all 40+ cities →
+                  View all service areas →
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Blog Column */}
           <div>
             <h3 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">
               From Our Blog
