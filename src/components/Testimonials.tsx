@@ -4,34 +4,34 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    name: "Maria G.",
-    location: "Fort Lauderdale",
+    name: "Sarah K.",
+    location: "Jacksonville",
     rating: 5,
-    text: "TIDYWISE has been cleaning my home for 6 months now. Always on time, thorough, and friendly. My house has never looked better!",
+    text: "Point Polish Cleaners left my home absolutely spotless. Every surface was polished to perfection. I've never had a cleaning service this thorough!",
   },
   {
-    name: "Robert T.",
-    location: "Boca Raton",
+    name: "Marcus T.",
+    location: "Jacksonville Beach",
     rating: 5,
-    text: "Used their move-out cleaning service and got my full deposit back. They cleaned areas I didn't even think about. Highly recommend!",
+    text: "Their attention to detail is unmatched. Used their deep cleaning service and the results were incredible. Highly recommend!",
   },
   {
-    name: "Sandra L.",
-    location: "Miami Beach",
+    name: "Lisa R.",
+    location: "Ponte Vedra",
     rating: 5,
-    text: "As a busy mom of 3, TIDYWISE is a lifesaver. The bi-weekly service keeps our home spotless and gives me back my weekends.",
+    text: "As a busy professional, Point Polish is a lifesaver. The bi-weekly service keeps my home in perfect shape and gives me back my weekends.",
   },
   {
-    name: "David R.",
-    location: "Pompano Beach",
+    name: "David M.",
+    location: "Atlantic Beach",
     rating: 5,
-    text: "Their move-in cleaning was so thorough, my landlord actually complimented it. Booked again immediately.",
+    text: "Their move-in cleaning was so thorough, my landlord actually complimented it. Booked again immediately for regular service.",
   },
   {
-    name: "Jennifer M.",
-    location: "Coral Springs",
+    name: "Jennifer W.",
+    location: "Neptune Beach",
     rating: 5,
-    text: "I was nervous about letting someone into my home but their background-checked team made me feel completely at ease. 5 stars.",
+    text: "I was nervous about letting someone into my home but their background-checked team made me feel completely at ease. Premium quality service.",
   },
 ];
 
@@ -49,14 +49,14 @@ const Testimonials = () => {
             ))}
           </div>
           <span className="text-lg font-semibold text-foreground">5.0</span>
-          <span className="text-muted-foreground">from 100+ reviews</span>
+          <span className="text-muted-foreground">5-Star Rated</span>
         </div>
         
         <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
           Real People. Real Clean Homes.
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          Join hundreds of happy South Florida homeowners who trust TIDYWISE.
+          Join happy Jacksonville homeowners who trust Point Polish Cleaners.
         </p>
 
         {/* Horizontal scroll carousel */}
@@ -85,7 +85,7 @@ const Testimonials = () => {
                   </p>
                 </div>
                 <span className="text-xs text-primary bg-primary/10 px-2 py-1 rounded-full font-medium">
-                  Verified Google Review
+                  Verified Review
                 </span>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Testimonials = () => {
             to="/service-areas"
             className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
           >
-            📍 Serving 30+ cities across South Florida →
+            📍 Serving Jacksonville, FL & surrounding areas →
           </Link>
         </div>
       </div>

@@ -12,20 +12,20 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "(561) 571-8725",
+    value: "(904) 513-9002",
     subtitle: "Available 24/7",
   },
   {
     icon: Mail,
     title: "Email",
-    value: "support@tidywisecleaning.com",
+    value: "support@pointpolishcleaners.com",
     subtitle: "Response in 15 minutes or less",
   },
   {
     icon: MapPin,
     title: "Service Area",
-    value: "Broward, Palm Beach & Miami-Dade",
-    subtitle: "South Florida",
+    value: "Jacksonville, FL",
+    subtitle: "Duval County & surrounding areas",
   },
 ];
 
@@ -39,7 +39,6 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Send SMS notification via OpenPhone
     try {
       await supabase.functions.invoke("send-sms-notification", {
         body: {

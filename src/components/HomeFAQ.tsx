@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 
 const faqs = [
   {
-    q: "How much does house cleaning cost in South Florida?",
+    q: "How much does house cleaning cost in Jacksonville?",
     a: "Our standard cleaning starts at $108 for homes up to 750 sq ft. Deep cleaning starts at $208 and move in/out cleaning starts at $283. Use our instant price calculator above for your exact quote based on home size and service type.",
   },
   {
     q: "Are your cleaners background-checked?",
-    a: "Yes! Every TIDYWISE cleaner undergoes a thorough background check, is fully insured, and goes through our professional training program before their first assignment.",
+    a: "Yes! Every Point Polish cleaner undergoes a thorough background check, is fully insured, and goes through our professional training program before their first assignment.",
   },
   {
     q: "Do I need to be home during the cleaning?",
@@ -33,11 +33,11 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We serve 40+ cities across Broward County, Miami-Dade County, and Palm Beach County including Fort Lauderdale, Miami, Boca Raton, West Palm Beach, Hollywood, Coral Springs, and many more.",
+    a: "We serve Jacksonville, FL and surrounding areas including Jacksonville Beach, Atlantic Beach, Neptune Beach, Ponte Vedra Beach, and more throughout Duval County.",
   },
   {
-    q: "What's included in a deep clean vs. a standard clean?",
-    a: "A standard clean covers all basic cleaning — vacuuming, mopping, bathroom sanitization, kitchen cleaning, and dusting. A deep clean includes all of that PLUS baseboards, inside cabinets, light fixtures, door handles, window sills, and all add-on services.",
+    q: "Do you offer a first-time discount?",
+    a: "Yes! Use promo code POLISH to get 10% off your first cleaning. We also offer a free estimate on all services.",
   },
 ];
 

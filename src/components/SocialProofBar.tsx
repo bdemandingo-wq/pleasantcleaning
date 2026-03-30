@@ -2,11 +2,11 @@ import { Star, Shield, UserCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const microTestimonials = [
-  '"TIDYWISE has been cleaning my home for 6 months now. Always on time, thorough, and friendly." — Maria G., Fort Lauderdale',
-  '"Used their move-out cleaning service and got my full deposit back. Highly recommend!" — Robert T., Boca Raton',
-  '"As a busy mom of 3, TIDYWISE is a lifesaver. The bi-weekly service keeps our home spotless." — Sandra L., Miami Beach',
-  '"Their move-in cleaning was so thorough, my landlord actually complimented it." — David R., Pompano Beach',
-  '"Background-checked team made me feel completely at ease. 5 stars." — Jennifer M., Coral Springs',
+  '"Point Polish Cleaners left my home spotless. Every surface was polished to perfection!" — Sarah K., Jacksonville',
+  '"Their attention to detail is unmatched. Highly recommend for deep cleaning!" — Marcus T., Jacksonville Beach',
+  '"As a busy professional, Point Polish is a lifesaver. My home has never looked better." — Lisa R., Ponte Vedra',
+  '"Used their move-in cleaning service — the place was flawless. 5 stars!" — David M., Atlantic Beach',
+  '"Background-checked team made me feel completely at ease. Premium service." — Jennifer W., Neptune Beach',
 ];
 
 const SocialProofBar = () => {
@@ -30,8 +30,8 @@ const SocialProofBar = () => {
                 <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />
               ))}
             </div>
-            <span className="font-semibold">Rated 5.0 on Google</span>
-            <span className="opacity-80">· 100+ Verified Reviews</span>
+            <span className="font-semibold">5-Star Rated</span>
+            <span className="opacity-80">· Jacksonville, FL</span>
           </div>
 
           {/* Rotating testimonial */}
@@ -41,10 +41,6 @@ const SocialProofBar = () => {
 
           {/* Trust badges */}
           <div className="hidden lg:flex items-center gap-4">
-            <div className="flex items-center gap-1.5 text-sm">
-              <Star className="w-4 h-4 fill-secondary text-secondary" />
-              <span>Google Reviews</span>
-            </div>
             <div className="flex items-center gap-1.5 text-sm">
               <Shield className="w-4 h-4" />
               <span>Insured</span>
