@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, User, ChevronDown, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+
 import { useAuth } from "@/contexts/AuthContext";
 import {
   DropdownMenu,
