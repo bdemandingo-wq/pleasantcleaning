@@ -20,7 +20,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import logo from "@/assets/logo-optimized.webp";
+import logo from "@/assets/logo.png";
 
 type BookingStatus = "pending" | "confirmed" | "in_progress" | "completed" | "cancelled";
 
