@@ -19,6 +19,8 @@ const serviceAreas = [
   { name: "Riverside", link: "/riverside-cleaning", desc: "Avondale, Five Points, Memorial Park" },
   { name: "Arlington", link: "/arlington-cleaning", desc: "Fort Caroline, Monument Point" },
   { name: "Southside", link: "/southside-cleaning", desc: "Deerwood, Tinseltown, St. Johns Town Center" },
+  { name: "Yulee", link: "/yulee-cleaning", desc: "Nassauville, Chester, Blackrock, Amelia National" },
+  { name: "Fernandina Beach", link: "/fernandina-beach-cleaning", desc: "Amelia Island, Historic Downtown, Summer Beach" },
 ];
 
 const itemListSchema = {

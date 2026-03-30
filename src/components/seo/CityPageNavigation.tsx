@@ -18,6 +18,8 @@ const cityLinks = [
   { name: "Riverside", path: "/riverside-cleaning" },
   { name: "Arlington", path: "/arlington-cleaning" },
   { name: "Southside", path: "/southside-cleaning" },
+  { name: "Yulee", path: "/yulee-cleaning" },
+  { name: "Fernandina Beach", path: "/fernandina-beach-cleaning" },
 ];
 
 const serviceLinks = [
