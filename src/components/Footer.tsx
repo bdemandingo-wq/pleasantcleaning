@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Point Polish Cleaners" className="h-12 w-auto" />
+              <img src={logo} alt="Point Polish Cleaners" className="h-12 w-auto rounded-lg" style={{ mixBlendMode: 'lighten' }} />
             </div>
             <p className="text-background/70 text-sm mb-2">
               Luxury-Level Cleaning. Every Detail Polished.

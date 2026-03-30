@@ -53,7 +53,7 @@ const ServiceAreas = () => {
         
         <section className="pt-24 pb-12 bg-gradient-to-br from-primary/10 to-background">
           <div className="container mx-auto px-4 text-center">
-            <div className="inline-flex items-center gap-2 bg-secondary/20 text-secondary-foreground px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-primary/15 text-primary border border-primary/30 px-4 py-2 rounded-full mb-6">
               <MapPin className="w-4 h-4" />
               <span className="text-sm font-medium">Jacksonville Metro Area</span>
             </div>
@@ -138,7 +138,7 @@ const ServiceAreas = () => {
               <Button size="lg" variant="secondary" asChild>
                 <Link to="/#booking">Get Free Quote</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <Button size="lg" className="bg-white text-primary border-white hover:bg-white/90 font-semibold" asChild>
                 <a href="tel:+19045139002">Call (904) 513-9002</a>
               </Button>
             </div>
