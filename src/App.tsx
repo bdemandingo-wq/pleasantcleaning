@@ -111,7 +111,7 @@ const AppRoutes = () => {
         <Route path="/southside-cleaning" element={<SouthsideCleaning />} />
         
         {/* Blog Posts */}
-        <Route path="/blog/broward-cost-guide" element={<DuvalCostGuide />} />
+        <Route path="/blog/broward-cost-guide" element={<BrowardCostGuide />} />
         <Route path="/blog/miami-permit-rules" element={<MiamiPermitRules />} />
         <Route path="/blog/palm-beach-seasonal-discounts" element={<PalmBeachSeasonalDiscounts />} />
         <Route path="/blog/move-in-out-cleaning-checklist" element={<MoveInOutCleaningChecklist />} />
