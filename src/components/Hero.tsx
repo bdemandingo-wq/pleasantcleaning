@@ -4,7 +4,7 @@ import HeroEstimator from "./HeroEstimator";
 
 const trustPills = [
   { icon: Shield, label: "Licensed & Insured" },
-  { icon: Star, label: "5.0 Stars · 100+ Reviews" },
+  { icon: Star, label: "Precision Cleaning" },
   { icon: Leaf, label: "Eco-Friendly Products" },
   { icon: Lock, label: "Satisfaction Guaranteed" },
 ];
@@ -26,21 +26,21 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left — Copy + CTAs */}
           <div className="space-y-6 opacity-0 animate-fade-in">
-            {/* Trust indicator - green */}
+            {/* Promo badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 text-secondary border border-secondary/30">
               <span className="relative flex h-2 w-2" aria-hidden="true">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
               </span>
-              <span className="text-sm font-medium">Booking Available Today</span>
+              <span className="text-sm font-medium">10% Off First Cleaning — Code: POLISH</span>
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Your Home Deserves Better Than Average.
+              Luxury-Level Cleaning. Every Detail Polished.
             </h1>
 
             <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
-              TIDYWISE delivers professional home cleaning across Fort Lauderdale, Boca Raton, West Palm Beach, Miami & 30+ South Florida cities — with transparent pricing, vetted cleaners, and a satisfaction guarantee.
+              Point Polish Cleaners delivers precision cleaning across Jacksonville, FL — with transparent pricing, vetted professionals, and a flawless finish every time.
             </p>
 
             {/* Trust pills */}
@@ -67,7 +67,7 @@ const Hero = () => {
                 asChild
               >
                 <a href="#booking" className="flex items-center gap-2">
-                  Get My Instant Quote
+                  Get My Free Estimate
                   <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
                 </a>
               </Button>
@@ -78,7 +78,7 @@ const Hero = () => {
                 asChild
               >
                 <a
-                  href="tel:+15615718725"
+                  href="tel:+19045139002"
                   className="flex items-center gap-2"
                   onClick={() => {
                     if (typeof window.gtag === "function") {
@@ -90,7 +90,7 @@ const Hero = () => {
                   }}
                 >
                   <Phone className="w-5 h-5" aria-hidden="true" />
-                  Call (561) 571-8725
+                  Call (904) 513-9002
                 </a>
               </Button>
             </div>

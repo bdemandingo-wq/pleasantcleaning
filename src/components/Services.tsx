@@ -98,7 +98,7 @@ const Services = () => {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             From standard maintenance to deep cleaning, carpet care to upholstery cleaning — 
-            we offer comprehensive solutions for every need in South Florida.
+            we offer comprehensive solutions for every need in Jacksonville, FL.
           </p>
         </div>
 
@@ -145,20 +145,14 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Urgency + internal links */}
+        {/* Urgency + promo */}
         <div className="mt-10 text-center space-y-4">
           <p className="text-foreground font-medium flex items-center justify-center gap-2">
             <Calendar className="w-5 h-5 text-secondary" />
-            🗓️ Limited slots this week — book now to secure your preferred date.
+            🎉 Use code <strong>POLISH</strong> for 10% off your first cleaning!
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
-            <Link to="/broward-county-cleaning" className="text-primary hover:underline">Broward County</Link>
-            <span className="text-muted-foreground">•</span>
-            <Link to="/miami-dade-cleaning" className="text-primary hover:underline">Miami-Dade County</Link>
-            <span className="text-muted-foreground">•</span>
-            <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline">Palm Beach County</Link>
-            <span className="text-muted-foreground">•</span>
-            <Link to="/service-areas" className="text-primary hover:underline">All Service Areas</Link>
+            <Link to="/service-areas" className="text-primary hover:underline">View All Service Areas</Link>
           </div>
         </div>
       </div>

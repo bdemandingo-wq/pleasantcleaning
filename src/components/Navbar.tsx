@@ -71,7 +71,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="font-display text-xl font-bold text-foreground">TIDYWISE</span>
+            <span className="font-display text-xl font-bold text-foreground">POINT POLISH</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-5">
@@ -133,7 +133,7 @@ const Navbar = () => {
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               asChild
             >
-              <a href="tel:+15615718725" className="flex items-center gap-1.5">
+              <a href="tel:+19045139002" className="flex items-center gap-1.5">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
@@ -222,7 +222,7 @@ const Navbar = () => {
               )}
               <div className="flex gap-2 mt-2">
                 <Button variant="outline" className="flex-1 border-primary text-primary" asChild>
-                  <a href="tel:+15615718725" className="flex items-center justify-center gap-1.5">
+                  <a href="tel:+19045139002" className="flex items-center justify-center gap-1.5">
                     <Phone className="w-4 h-4" />
                     Call
                   </a>

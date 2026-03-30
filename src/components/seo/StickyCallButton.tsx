@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 const StickyCallButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   
-  const phoneNumber = "(561) 571-8725";
-  const telLink = "tel:+15615718725";
+  const phoneNumber = "(904) 513-9002";
+  const telLink = "tel:+19045139002";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +44,7 @@ const StickyCallButton = () => {
         >
           <a href="#booking" className="flex items-center justify-center gap-2">
             <Calendar className="w-5 h-5" aria-hidden="true" />
-            <span>Get Quote</span>
+            <span>Free Estimate</span>
           </a>
         </Button>
       </div>
@@ -59,7 +59,7 @@ const StickyCallButton = () => {
           <a 
             href={telLink} 
             className="flex items-center justify-center gap-3"
-            aria-label={`Call TIDYWISE now at ${phoneNumber}`}
+            aria-label={`Call Point Polish now at ${phoneNumber}`}
           >
             <Phone className="w-5 h-5" aria-hidden="true" />
             <span>Call Now: {phoneNumber}</span>
