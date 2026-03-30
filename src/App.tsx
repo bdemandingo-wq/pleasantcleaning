@@ -32,6 +32,8 @@ const SanMarcoCleaning = lazy(() => import("./pages/cities/SanMarcoCleaning"));
 const RiversideCleaning = lazy(() => import("./pages/cities/RiversideCleaning"));
 const ArlingtonCleaning = lazy(() => import("./pages/cities/ArlingtonCleaning"));
 const SouthsideCleaning = lazy(() => import("./pages/cities/SouthsideCleaning"));
+const YuleeCleaning = lazy(() => import("./pages/cities/YuleeCleaning"));
+const FernandinaBeachCleaning = lazy(() => import("./pages/cities/FernandinaBeachCleaning"));
 
 // Blog posts
 const BrowardCostGuide = lazy(() => import("./pages/blog/BrowardCostGuide"));
