@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Point Polish Cleaners" className="h-10 w-auto rounded" style={{ background: 'transparent' }} />
+            <span className="font-display text-xl font-bold text-foreground">Point Polish <span className="text-primary">Cleaners</span></span>
           </Link>
 
           <div className="hidden md:flex items-center gap-5">
