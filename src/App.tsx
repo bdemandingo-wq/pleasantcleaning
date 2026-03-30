@@ -35,7 +35,7 @@ const SouthsideCleaning = lazy(() => import("./pages/cities/SouthsideCleaning"))
 
 // Blog posts
 const BrowardCostGuide = lazy(() => import("./pages/blog/BrowardCostGuide"));
-const MiamiPermitRules = lazy(() => import("./pages/blog/MiamiPermitRules"));
+const JacksonvillePermitRules = lazy(() => import("./pages/blog/JacksonvillePermitRules"));
 const PalmBeachSeasonalDiscounts = lazy(() => import("./pages/blog/PalmBeachSeasonalDiscounts"));
 const MoveInOutCleaningChecklist = lazy(() => import("./pages/blog/MoveInOutCleaningChecklist"));
 const DeepCleaningVsStandardCleaning = lazy(() => import("./pages/blog/DeepCleaningVsStandardCleaning"));
@@ -112,7 +112,7 @@ const AppRoutes = () => {
         
         {/* Blog Posts */}
         <Route path="/blog/broward-cost-guide" element={<BrowardCostGuide />} />
-        <Route path="/blog/miami-permit-rules" element={<MiamiPermitRules />} />
+        <Route path="/blog/miami-permit-rules" element={<JacksonvillePermitRules />} />
         <Route path="/blog/palm-beach-seasonal-discounts" element={<PalmBeachSeasonalDiscounts />} />
         <Route path="/blog/move-in-out-cleaning-checklist" element={<MoveInOutCleaningChecklist />} />
         <Route path="/blog/deep-cleaning-vs-standard-cleaning" element={<DeepCleaningVsStandardCleaning />} />

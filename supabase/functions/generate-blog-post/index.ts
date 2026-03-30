@@ -31,7 +31,7 @@ const CLEANING_TOPICS = [
   "Quick cleaning hacks for busy Florida professionals",
   "How to maintain a clean home during hurricane season",
   "Pet-friendly cleaning solutions for Jacksonville, FL homes",
-  "Best practices for cleaning luxury condos in Miami",
+  "Best practices for cleaning luxury condos in Jacksonville",
   "Seasonal deep cleaning checklist for Florida homeowners",
   "How to prevent sand and salt buildup in coastal homes",
   "Green cleaning tips for eco-conscious Floridians",
@@ -195,7 +195,7 @@ serve(async (req) => {
 Write engaging, SEO-optimized blog posts about cleaning tips and home care.
 Your content should be helpful, practical, and relevant to Jacksonville, FL homeowners.
 Focus on actionable advice that readers can implement immediately.
-Include local references to Miami, Jacksonville, St. Johns, and other Jacksonville, FL areas when appropriate.`
+Include local references to Jacksonville, Jacksonville, St. Johns, and other Jacksonville, FL areas when appropriate.`
           },
           {
             role: 'user',

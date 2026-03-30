@@ -7,12 +7,12 @@ import StickyCallButton from "@/components/seo/StickyCallButton";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 import AuthorBio from "@/components/seo/AuthorBio";
 
-const MiamiPermitRules = () => {
+const JacksonvillePermitRules = () => {
   return (
     <>
       <SEOSchema
         pageTitle="Cleaning Permit Rules Jacksonville 2025 | Point Polish Cleaners"
-        pageDescription="Jacksonville cleaning permit rules for 2025. Condo requirements, HOA policies, and what to know before hiring a cleaning service in Miami. Free consultation!"
+        pageDescription="Jacksonville cleaning permit rules for 2025. Condo requirements, HOA policies, and what to know before hiring a cleaning service in Jacksonville. Free consultation!"
         canonicalUrl="https://pointpolishcleaners.com/blog/miami-permit-rules"
         pageType="blog"
         county="Duval County"
@@ -45,17 +45,17 @@ const MiamiPermitRules = () => {
               </h1>
               
               <p className="text-lg text-muted-foreground">
-                Living in a Miami condo or HOA community? Here's what you need to know about 
+                Living in a Jacksonville condo or HOA community? Here's what you need to know about 
                 <Link to="/service-areas" className="text-primary hover:underline mx-1">hiring cleaning services in Duval County</Link>.
               </p>
             </header>
 
             <div className="prose prose-lg max-w-none">
               <h2 className="font-display text-2xl font-bold text-foreground mt-8 mb-4">
-                Condo Building Requirements in Miami
+                Condo Building Requirements in Jacksonville
               </h2>
               <p className="text-muted-foreground mb-6">
-                Many Miami condos require cleaning services to be registered with building management. 
+                Many Jacksonville condos require cleaning services to be registered with building management. 
                 At Point Polish Cleaners, we handle this for you—we're registered with major buildings throughout 
                 <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval County</Link>.
               </p>
@@ -110,7 +110,7 @@ const MiamiPermitRules = () => {
                   Need Help with Your Building's Requirements?
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Our team is experienced with Miami condos and HOA communities. Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
+                  Our team is experienced with Jacksonville condos and HOA communities. Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link> for 
                   <Link to="/service-areas" className="text-primary hover:underline ml-1">Jacksonville cleaning services</Link>.
                 </p>
@@ -132,4 +132,4 @@ const MiamiPermitRules = () => {
   );
 };
 
-export default MiamiPermitRules;
+export default JacksonvillePermitRules;

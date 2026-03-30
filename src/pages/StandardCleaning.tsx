@@ -52,7 +52,7 @@ const StandardCleaning = () => {
     <>
       <SEOSchema
         pageTitle="Standard House Cleaning Jacksonville, FL | From $150 | Point Polish Cleaners"
-        pageDescription="Affordable standard house cleaning in Jacksonville, Jacksonville Beach & Miami. Starting at $150. Vacuuming, mopping, kitchen & bathroom cleaning. Book online or call (904) 513-9002."
+        pageDescription="Affordable standard house cleaning in Jacksonville, Jacksonville Beach & Jacksonville Jacksonville Beach. Starting at $150. Vacuuming, mopping, kitchen & bathroom cleaning. Book online or call (904) 513-9002."
         canonicalUrl="https://pointpolishcleaners.com/standard-cleaning"
         pageType="service"
         county="Jacksonville, FL"

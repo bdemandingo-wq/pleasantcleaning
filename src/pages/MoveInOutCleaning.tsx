@@ -41,7 +41,7 @@ const MoveInOutCleaning = () => {
     <>
       <SEOSchema
         pageTitle="Move In Move Out Cleaning Jacksonville, FL | Point Polish Cleaners"
-        pageDescription="Move-out cleaning to get your full deposit back. Move-in cleaning for a fresh start. Serving Jacksonville, Miami & 12+ Jacksonville, FL cities. Book Point Polish Cleaners today."
+        pageDescription="Move-out cleaning to get your full deposit back. Move-in cleaning for a fresh start. Serving Jacksonville, Jacksonville & 12+ Jacksonville, FL cities. Book Point Polish Cleaners today."
         canonicalUrl="https://pointpolishcleaners.com/move-in-out-cleaning"
         pageType="service"
         county="Jacksonville, FL"
