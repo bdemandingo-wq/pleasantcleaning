@@ -2,7 +2,7 @@ const AuthorBio = () => (
   <div className="mt-12 pt-8 border-t border-border">
     <div className="flex items-start gap-4">
       <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-        <span className="font-display text-lg font-bold text-primary">TW</span>
+        <span className="font-display text-lg font-bold text-primary">PP</span>
       </div>
       <div>
         <p className="font-semibold text-foreground mb-1">Written by the Point Polish Cleaners Team</p>

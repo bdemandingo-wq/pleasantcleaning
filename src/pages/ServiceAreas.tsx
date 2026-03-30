@@ -138,7 +138,7 @@ const ServiceAreas = () => {
               <Button size="lg" variant="secondary" asChild>
                 <Link to="/#booking">Get Free Quote</Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <Button size="lg" className="bg-white text-primary border-white hover:bg-white/90 font-semibold" asChild>
                 <a href="tel:+19045139002">Call (904) 513-9002</a>
               </Button>
             </div>

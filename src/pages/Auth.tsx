@@ -202,7 +202,7 @@ const Auth = () => {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="admin@pointpolish.com"
+                        placeholder="admin@pointpolishcleaners.com"
                         className="pl-10"
                         value={email}
                         onChange={(e) => {
@@ -311,7 +311,7 @@ const Auth = () => {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="admin@pointpolish.com"
+                        placeholder="admin@pointpolishcleaners.com"
                         className="pl-10"
                         value={email}
                         onChange={(e) => {
