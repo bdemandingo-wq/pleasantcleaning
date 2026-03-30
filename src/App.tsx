@@ -107,6 +107,7 @@ const AppRoutes = () => {
         <Route path="/mandarin-cleaning" element={<MandarinCleaning />} />
         <Route path="/san-marco-cleaning" element={<SanMarcoCleaning />} />
         <Route path="/riverside-cleaning" element={<RiversideCleaning />} />
+        <Route path="/riverside-avondale-cleaning" element={<RiversideCleaning />} />
         <Route path="/arlington-cleaning" element={<ArlingtonCleaning />} />
         <Route path="/southside-cleaning" element={<SouthsideCleaning />} />
         
