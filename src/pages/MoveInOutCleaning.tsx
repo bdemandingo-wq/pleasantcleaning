@@ -227,7 +227,7 @@ const MoveInOutCleaning = () => {
               Moving Soon? Book Your Cleaning Today
             </h2>
             <p className="text-secondary-foreground/80 mb-8 max-w-xl mx-auto">
-              Serving Broward, Palm Beach, and Jacksonville counties. Response in 15 minutes or less!
+              Serving Jacksonville and surrounding areas. Response in 15 minutes or less!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-background text-foreground hover:bg-background/90" asChild>

@@ -4,7 +4,7 @@ const GoogleMapEmbed = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-            Serving Broward, Jacksonville & St. Johns County
+            Serving Duval, Jacksonville & St. Johns County
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Professional cleaning services throughout Jacksonville, FL. 
@@ -100,9 +100,9 @@ const GoogleMapEmbed = () => {
                 <strong>Service Areas:</strong>
               </p>
               <div className="flex flex-wrap gap-2">
-                <a href="/broward-county-cleaning" className="text-xs bg-primary/10 text-primary px-2 py-1 rounded hover:bg-primary/20 transition-colors">Duval County</a>
-                <a href="/miami-dade-cleaning" className="text-xs bg-primary/10 text-primary px-2 py-1 rounded hover:bg-primary/20 transition-colors">Duval County</a>
-                <a href="/palm-beach-county-cleaning" className="text-xs bg-primary/10 text-primary px-2 py-1 rounded hover:bg-primary/20 transition-colors">St. Johns County</a>
+                <a href="/service-areas" className="text-xs bg-primary/10 text-primary px-2 py-1 rounded hover:bg-primary/20 transition-colors">Duval County</a>
+                <a href="/service-areas" className="text-xs bg-primary/10 text-primary px-2 py-1 rounded hover:bg-primary/20 transition-colors">Duval County</a>
+                <a href="/service-areas" className="text-xs bg-primary/10 text-primary px-2 py-1 rounded hover:bg-primary/20 transition-colors">St. Johns County</a>
                 <a href="/fort-lauderdale-cleaning" className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded hover:bg-primary/10 hover:text-primary transition-colors">Jacksonville</a>
                 <a href="/miami-cleaning" className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded hover:bg-primary/10 hover:text-primary transition-colors">Miami</a>
                 <a href="/west-palm-beach-cleaning" className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded hover:bg-primary/10 hover:text-primary transition-colors">Ponte Vedra</a>

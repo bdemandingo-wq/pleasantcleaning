@@ -11,7 +11,7 @@ const PalmBeachSeasonalDiscounts = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Seasonal Cleaning Discounts Palm Beach 2025 | Point Polish Cleaners"
+        pageTitle="Seasonal Cleaning Discounts St. Johns 2025 | Point Polish Cleaners"
         pageDescription="St. Johns County seasonal cleaning discounts 2025. Save 10-20% on cleaning in Ponte Vedra, Jacksonville Beach, Jupiter. Limited time offers. Book now!"
         canonicalUrl="https://pointpolishcleaners.com/blog/palm-beach-seasonal-discounts"
         pageType="blog"
@@ -23,7 +23,7 @@ const PalmBeachSeasonalDiscounts = () => {
         
         <article className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
-            <Link to="/palm-beach-county-cleaning" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
+            <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to St. Johns County Cleaning
             </Link>
@@ -41,12 +41,12 @@ const PalmBeachSeasonalDiscounts = () => {
               </div>
               
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Seasonal Discounts for Cleaning Services in Palm Beach
+                Seasonal Discounts for Cleaning Services in St. Johns
               </h1>
               
               <p className="text-lg text-muted-foreground">
                 Looking for affordable 
-                <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline mx-1">St. Johns County cleaning services</Link>? 
+                <Link to="/service-areas" className="text-primary hover:underline mx-1">St. Johns County cleaning services</Link>? 
                 Here are the best seasonal deals and discounts for 2025.
               </p>
             </header>
@@ -57,7 +57,7 @@ const PalmBeachSeasonalDiscounts = () => {
                 <div>
                   <h3 className="font-display text-xl font-semibold text-foreground mb-2">Current Offer: 10% Off First Clean</h3>
                   <p className="text-muted-foreground mb-0">
-                    New customers in <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline">St. Johns County</Link> get 
+                    New customers in <Link to="/service-areas" className="text-primary hover:underline">St. Johns County</Link> get 
                     10% off their first cleaning. Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> to claim.
                   </p>
                 </div>
@@ -67,7 +67,7 @@ const PalmBeachSeasonalDiscounts = () => {
                 Recurring Service Discounts in Ponte Vedra
               </h2>
               <p className="text-muted-foreground mb-6">
-                The best way to save on <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline">cleaning in St. Johns County</Link> is 
+                The best way to save on <Link to="/service-areas" className="text-primary hover:underline">cleaning in St. Johns County</Link> is 
                 with recurring service. Here's what you save:
               </p>
 
@@ -84,7 +84,7 @@ const PalmBeachSeasonalDiscounts = () => {
                 Snowbird Season Specials (October-April)
               </h2>
               <p className="text-muted-foreground mb-6">
-                Returning to your Palm Beach property for the season? Point Polish Cleaners offers special rates for 
+                Returning to your St. Johns property for the season? Point Polish Cleaners offers special rates for 
                 seasonal residents in Jacksonville Beach, Jupiter, and Ponte Vedra. This includes:
               </p>
               <ul className="space-y-2 text-muted-foreground mb-8">
@@ -98,7 +98,7 @@ const PalmBeachSeasonalDiscounts = () => {
               </h2>
               <p className="text-muted-foreground mb-6">
                 Off-season means better availability and special rates! Contact us for current summer 
-                promotions in <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline">St. Johns County</Link>.
+                promotions in <Link to="/service-areas" className="text-primary hover:underline">St. Johns County</Link>.
               </p>
 
               <h2 className="font-display text-2xl font-bold text-foreground mt-8 mb-4">
@@ -116,11 +116,11 @@ const PalmBeachSeasonalDiscounts = () => {
                 <p className="text-muted-foreground mb-4">
                   Get your free quote and ask about current promotions. Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link> for 
-                  <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline ml-1">St. Johns County cleaning</Link>.
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">St. Johns County cleaning</Link>.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Also serving <Link to="/broward-county-cleaning" className="text-primary hover:underline">Duval County</Link> and 
-                  <Link to="/miami-dade-cleaning" className="text-primary hover:underline ml-1">Duval County</Link>.
+                  Also serving <Link to="/service-areas" className="text-primary hover:underline">Duval County</Link> and 
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">Duval County</Link>.
                 </p>
               </div>
             </div>

@@ -37,7 +37,7 @@ const UpholsteryCleaning = () => {
     <>
       <SEOSchema
         pageTitle="Upholstery Cleaning Near Me | Jacksonville, FL | Point Polish Cleaners"
-        pageDescription="Professional upholstery and furniture cleaning in Broward, Jacksonville & St. Johns County. Sofa, chair & fabric cleaning. Get a custom quote today!"
+        pageDescription="Professional upholstery and furniture cleaning in Duval, Jacksonville & St. Johns County. Sofa, chair & fabric cleaning. Get a custom quote today!"
         canonicalUrl="https://pointpolishcleaners.com/upholstery-cleaning"
         pageType="service"
         county="Jacksonville, FL"

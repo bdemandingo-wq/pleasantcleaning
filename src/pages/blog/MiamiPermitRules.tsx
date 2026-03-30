@@ -23,7 +23,7 @@ const MiamiPermitRules = () => {
         
         <article className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
-            <Link to="/miami-dade-cleaning" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
+            <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
               <ArrowLeft className="w-4 h-4" />
               Back to Jacksonville Cleaning
             </Link>
@@ -46,7 +46,7 @@ const MiamiPermitRules = () => {
               
               <p className="text-lg text-muted-foreground">
                 Living in a Miami condo or HOA community? Here's what you need to know about 
-                <Link to="/miami-dade-cleaning" className="text-primary hover:underline mx-1">hiring cleaning services in Duval County</Link>.
+                <Link to="/service-areas" className="text-primary hover:underline mx-1">hiring cleaning services in Duval County</Link>.
               </p>
             </header>
 
@@ -57,7 +57,7 @@ const MiamiPermitRules = () => {
               <p className="text-muted-foreground mb-6">
                 Many Miami condos require cleaning services to be registered with building management. 
                 At Point Polish Cleaners, we handle this for you—we're registered with major buildings throughout 
-                <Link to="/miami-dade-cleaning" className="text-primary hover:underline mx-1">Duval County</Link>.
+                <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval County</Link>.
               </p>
 
               <div className="bg-muted p-6 rounded-xl mb-8">
@@ -75,7 +75,7 @@ const MiamiPermitRules = () => {
               </h2>
               <p className="text-muted-foreground mb-6">
                 Upscale neighborhoods in Coral Gables and Aventura often have specific HOA rules. 
-                Our <Link to="/miami-dade-cleaning" className="text-primary hover:underline">professional cleaning team</Link> is experienced 
+                Our <Link to="/service-areas" className="text-primary hover:underline">professional cleaning team</Link> is experienced 
                 with these communities and follows all guidelines.
               </p>
 
@@ -112,11 +112,11 @@ const MiamiPermitRules = () => {
                 <p className="text-muted-foreground mb-4">
                   Our team is experienced with Miami condos and HOA communities. Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link> for 
-                  <Link to="/miami-dade-cleaning" className="text-primary hover:underline ml-1">Jacksonville cleaning services</Link>.
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">Jacksonville cleaning services</Link>.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Also serving <Link to="/broward-county-cleaning" className="text-primary hover:underline">Duval County</Link> and 
-                  <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline ml-1">St. Johns County</Link>.
+                  Also serving <Link to="/service-areas" className="text-primary hover:underline">Duval County</Link> and 
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">St. Johns County</Link>.
                 </p>
               </div>
             </div>

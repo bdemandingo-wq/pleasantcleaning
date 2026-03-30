@@ -48,9 +48,9 @@ const NotFound = () => {
           <div className="mt-12 pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground mb-4">Popular pages:</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link to="/broward-county-cleaning" className="text-primary hover:underline">Duval County</Link>
-              <Link to="/miami-dade-cleaning" className="text-primary hover:underline">Jacksonville</Link>
-              <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline">Palm Beach</Link>
+              <Link to="/service-areas" className="text-primary hover:underline">Duval County</Link>
+              <Link to="/service-areas" className="text-primary hover:underline">Jacksonville</Link>
+              <Link to="/service-areas" className="text-primary hover:underline">St. Johns</Link>
               <Link to="/#booking" className="text-primary hover:underline">Book Now</Link>
             </div>
           </div>

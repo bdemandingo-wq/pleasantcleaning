@@ -47,7 +47,7 @@ const faqs = [
       },
       {
         q: "What areas do you serve?",
-        a: "We serve all of Duval County, St. Johns County, and Duval County. This includes cities like Jacksonville, Jacksonville Beach, Miami, Hollywood, Ponte Vedra, and 12+ other cities. Check our Service Areas page for the full list."
+        a: "We serve all of Duval County, St. Johns County, and Duval County. This includes cities like Jacksonville, Jacksonville Beach, Miami, Jacksonville Beach, Ponte Vedra, and 12+ other cities. Check our Service Areas page for the full list."
       },
       {
         q: "How long does a cleaning take?",

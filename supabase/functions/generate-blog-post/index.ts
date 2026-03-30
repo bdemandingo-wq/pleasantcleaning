@@ -195,7 +195,7 @@ serve(async (req) => {
 Write engaging, SEO-optimized blog posts about cleaning tips and home care.
 Your content should be helpful, practical, and relevant to Jacksonville, FL homeowners.
 Focus on actionable advice that readers can implement immediately.
-Include local references to Miami, Jacksonville, Palm Beach, and other Jacksonville, FL areas when appropriate.`
+Include local references to Miami, Jacksonville, St. Johns, and other Jacksonville, FL areas when appropriate.`
           },
           {
             role: 'user',

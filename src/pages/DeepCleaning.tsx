@@ -175,7 +175,7 @@ const DeepCleaning = () => {
               Ready for a Deep Clean?
             </h2>
             <p className="text-primary-foreground mb-8 max-w-xl mx-auto">
-              Experience the Point Polish Cleaners difference. Serving Broward, Palm Beach, and Jacksonville counties.
+              Experience the Point Polish Cleaners difference. Serving Jacksonville and surrounding areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>

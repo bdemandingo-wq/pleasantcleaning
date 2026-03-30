@@ -157,9 +157,9 @@ const HurricaneSeasonCleaningPrep = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">
                   Whether you need pre-storm prep or post-storm cleanup, Point Polish Cleaners serves 
-                  <Link to="/broward-county-cleaning" className="text-primary hover:underline mx-1">Broward</Link>,
-                  <Link to="/miami-dade-cleaning" className="text-primary hover:underline mx-1">Jacksonville</Link>, and
-                  <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline mx-1">St. Johns County</Link>.
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval</Link>,
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Jacksonville</Link>, and
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">St. Johns County</Link>.
                   Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> for emergency cleaning services.
                 </p>
               </div>

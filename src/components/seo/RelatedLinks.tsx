@@ -20,15 +20,15 @@ const topCities = [
   { name: "Jacksonville Beach", link: "/boca-raton-cleaning" },
   { name: "Ponte Vedra", link: "/west-palm-beach-cleaning" },
   { name: "Miami", link: "/miami-cleaning" },
-  { name: "Hollywood", link: "/hollywood-cleaning" },
+  { name: "Jacksonville Beach", link: "/hollywood-cleaning" },
   { name: "Mandarin", link: "/coral-springs-cleaning" },
   { name: "Ponte Vedra Beach", link: "/pompano-beach-cleaning" },
 ];
 
 const counties = [
-  { name: "Duval County", link: "/broward-county-cleaning" },
-  { name: "St. Johns County", link: "/palm-beach-county-cleaning" },
-  { name: "Duval County", link: "/miami-dade-cleaning" },
+  { name: "Duval County", link: "/service-areas" },
+  { name: "St. Johns County", link: "/service-areas" },
+  { name: "Duval County", link: "/service-areas" },
 ];
 
 const blogPosts = [

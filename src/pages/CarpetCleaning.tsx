@@ -28,7 +28,7 @@ const CarpetCleaning = () => {
     <>
       <SEOSchema
         pageTitle="Carpet Cleaning Services Near Me | Jacksonville, FL | Point Polish Cleaners"
-        pageDescription="Professional carpet cleaning in Broward, Jacksonville & St. Johns County. Deep extraction, stain removal & eco-friendly options. Get a custom quote today!"
+        pageDescription="Professional carpet cleaning in Duval, Jacksonville & St. Johns County. Deep extraction, stain removal & eco-friendly options. Get a custom quote today!"
         canonicalUrl="https://pointpolishcleaners.com/carpet-cleaning"
         pageType="service"
         county="Jacksonville, FL"

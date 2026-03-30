@@ -4,17 +4,17 @@ import { MapPin } from "lucide-react";
 const serviceAreas = [
   {
     county: "Duval County",
-    slug: "/broward-county-cleaning",
-    cities: ["Jacksonville", "Mandarin", "Hollywood", "Ponte Vedra Beach", "Riverside"],
+    slug: "/service-areas",
+    cities: ["Jacksonville", "Mandarin", "Jacksonville Beach", "Ponte Vedra Beach", "Riverside"],
   },
   {
     county: "Duval County",
-    slug: "/miami-dade-cleaning",
+    slug: "/service-areas",
     cities: ["Miami", "Jacksonville Beach", "Hialeah", "Coral Gables", "Aventura"],
   },
   {
     county: "St. Johns County",
-    slug: "/palm-beach-county-cleaning",
+    slug: "/service-areas",
     cities: ["Ponte Vedra", "Jacksonville Beach", "Delray Beach", "Boynton Beach", "Jupiter"],
   },
 ];
@@ -28,9 +28,9 @@ const ServiceAreaLinks = () => {
             Professional Cleaning Services Near You
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Point Polish Cleaners provides <Link to="/broward-county-cleaning" className="text-primary hover:underline">Duval County cleaning services</Link>, 
-            <Link to="/miami-dade-cleaning" className="text-primary hover:underline ml-1">Jacksonville cleaning services</Link>, and 
-            <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline ml-1">St. Johns County cleaning services</Link>. 
+            Point Polish Cleaners provides <Link to="/service-areas" className="text-primary hover:underline">Duval County cleaning services</Link>, 
+            <Link to="/service-areas" className="text-primary hover:underline ml-1">Jacksonville cleaning services</Link>, and 
+            <Link to="/service-areas" className="text-primary hover:underline ml-1">St. Johns County cleaning services</Link>. 
             Licensed, insured, and ready to transform your space.
           </p>
         </div>

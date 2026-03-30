@@ -311,7 +311,7 @@ const Blog = () => {
             </h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
               Let Point Polish Cleaners handle the cleaning while you enjoy your free time. 
-              Serving Broward, Palm Beach, and Jacksonville counties.
+              Serving Jacksonville and surrounding areas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 

@@ -169,9 +169,9 @@ const HowToPrepareForCleaningService = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">
                   Point Polish Cleaners makes professional cleaning easy. We serve 
-                  <Link to="/broward-county-cleaning" className="text-primary hover:underline mx-1">Broward</Link>,
-                  <Link to="/miami-dade-cleaning" className="text-primary hover:underline mx-1">Jacksonville</Link>, and
-                  <Link to="/palm-beach-county-cleaning" className="text-primary hover:underline mx-1">St. Johns County</Link>.
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval</Link>,
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Jacksonville</Link>, and
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">St. Johns County</Link>.
                   Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link>—response in 15 minutes or less!
                 </p>
