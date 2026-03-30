@@ -13,7 +13,7 @@ const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const HomeFAQ = lazy(() => import("@/components/HomeFAQ"));
 const ContactOptions = lazy(() => import("@/components/ContactOptions"));
-const ReferralBanner = lazy(() => import("@/components/ReferralBanner"));
+
 const Contact = lazy(() => import("@/components/Contact"));
 const BlogPreview = lazy(() => import("@/components/BlogPreview"));
 const AIChatbot = lazy(() => import("@/components/AIChatbot"));
@@ -62,7 +62,7 @@ const Index = () => {
         <LazySection minHeight={200}><ContactOptions /></LazySection>
         <LazySection minHeight={300}><BlogPreview /></LazySection>
         <LazySection minHeight={400}><Contact /></LazySection>
-        <LazySection minHeight={200}><ReferralBanner /></LazySection>
+        
         <Footer />
         <LazySection minHeight={0}><StickyCallButton /></LazySection>
         <LazySection minHeight={0}><AIChatbot /></LazySection>
