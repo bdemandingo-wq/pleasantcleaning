@@ -12,7 +12,7 @@ const reviews = [
     id: 2,
     name: "Sallie Sutherland",
     rating: 5,
-    text: "I had an emergency due to ductwork installation that went wrong. Tidy Wise in less than 12 hours got two women to my home over a holiday weekend. They were the most efficient, fast, capable young women I've ever met. It really saved my day. Saved my home. PS: Joe sent Roxi & Yesenia!",
+    text: "I had an emergency due to ductwork installation that went wrong. Point Polish in less than 12 hours got two women to my home over a holiday weekend. They were the most efficient, fast, capable young women I've ever met. It really saved my day. Saved my home!",
     date: "1 month ago",
   },
   {

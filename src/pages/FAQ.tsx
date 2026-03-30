@@ -47,7 +47,7 @@ const faqs = [
       },
       {
         q: "What areas do you serve?",
-        a: "We serve all of Duval County, St. Johns County, and Duval County. This includes cities like Jacksonville, Jacksonville Beach, Jacksonville, Jacksonville Beach, Ponte Vedra, and 12+ other cities. Check our Service Areas page for the full list."
+        a: "We serve the greater Jacksonville area including Jacksonville Beach, Atlantic Beach, Neptune Beach, Ponte Vedra Beach, Mandarin, Riverside, Southside, and more. Check our Service Areas page for the full list."
       },
       {
         q: "How long does a cleaning take?",
