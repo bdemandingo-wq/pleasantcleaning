@@ -176,7 +176,7 @@ const Sitemap = () => {
     { name: "Service Areas", path: "/service-areas" },
     { name: "FAQ", path: "/faq" },
     { name: "Blog", path: "/blog" },
-    { name: "Referral Program", path: "/referral-program" },
+    
     { name: "Book a Cleaning", path: "/booking" },
     { name: "Join Our Team", path: "/apply" },
   ];
