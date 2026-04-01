@@ -11,6 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, ArrowLeft, Upload, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const applicationSchema = z.object({
   name: z.string().min(2).max(100),
