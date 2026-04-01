@@ -51,7 +51,7 @@ const services = [
     icon: Layers,
     title: "Airbnb / Vacation Rental",
     description: "Turnover cleaning for short-term rental properties.",
-    price: "From $140",
+    price: "From $180",
     link: "/airbnb-cleaning",
     features: [
       "Turnover cleaning between guests",
