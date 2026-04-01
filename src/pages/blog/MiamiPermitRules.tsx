@@ -7,15 +7,15 @@ import StickyCallButton from "@/components/seo/StickyCallButton";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 import AuthorBio from "@/components/seo/AuthorBio";
 
-const JacksonvillePermitRules = () => {
+const Pembroke PinesPermitRules = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Cleaning Permit Rules Jacksonville 2025 | Point Polish Cleaners"
-        pageDescription="Jacksonville cleaning permit rules for 2025. Condo requirements, HOA policies, and what to know before hiring a cleaning service in Jacksonville. Free consultation!"
-        canonicalUrl="https://pointpolishcleaners.com/blog/miami-permit-rules"
+        pageTitle="Cleaning Permit Rules Pembroke Pines 2025 | Pleasant Cleanings"
+        pageDescription="Pembroke Pines cleaning permit rules for 2025. Condo requirements, HOA policies, and what to know before hiring a cleaning service in Pembroke Pines. Free consultation!"
+        canonicalUrl="https://pleasantcleanings.com/blog/miami-permit-rules"
         pageType="blog"
-        county="Duval County"
+        county="Broward County"
         blogMeta={{ datePublished: "2025-01-10", readTime: "6 min", category: "Local Guides" }}
       />
       <main className="min-h-screen">
@@ -25,7 +25,7 @@ const JacksonvillePermitRules = () => {
           <div className="container mx-auto px-4 max-w-4xl">
             <Link to="/service-areas" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
               <ArrowLeft className="w-4 h-4" />
-              Back to Jacksonville Cleaning
+              Back to Pembroke Pines Cleaning
             </Link>
 
             <header className="mb-12">
@@ -41,23 +41,23 @@ const JacksonvillePermitRules = () => {
               </div>
               
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                Permit Rules for Cleaning Services in Jacksonville
+                Permit Rules for Cleaning Services in Pembroke Pines
               </h1>
               
               <p className="text-lg text-muted-foreground">
-                Living in a Jacksonville condo or HOA community? Here's what you need to know about 
-                <Link to="/service-areas" className="text-primary hover:underline mx-1">hiring cleaning services in Duval County</Link>.
+                Living in a Pembroke Pines condo or HOA community? Here's what you need to know about 
+                <Link to="/service-areas" className="text-primary hover:underline mx-1">hiring cleaning services in Broward County</Link>.
               </p>
             </header>
 
             <div className="prose prose-lg max-w-none">
               <h2 className="font-display text-2xl font-bold text-foreground mt-8 mb-4">
-                Condo Building Requirements in Jacksonville
+                Condo Building Requirements in Pembroke Pines
               </h2>
               <p className="text-muted-foreground mb-6">
-                Many Jacksonville condos require cleaning services to be registered with building management. 
-                At Point Polish Cleaners, we handle this for you—we're registered with major buildings throughout 
-                <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval County</Link>.
+                Many Pembroke Pines condos require cleaning services to be registered with building management. 
+                At Pleasant Cleanings, we handle this for you—we're registered with major buildings throughout 
+                <Link to="/service-areas" className="text-primary hover:underline mx-1">Broward County</Link>.
               </p>
 
               <div className="bg-muted p-6 rounded-xl mb-8">
@@ -80,10 +80,10 @@ const JacksonvillePermitRules = () => {
               </p>
 
               <h2 className="font-display text-2xl font-bold text-foreground mt-8 mb-4">
-                Jacksonville Business Requirements
+                Pembroke Pines Business Requirements
               </h2>
               <p className="text-muted-foreground mb-6">
-                Professional cleaning services in Jacksonville must have:
+                Professional cleaning services in Pembroke Pines must have:
               </p>
               <ul className="space-y-2 text-muted-foreground mb-8">
                 <li>• Local business tax receipt</li>
@@ -91,7 +91,7 @@ const JacksonvillePermitRules = () => {
                 <li>• Workers' compensation (for employees)</li>
               </ul>
               <p className="text-muted-foreground mb-6">
-                Point Polish Cleaners meets all <a href="https://www.coj.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Duval County</a> requirements 
+                Pleasant Cleanings meets all <a href="https://www.coj.net" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Broward County</a> requirements 
                 and is fully licensed, bonded, and insured.
               </p>
 
@@ -110,13 +110,13 @@ const JacksonvillePermitRules = () => {
                   Need Help with Your Building's Requirements?
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Our team is experienced with Jacksonville condos and HOA communities. Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
+                  Our team is experienced with Pembroke Pines condos and HOA communities. Call <a href="tel:+17867967445" className="text-primary font-semibold">(786) 796-7445</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link> for 
-                  <Link to="/service-areas" className="text-primary hover:underline ml-1">Jacksonville cleaning services</Link>.
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">Pembroke Pines cleaning services</Link>.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Also serving <Link to="/service-areas" className="text-primary hover:underline">Duval County</Link> and 
-                  <Link to="/service-areas" className="text-primary hover:underline ml-1">St. Johns County</Link>.
+                  Also serving <Link to="/service-areas" className="text-primary hover:underline">Broward County</Link> and 
+                  <Link to="/service-areas" className="text-primary hover:underline ml-1">Palm Beach County</Link>.
                 </p>
               </div>
             </div>
@@ -132,4 +132,4 @@ const JacksonvillePermitRules = () => {
   );
 };
 
-export default JacksonvillePermitRules;
+export default Pembroke PinesPermitRules;

@@ -3,8 +3,8 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 // Restricted CORS - only allow specific origins
 const ALLOWED_ORIGINS = [
-  'https://pointpolishcleaners.com',
-  'https://www.pointpolishcleaners.com',
+  'https://pleasantcleanings.com',
+  'https://www.pleasantcleanings.com',
   'https://ekseakjxarhjujngoklz.supabase.co',
 ];
 
@@ -30,12 +30,12 @@ function getCorsHeaders(req: Request): Record<string, string> {
 const CLEANING_TOPICS = [
   "Quick cleaning hacks for busy Florida professionals",
   "How to maintain a clean home during hurricane season",
-  "Pet-friendly cleaning solutions for Jacksonville, FL homes",
-  "Best practices for cleaning luxury condos in Jacksonville",
+  "Pet-friendly cleaning solutions for South Florida homes",
+  "Best practices for cleaning luxury condos in Pembroke Pines",
   "Seasonal deep cleaning checklist for Florida homeowners",
   "How to prevent sand and salt buildup in coastal homes",
   "Green cleaning tips for eco-conscious Floridians",
-  "Organizing tips for small apartments in Jacksonville",
+  "Organizing tips for small apartments in Pembroke Pines",
   "How to clean and maintain tile floors in humid climates",
   "Tips for keeping your Airbnb spotless between guests",
   "Cleaning tips for homes with allergies in humid Florida",
@@ -44,7 +44,7 @@ const CLEANING_TOPICS = [
   "Kitchen deep cleaning tips for holiday entertaining",
   "How to prepare your home for professional cleaners",
   "Decluttering strategies for a stress-free home",
-  "Cleaning tips for new parents in Jacksonville, FL",
+  "Cleaning tips for new parents in South Florida",
   "How to maintain pristine white surfaces in your home",
   "Tips for cleaning after a Florida rainstorm",
   "How to keep your garage clean and organized",
@@ -191,11 +191,11 @@ serve(async (req) => {
         messages: [
           {
             role: 'system',
-            content: `You are a professional content writer for Point Polish Cleaners, a cleaning service company in Jacksonville, FL. 
+            content: `You are a professional content writer for Pleasant Cleanings, a cleaning service company in South Florida. 
 Write engaging, SEO-optimized blog posts about cleaning tips and home care.
-Your content should be helpful, practical, and relevant to Jacksonville, FL homeowners.
+Your content should be helpful, practical, and relevant to South Florida homeowners.
 Focus on actionable advice that readers can implement immediately.
-Include local references to Jacksonville, Jacksonville, St. Johns, and other Jacksonville, FL areas when appropriate.`
+Include local references to Pembroke Pines, Pembroke Pines, St. Johns, and other South Florida areas when appropriate.`
           },
           {
             role: 'user',
@@ -213,7 +213,7 @@ The content should include:
 - An engaging introduction
 - 3-5 main sections with subheadings
 - Practical tips and actionable advice
-- A call-to-action mentioning Point Polish Cleaners services
+- A call-to-action mentioning Pleasant Cleanings services
 - Proper HTML formatting (use <h2>, <h3>, <p>, <ul>, <li>, <strong> tags)`
           }
         ],

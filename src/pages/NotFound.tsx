@@ -14,9 +14,9 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>Page Not Found | Point Polish Cleaners Cleaning Services</title>
+        <title>Page Not Found | Pleasant Cleanings Cleaning Services</title>
         <meta name="robots" content="noindex, nofollow" />
-        <meta name="description" content="The page you're looking for doesn't exist. Point Polish Cleaners offers professional house cleaning in Jacksonville, Jacksonville Beach & Ponte Vedra." />
+        <meta name="description" content="The page you're looking for doesn't exist. Pleasant Cleanings offers professional house cleaning in Pembroke Pines, Pembroke Pines Beach & Ponte Vedra." />
       </Helmet>
       
       <div className="flex min-h-screen items-center justify-center bg-muted px-4">
@@ -26,7 +26,7 @@ const NotFound = () => {
             Page Not Found
           </h2>
           <p className="text-muted-foreground mb-8">
-            Point Polish Cleaners professional house cleaning in Jacksonville, Jacksonville Beach & Ponte Vedra. 
+            Pleasant Cleanings professional house cleaning in Pembroke Pines, Pembroke Pines Beach & Ponte Vedra. 
             Let's get you back on track!
           </p>
           
@@ -38,9 +38,9 @@ const NotFound = () => {
               </Link>
             </Button>
             <Button variant="outline" asChild>
-              <a href="tel:+19045139002" className="flex items-center gap-2">
+              <a href="tel:+17867967445" className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                Call (904) 513-9002
+                Call (786) 796-7445
               </a>
             </Button>
           </div>
@@ -48,8 +48,8 @@ const NotFound = () => {
           <div className="mt-12 pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground mb-4">Popular pages:</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link to="/service-areas" className="text-primary hover:underline">Duval County</Link>
-              <Link to="/service-areas" className="text-primary hover:underline">Jacksonville</Link>
+              <Link to="/service-areas" className="text-primary hover:underline">Broward County</Link>
+              <Link to="/service-areas" className="text-primary hover:underline">Pembroke Pines</Link>
               <Link to="/service-areas" className="text-primary hover:underline">St. Johns</Link>
               <Link to="/#booking" className="text-primary hover:underline">Book Now</Link>
             </div>

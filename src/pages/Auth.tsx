@@ -180,7 +180,7 @@ const Auth = () => {
         <Card className="shadow-elevated">
           <CardContent className="p-8">
             <div className="text-center mb-8">
-              <img src={logo} alt="Point Polish Cleaners" className="h-16 w-auto mx-auto mb-4" />
+              <img src={logo} alt="Pleasant Cleanings" className="h-16 w-auto mx-auto mb-4" />
               <h1 className="font-display text-2xl font-bold text-foreground mb-2">
                 {isForgotPassword ? "Reset Password" : isLogin ? "Admin Login" : "Create Account"}
               </h1>
@@ -203,7 +203,7 @@ const Auth = () => {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="admin@pointpolishcleaners.com"
+                        placeholder="admin@pleasantcleanings.com"
                         className="pl-10"
                         value={email}
                         onChange={(e) => {
@@ -312,7 +312,7 @@ const Auth = () => {
                       <Input
                         id="email"
                         type="email"
-                        placeholder="admin@pointpolishcleaners.com"
+                        placeholder="admin@pleasantcleanings.com"
                         className="pl-10"
                         value={email}
                         onChange={(e) => {

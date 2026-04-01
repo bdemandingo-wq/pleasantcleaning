@@ -11,11 +11,11 @@ const MoveInOutCleaningChecklist = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Move In/Out Cleaning Checklist 2025 | Jacksonville, FL | Point Polish Cleaners"
-        pageDescription="Complete move in/out cleaning checklist for Jacksonville, FL rentals & homes. Get your security deposit back with our professional cleaning guide. Free quote!"
-        canonicalUrl="https://pointpolishcleaners.com/blog/move-in-out-cleaning-checklist"
+        pageTitle="Move In/Out Cleaning Checklist 2025 | South Florida | Pleasant Cleanings"
+        pageDescription="Complete move in/out cleaning checklist for South Florida rentals & homes. Get your security deposit back with our professional cleaning guide. Free quote!"
+        canonicalUrl="https://pleasantcleanings.com/blog/move-in-out-cleaning-checklist"
         pageType="blog"
-        county="Jacksonville, FL"
+        county="South Florida"
         blogMeta={{
           datePublished: "2025-01-15",
           readTime: "7 min",
@@ -45,11 +45,11 @@ const MoveInOutCleaningChecklist = () => {
               </div>
               
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                The Ultimate Move In/Out Cleaning Checklist for Jacksonville, FL
+                The Ultimate Move In/Out Cleaning Checklist for South Florida
               </h1>
               
               <p className="text-lg text-muted-foreground">
-                Moving in or out of a Jacksonville, FL property? This comprehensive checklist ensures you get your 
+                Moving in or out of a South Florida property? This comprehensive checklist ensures you get your 
                 security deposit back and start fresh in your new home.
               </p>
             </header>
@@ -152,7 +152,7 @@ const MoveInOutCleaningChecklist = () => {
                 Florida-Specific Considerations
               </h2>
               <p className="text-muted-foreground mb-6">
-                Jacksonville, FL's humidity creates unique cleaning challenges. Pay special attention to:
+                South Florida's humidity creates unique cleaning challenges. Pay special attention to:
               </p>
               <ul className="space-y-2 text-muted-foreground mb-8">
                 <li>• Mold and mildew in bathrooms and AC vents</li>
@@ -163,14 +163,14 @@ const MoveInOutCleaningChecklist = () => {
 
               <div className="bg-primary/10 p-6 rounded-xl">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-4">
-                  Let Point Polish Cleaners Handle Your Move Cleaning
+                  Let Pleasant Cleanings Handle Your Move Cleaning
                 </h3>
                 <p className="text-muted-foreground mb-4">
                   Don't stress about move cleaning! Our professional team serves 
                   <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval</Link>,
-                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Jacksonville</Link>, and
-                  <Link to="/service-areas" className="text-primary hover:underline mx-1">St. Johns County</Link>.
-                  Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Pembroke Pines</Link>, and
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Palm Beach County</Link>.
+                  Call <a href="tel:+17867967445" className="text-primary font-semibold">(786) 796-7445</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link>.
                 </p>
               </div>
