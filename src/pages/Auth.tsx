@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { ArrowLeft, Mail, Lock, User, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+
 
 const emailSchema = z.string().email("Please enter a valid email address");
 const passwordSchema = z.string().min(6, "Password must be at least 6 characters");
@@ -179,7 +179,7 @@ const Auth = () => {
         <Card className="shadow-elevated">
           <CardContent className="p-8">
             <div className="text-center mb-8">
-              <img src={logo} alt="Pleasant Cleanings" className="h-16 w-auto mx-auto mb-4" style={{ mixBlendMode: 'multiply' }} />
+              <span className="font-display text-2xl font-bold text-foreground block mb-4">Pleasant Cleanings</span>
               <h1 className="font-display text-2xl font-bold text-foreground mb-2">
                 {isForgotPassword ? "Reset Password" : isLogin ? "Admin Login" : "Create Account"}
               </h1>
