@@ -7,7 +7,7 @@ import StickyCallButton from "@/components/seo/StickyCallButton";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 import AuthorBio from "@/components/seo/AuthorBio";
 
-const DuvalCostGuide = () => {
+const BrowardCostGuide = () => {
   return (
     <>
       <SEOSchema
@@ -124,4 +124,4 @@ const DuvalCostGuide = () => {
   );
 };
 
-export default DuvalCostGuide;
+export default BrowardCostGuide;

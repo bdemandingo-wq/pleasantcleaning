@@ -141,7 +141,7 @@ const PetFriendlyCleaningTips = () => {
                 </h3>
                 <p className="text-muted-foreground mb-4">
                   Pleasant Cleanings loves pets! We serve pet owners across 
-                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval</Link>,
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Broward</Link>,
                   <Link to="/service-areas" className="text-primary hover:underline mx-1">Pembroke Pines</Link>, and
                   <Link to="/service-areas" className="text-primary hover:underline mx-1">Palm Beach County</Link>.
                   Call <a href="tel:+17867967445" className="text-primary font-semibold">(786) 796-7445</a> or 
