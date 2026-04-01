@@ -179,7 +179,7 @@ const Auth = () => {
         <Card className="shadow-elevated">
           <CardContent className="p-8">
             <div className="text-center mb-8">
-              <img src={logo} alt="Pleasant Cleanings" className="h-16 w-auto mx-auto mb-4" />
+              <span className="font-display text-2xl font-bold text-foreground block mb-4">Pleasant Cleanings</span>
               <h1 className="font-display text-2xl font-bold text-foreground mb-2">
                 {isForgotPassword ? "Reset Password" : isLogin ? "Admin Login" : "Create Account"}
               </h1>

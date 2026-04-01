@@ -132,4 +132,4 @@ const PembrokePinesPermitRules = () => {
   );
 };
 
-export default Pembroke PinesPermitRules;
+export default PembrokePinesPermitRules;
