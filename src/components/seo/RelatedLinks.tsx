@@ -11,17 +11,16 @@ const services = [
   { name: "Standard Cleaning", link: "/standard-cleaning" },
   { name: "Deep Cleaning", link: "/deep-cleaning" },
   { name: "Move In/Out Cleaning", link: "/move-in-out-cleaning" },
-  { name: "Carpet Cleaning", link: "/carpet-cleaning" },
   { name: "Upholstery Cleaning", link: "/upholstery-cleaning" },
 ];
 
 const topCities = [
-  { name: "Jacksonville", link: "/jacksonville-cleaning" },
-  { name: "Jacksonville Beach", link: "/jacksonville-beach-cleaning" },
-  { name: "Ponte Vedra Beach", link: "/ponte-vedra-beach-cleaning" },
-  { name: "Mandarin", link: "/mandarin-cleaning" },
-  { name: "Riverside", link: "/riverside-cleaning" },
-  { name: "Southside", link: "/southside-cleaning" },
+  { name: "Pembroke Pines", link: "/pembroke-pines-cleaning" },
+  { name: "Miramar", link: "/miramar-cleaning" },
+  { name: "Coral Springs", link: "/coral-springs-cleaning" },
+  { name: "Aventura", link: "/aventura-cleaning" },
+  { name: "Doral", link: "/doral-cleaning" },
+  { name: "Boca Raton", link: "/boca-raton-cleaning" },
 ];
 
 const blogPosts = [
@@ -42,7 +41,7 @@ const RelatedLinks = ({ currentPage, pageType, cityName }: RelatedLinksProps) =>
     <section className="py-12 bg-muted/50">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="font-display text-2xl font-bold text-foreground mb-6">
-          Explore More Point Polish Cleaners Services
+          Explore More Pleasant Cleanings Services
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -62,41 +61,29 @@ const RelatedLinks = ({ currentPage, pageType, cityName }: RelatedLinksProps) =>
           </div>
 
           <div>
-            <h3 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">
-              Service Areas
-            </h3>
+            <h3 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">Service Areas</h3>
             <ul className="space-y-2">
               {filteredCities.slice(0, 5).map(city => (
                 <li key={city.link}>
-                  <Link to={city.link} className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                    {city.name} cleaning service
-                  </Link>
+                  <Link to={city.link} className="text-muted-foreground hover:text-primary transition-colors text-sm">{city.name} cleaning service</Link>
                 </li>
               ))}
               <li>
-                <Link to="/service-areas" className="text-primary hover:underline text-sm font-medium">
-                  View all service areas →
-                </Link>
+                <Link to="/service-areas" className="text-primary hover:underline text-sm font-medium">View all service areas →</Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">
-              From Our Blog
-            </h3>
+            <h3 className="font-semibold text-foreground mb-3 text-sm uppercase tracking-wider">From Our Blog</h3>
             <ul className="space-y-2">
               {filteredBlogs.map(post => (
                 <li key={post.link}>
-                  <Link to={post.link} className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                    {post.name}
-                  </Link>
+                  <Link to={post.link} className="text-muted-foreground hover:text-primary transition-colors text-sm">{post.name}</Link>
                 </li>
               ))}
               <li>
-                <Link to="/blog" className="text-primary hover:underline text-sm font-medium">
-                  More articles →
-                </Link>
+                <Link to="/blog" className="text-primary hover:underline text-sm font-medium">More articles →</Link>
               </li>
             </ul>
           </div>

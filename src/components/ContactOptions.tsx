@@ -1,5 +1,4 @@
 import { CalendarDays, Phone, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const ContactOptions = () => {
   return (
@@ -25,14 +24,14 @@ const ContactOptions = () => {
           </a>
 
           <a
-            href="tel:+19045139002"
+            href="tel:+17867967445"
             className="bg-card rounded-xl p-6 text-center border border-border hover:shadow-lg hover:-translate-y-1 transition-all group"
           >
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
               <Phone className="w-6 h-6 text-primary" />
             </div>
             <h3 className="font-display text-lg font-semibold text-foreground mb-2">Call Us</h3>
-            <p className="text-sm text-muted-foreground">(904) 513-9002 · Mon–Sun 8am–7pm</p>
+            <p className="text-sm text-muted-foreground">(786) 796-7445 · Mon–Sun 8am–7pm</p>
           </a>
 
           <button

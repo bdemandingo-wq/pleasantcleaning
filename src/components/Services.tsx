@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Sparkles, Home, Truck, Building2, Check, Armchair, Layers, ArrowRight, Calendar } from "lucide-react";
+import { Sparkles, Home, Truck, Building2, Check, Armchair, Layers, ArrowRight, Calendar, Hammer } from "lucide-react";
 
 const services = [
   {
     icon: Sparkles,
     title: "Standard Cleaning",
     description: "Perfect for regular maintenance cleaning to keep your home spotless.",
-    price: "From $150",
+    price: "From $120",
     link: "/standard-cleaning",
     badge: "Best Value",
     badgeColor: "bg-success text-success-foreground",
@@ -23,7 +23,7 @@ const services = [
     icon: Home,
     title: "Deep Cleaning",
     description: "Comprehensive cleaning for homes that need extra attention to detail.",
-    price: "From $250",
+    price: "From $220",
     link: "/deep-cleaning",
     badge: "Most Popular",
     badgeColor: "bg-secondary text-secondary-foreground",
@@ -38,26 +38,26 @@ const services = [
     icon: Truck,
     title: "Move In/Out",
     description: "Perfect for moving - we leave your old or new home spotless.",
-    price: "From $300",
+    price: "From $280",
     link: "/move-in-out-cleaning",
     features: [
       "Complete top-to-bottom cleaning",
       "Inside appliances cleaned",
       "Windows & tracks cleaned",
-      "Ready for move-in inspection",
+      "Ready for inspection",
     ],
   },
   {
     icon: Layers,
-    title: "Carpet Cleaning",
-    description: "Professional deep extraction cleaning for all carpet types.",
+    title: "Airbnb / Vacation Rental",
+    description: "Turnover cleaning for short-term rental properties.",
     price: "Custom Quote",
-    link: "/carpet-cleaning",
+    link: "/#booking",
     features: [
-      "Deep fiber extraction",
-      "Stain & spot treatment",
-      "Odor elimination",
-      "Fast drying times",
+      "Turnover cleaning between guests",
+      "Fresh linens & towels",
+      "Restocking essentials",
+      "Same-day availability",
     ],
   },
   {
@@ -75,15 +75,28 @@ const services = [
   },
   {
     icon: Building2,
-    title: "Commercial",
+    title: "Office Cleaning",
     description: "Professional cleaning for offices, retail spaces, and commercial properties.",
     price: "Custom Quote",
     link: "/#booking",
     features: [
       "Flexible scheduling",
-      "OSHA compliant cleaning",
+      "OSHA compliant",
       "Janitorial services",
       "Floor care & maintenance",
+    ],
+  },
+  {
+    icon: Hammer,
+    title: "Post-Construction",
+    description: "Thorough cleanup after renovation or construction projects.",
+    price: "Custom Quote",
+    link: "/#booking",
+    features: [
+      "Dust & debris removal",
+      "Window & glass cleaning",
+      "Deep scrub all surfaces",
+      "Move-in ready finish",
     ],
   },
 ];
@@ -94,11 +107,11 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Premium Cleaning Services
+            Our Professional Cleaning Services
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From standard maintenance to deep cleaning, carpet care to upholstery cleaning — 
-            we offer comprehensive solutions for every need in Jacksonville, FL.
+            From standard maintenance to deep cleaning, Airbnb turnovers to office care — 
+            we offer comprehensive solutions across Pembroke Pines & South Florida.
           </p>
         </div>
 
@@ -145,12 +158,7 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Urgency + promo */}
         <div className="mt-10 text-center space-y-4">
-          <p className="text-foreground font-medium flex items-center justify-center gap-2">
-            <Calendar className="w-5 h-5 text-secondary" />
-            🎉 Use code <strong>POLISH</strong> for 10% off your first cleaning!
-          </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
             <Link to="/service-areas" className="text-primary hover:underline">View All Service Areas</Link>
           </div>

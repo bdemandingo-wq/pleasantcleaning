@@ -39,10 +39,10 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Choose Point Polish?
+            Why Choose Pleasant Cleanings?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We don't just clean surfaces — we deliver a deep, polished finish that makes every space feel refreshed and brand new.
+            We focus on quality, consistency, and customer satisfaction — delivering a spotless finish that makes every space feel refreshed and brand new.
           </p>
         </div>
 

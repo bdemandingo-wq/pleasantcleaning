@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const blogPosts = [
-  { slug: "move-in-out-cleaning-checklist", title: "Move In/Out Cleaning Checklist", category: "Guides" },
-  { slug: "deep-cleaning-vs-standard-cleaning", title: "Deep vs Standard Cleaning", category: "Guides" },
-  { slug: "pet-friendly-cleaning-tips", title: "Pet-Friendly Cleaning Tips", category: "Tips" },
+  { slug: "deep-cleaning-vs-standard-cleaning", title: "How Often Should You Deep Clean Your Home in South Florida?", category: "Guides" },
+  { slug: "how-to-prepare-for-cleaning-service", title: "Top 5 Benefits of Hiring a Professional Cleaning Service in Pembroke Pines", category: "Tips" },
+  { slug: "eco-friendly-cleaning-products", title: "Eco-Friendly Cleaning: Why It Matters for Your Family and the Environment", category: "Tips" },
 ];
 
 const BlogPreview = () => {

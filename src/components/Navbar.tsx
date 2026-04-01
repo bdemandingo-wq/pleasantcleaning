@@ -56,7 +56,6 @@ const Navbar = () => {
     { href: "/standard-cleaning", label: "Standard Cleaning" },
     { href: "/deep-cleaning", label: "Deep Cleaning" },
     { href: "/move-in-out-cleaning", label: "Move In/Out Cleaning" },
-    { href: "/carpet-cleaning", label: "Carpet Cleaning" },
     { href: "/upholstery-cleaning", label: "Upholstery Cleaning" },
   ];
 
@@ -73,7 +72,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Point Polish Cleaners" className="h-10 w-auto" />
+            <img src={logo} alt="Pleasant Cleanings" className="h-10 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center gap-5">
@@ -135,7 +134,7 @@ const Navbar = () => {
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               asChild
             >
-              <a href="tel:+19045139002" className="flex items-center gap-1.5">
+              <a href="tel:+17867967445" className="flex items-center gap-1.5">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
@@ -159,72 +158,31 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in relative z-[60] bg-background">
             <div className="flex flex-col gap-2">
-              <Link
-                to="/"
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
+              <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>Home</Link>
               
-              {/* Services section */}
               <div className="py-2">
                 <span className="text-foreground font-medium">Services</span>
                 <div className="pl-4 mt-2 space-y-2">
                   {serviceLinks.map((service) => (
-                    <Link
-                      key={service.href}
-                      to={service.href}
-                      className="block text-muted-foreground hover:text-foreground transition-colors py-1"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {service.label}
-                    </Link>
+                    <Link key={service.href} to={service.href} className="block text-muted-foreground hover:text-foreground transition-colors py-1" onClick={() => setIsOpen(false)}>{service.label}</Link>
                   ))}
                 </div>
               </div>
 
-              <button
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2 text-left"
-                onClick={() => { setIsOpen(false); handlePricingClick(); }}
-              >
-                Pricing
-              </button>
+              <button className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2 text-left" onClick={() => { setIsOpen(false); handlePricingClick(); }}>Pricing</button>
               
-              <Link
-                to="/service-areas"
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Service Areas
-              </Link>
-              <Link
-                to="/blog"
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Blog
-              </Link>
-              <Link
-                to="/faq"
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                FAQ
-              </Link>
+              <Link to="/service-areas" className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>Service Areas</Link>
+              <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>Blog</Link>
+              <Link to="/faq" className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>FAQ</Link>
               {user && (
-                <Link
-                  to="/my-bookings"
-                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                  onClick={() => setIsOpen(false)}
-                >
+                <Link to="/my-bookings" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors font-medium py-2" onClick={() => setIsOpen(false)}>
                   <User className="h-4 w-4" />
                   My Bookings
                 </Link>
               )}
               <div className="flex gap-2 mt-2">
                 <Button variant="outline" className="flex-1 border-primary text-primary" asChild>
-                  <a href="tel:+19045139002" className="flex items-center justify-center gap-1.5">
+                  <a href="tel:+17867967445" className="flex items-center justify-center gap-1.5">
                     <Phone className="w-4 h-4" />
                     Call
                   </a>
