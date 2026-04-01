@@ -23,7 +23,7 @@ const services = [
     icon: Home,
     title: "Deep Cleaning",
     description: "Comprehensive cleaning for homes that need extra attention to detail.",
-    price: "From $220",
+    price: "From $250",
     link: "/deep-cleaning",
     badge: "Most Popular",
     badgeColor: "bg-secondary text-secondary-foreground",
