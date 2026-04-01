@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Loader2, Home, Calendar, MapPin, Phone, Mail, ArrowLeft } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 interface Booking {
   id: string;
