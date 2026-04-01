@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Shield, Leaf } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="font-display text-xl font-bold">Pleasant Cleanings</span>
+              <img src={logo} alt="Pleasant Cleanings" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-background/70 text-sm mb-2">
               Quality, Consistency & Customer Satisfaction — Every Time.

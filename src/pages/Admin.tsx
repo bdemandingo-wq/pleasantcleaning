@@ -20,6 +20,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import logo from "@/assets/logo.png";
 
 type BookingStatus = "pending" | "confirmed" | "in_progress" | "completed" | "cancelled";
 
@@ -242,7 +243,7 @@ const Admin = () => {
       <header className="bg-background border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            
+            <img src={logo} alt="Pleasant Cleanings" className="h-10 w-auto" style={{ mixBlendMode: 'multiply' }} />
             <span className="font-display text-xl font-bold text-foreground">Admin Dashboard</span>
           </div>
           <Button variant="outline" onClick={handleSignOut}>
