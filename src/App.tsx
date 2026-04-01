@@ -19,21 +19,35 @@ const CustomerPortal = lazy(() => import("./pages/CustomerPortal"));
 const CleanerApplication = lazy(() => import("./pages/CleanerApplication"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-// Jacksonville-area city landing pages
-const JacksonvilleCleaning = lazy(() => import("./pages/cities/JacksonvilleCleaning"));
-const JacksonvilleBeachCleaning = lazy(() => import("./pages/cities/JacksonvilleBeachCleaning"));
-const AtlanticBeachCleaning = lazy(() => import("./pages/cities/AtlanticBeachCleaning"));
-const NeptuneBeachCleaning = lazy(() => import("./pages/cities/NeptuneBeachCleaning"));
-const PonteVedraBeachCleaning = lazy(() => import("./pages/cities/PonteVedraBeachCleaning"));
-const OrangeParkCleaning = lazy(() => import("./pages/cities/OrangeParkCleaning"));
-const FlemingIslandCleaning = lazy(() => import("./pages/cities/FlemingIslandCleaning"));
-const MandarinCleaning = lazy(() => import("./pages/cities/MandarinCleaning"));
-const SanMarcoCleaning = lazy(() => import("./pages/cities/SanMarcoCleaning"));
-const RiversideCleaning = lazy(() => import("./pages/cities/RiversideCleaning"));
-const ArlingtonCleaning = lazy(() => import("./pages/cities/ArlingtonCleaning"));
-const SouthsideCleaning = lazy(() => import("./pages/cities/SouthsideCleaning"));
-const YuleeCleaning = lazy(() => import("./pages/cities/YuleeCleaning"));
-const FernandinaBeachCleaning = lazy(() => import("./pages/cities/FernandinaBeachCleaning"));
+// Service pages
+const StandardCleaning = lazy(() => import("./pages/StandardCleaning"));
+const DeepCleaning = lazy(() => import("./pages/DeepCleaning"));
+const MoveInOutCleaning = lazy(() => import("./pages/MoveInOutCleaning"));
+const UpholsteryCleaning = lazy(() => import("./pages/UpholsteryCleaning"));
+const AirbnbCleaning = lazy(() => import("./pages/AirbnbCleaning"));
+const OfficeCleaning = lazy(() => import("./pages/OfficeCleaning"));
+const PostConstructionCleaning = lazy(() => import("./pages/PostConstructionCleaning"));
+
+// Info pages
+const Blog = lazy(() => import("./pages/Blog"));
+const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
+const FAQ = lazy(() => import("./pages/FAQ"));
+const Sitemap = lazy(() => import("./pages/Sitemap"));
+const ContractorRateSheet = lazy(() => import("./pages/ContractorRateSheet"));
+
+// South Florida city landing pages
+const PembrokePinesCleaning = lazy(() => import("./pages/cities/PembrokePinesCleaning"));
+const MiramarCleaning = lazy(() => import("./pages/cities/MiramarCleaning"));
+const CoralSpringsCleaning = lazy(() => import("./pages/cities/CoralSpringsCleaning"));
+const AventuraCleaning = lazy(() => import("./pages/cities/AventuraCleaning"));
+const DoralCleaning = lazy(() => import("./pages/cities/DoralCleaning"));
+const BocaRatonCleaning = lazy(() => import("./pages/cities/BocaRatonCleaning"));
+const CoralGablesCleaning = lazy(() => import("./pages/cities/CoralGablesCleaning"));
+const SunriseCleaning = lazy(() => import("./pages/cities/SunriseCleaning"));
+const DavieCleaning = lazy(() => import("./pages/cities/DavieCleaning"));
+const HomesteadCleaning = lazy(() => import("./pages/cities/HomesteadCleaning"));
+const CoconutGroveCleaning = lazy(() => import("./pages/cities/CoconutGroveCleaning"));
+const MiamiBeachCleaning = lazy(() => import("./pages/cities/MiamiBeachCleaning"));
 
 // Blog posts
 const BrowardCostGuide = lazy(() => import("./pages/blog/BrowardCostGuide"));
@@ -56,21 +70,8 @@ const CondoCleaningRules = lazy(() => import("./pages/blog/CondoCleaningRules"))
 const PostConstructionCleaningGuide = lazy(() => import("./pages/blog/PostConstructionCleaningGuide"));
 const AiBlogPost = lazy(() => import("./pages/blog/AiBlogPost"));
 
-// New pages
-const Blog = lazy(() => import("./pages/Blog"));
-const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
-const FAQ = lazy(() => import("./pages/FAQ"));
-const DeepCleaning = lazy(() => import("./pages/DeepCleaning"));
-const StandardCleaning = lazy(() => import("./pages/StandardCleaning"));
-const MoveInOutCleaning = lazy(() => import("./pages/MoveInOutCleaning"));
-const CarpetCleaning = lazy(() => import("./pages/CarpetCleaning"));
-const UpholsteryCleaning = lazy(() => import("./pages/UpholsteryCleaning"));
-const ContractorRateSheet = lazy(() => import("./pages/ContractorRateSheet"));
-const Sitemap = lazy(() => import("./pages/Sitemap"));
-
 const queryClient = new QueryClient();
 
-// Wrapper component to use hooks inside Router
 const AppRoutes = () => {
   usePageTracking();
   
@@ -86,34 +87,35 @@ const AppRoutes = () => {
         <Route path="/my-bookings" element={<CustomerPortal />} />
         <Route path="/apply" element={<CleanerApplication />} />
         
-        {/* Pages */}
+        {/* Service Pages */}
+        <Route path="/standard-cleaning" element={<StandardCleaning />} />
+        <Route path="/deep-cleaning" element={<DeepCleaning />} />
+        <Route path="/move-in-out-cleaning" element={<MoveInOutCleaning />} />
+        <Route path="/upholstery-cleaning" element={<UpholsteryCleaning />} />
+        <Route path="/airbnb-cleaning" element={<AirbnbCleaning />} />
+        <Route path="/office-cleaning" element={<OfficeCleaning />} />
+        <Route path="/post-construction-cleaning" element={<PostConstructionCleaning />} />
+        
+        {/* Info Pages */}
         <Route path="/blog" element={<Blog />} />
         <Route path="/service-areas" element={<ServiceAreas />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route path="/deep-cleaning" element={<DeepCleaning />} />
-        <Route path="/standard-cleaning" element={<StandardCleaning />} />
-        <Route path="/move-in-out-cleaning" element={<MoveInOutCleaning />} />
-        <Route path="/carpet-cleaning" element={<CarpetCleaning />} />
-        <Route path="/upholstery-cleaning" element={<UpholsteryCleaning />} />
-        <Route path="/contractor-rate-sheet" element={<ContractorRateSheet />} />
         <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/contractor-rate-sheet" element={<ContractorRateSheet />} />
         
-        {/* Jacksonville-Area City Landing Pages */}
-        <Route path="/jacksonville-cleaning" element={<JacksonvilleCleaning />} />
-        <Route path="/jacksonville-beach-cleaning" element={<JacksonvilleBeachCleaning />} />
-        <Route path="/atlantic-beach-cleaning" element={<AtlanticBeachCleaning />} />
-        <Route path="/neptune-beach-cleaning" element={<NeptuneBeachCleaning />} />
-        <Route path="/ponte-vedra-beach-cleaning" element={<PonteVedraBeachCleaning />} />
-        <Route path="/orange-park-cleaning" element={<OrangeParkCleaning />} />
-        <Route path="/fleming-island-cleaning" element={<FlemingIslandCleaning />} />
-        <Route path="/mandarin-cleaning" element={<MandarinCleaning />} />
-        <Route path="/san-marco-cleaning" element={<SanMarcoCleaning />} />
-        <Route path="/riverside-cleaning" element={<RiversideCleaning />} />
-        <Route path="/riverside-avondale-cleaning" element={<RiversideCleaning />} />
-        <Route path="/arlington-cleaning" element={<ArlingtonCleaning />} />
-        <Route path="/southside-cleaning" element={<SouthsideCleaning />} />
-        <Route path="/yulee-cleaning" element={<YuleeCleaning />} />
-        <Route path="/fernandina-beach-cleaning" element={<FernandinaBeachCleaning />} />
+        {/* South Florida City Landing Pages */}
+        <Route path="/pembroke-pines-cleaning" element={<PembrokePinesCleaning />} />
+        <Route path="/miramar-cleaning" element={<MiramarCleaning />} />
+        <Route path="/coral-springs-cleaning" element={<CoralSpringsCleaning />} />
+        <Route path="/aventura-cleaning" element={<AventuraCleaning />} />
+        <Route path="/doral-cleaning" element={<DoralCleaning />} />
+        <Route path="/boca-raton-cleaning" element={<BocaRatonCleaning />} />
+        <Route path="/coral-gables-cleaning" element={<CoralGablesCleaning />} />
+        <Route path="/sunrise-cleaning" element={<SunriseCleaning />} />
+        <Route path="/davie-cleaning" element={<DavieCleaning />} />
+        <Route path="/homestead-cleaning" element={<HomesteadCleaning />} />
+        <Route path="/coconut-grove-cleaning" element={<CoconutGroveCleaning />} />
+        <Route path="/miami-beach-cleaning" element={<MiamiBeachCleaning />} />
         
         {/* Blog Posts */}
         <Route path="/blog/broward-cost-guide" element={<BrowardCostGuide />} />
