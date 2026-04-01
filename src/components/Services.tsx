@@ -38,7 +38,7 @@ const services = [
     icon: Truck,
     title: "Move In/Out",
     description: "Perfect for moving - we leave your old or new home spotless.",
-    price: "From $280",
+    price: "From $300",
     link: "/move-in-out-cleaning",
     features: [
       "Complete top-to-bottom cleaning",
