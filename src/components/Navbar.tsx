@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, User, ChevronDown, Phone } from "lucide-react";
 
 import { useAuth } from "@/contexts/AuthContext";
-import logo from "@/assets/logo.png";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
