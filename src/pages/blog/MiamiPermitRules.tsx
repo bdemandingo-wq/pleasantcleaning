@@ -7,7 +7,7 @@ import StickyCallButton from "@/components/seo/StickyCallButton";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 import AuthorBio from "@/components/seo/AuthorBio";
 
-const Pembroke PinesPermitRules = () => {
+const PembrokePinesPermitRules = () => {
   return (
     <>
       <SEOSchema
