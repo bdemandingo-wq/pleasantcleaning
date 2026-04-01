@@ -90,8 +90,8 @@ const services = [
     icon: Hammer,
     title: "Post-Construction",
     description: "Thorough cleanup after renovation or construction projects.",
-    price: "Custom Quote",
-    link: "/#booking",
+    price: "From $450",
+    link: "/post-construction-cleaning",
     features: [
       "Dust & debris removal",
       "Window & glass cleaning",
