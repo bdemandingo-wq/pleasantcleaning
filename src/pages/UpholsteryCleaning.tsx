@@ -44,7 +44,7 @@ const UpholsteryCleaning = () => {
                 <Button size="lg" className="bg-primary text-primary-foreground" asChild>
                   <a href="tel:+17867967445" className="flex items-center gap-2"><Phone className="w-5 h-5" />Get Custom Quote</a>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold" asChild>
                   <Link to="/#booking" className="flex items-center gap-2">Request Quote Online<ArrowRight className="w-5 h-5" /></Link>
                 </Button>
               </div>
