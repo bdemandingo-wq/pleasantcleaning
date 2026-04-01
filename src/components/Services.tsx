@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Sparkles, Home, Truck, Building2, Check, Armchair, Layers, ArrowRight, Calendar, Hammer } from "lucide-react";
@@ -102,6 +102,22 @@ const services = [
 ];
 
 const Services = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleBookClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (location.pathname === '/') {
+      document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    }
+  };
+
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -148,7 +164,11 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                  <Button 
+                    variant="outline" 
+                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all"
+                    onClick={handleBookClick}
+                  >
                     Book This Service
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </Button>
