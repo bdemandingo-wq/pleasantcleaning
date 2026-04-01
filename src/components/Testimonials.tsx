@@ -4,34 +4,34 @@ import { useRef } from "react";
 
 const testimonials = [
   {
-    name: "Sarah K.",
-    location: "Jacksonville",
+    name: "Carmen R.",
+    location: "Pembroke Pines",
     rating: 5,
-    text: "Point Polish Cleaners left my home absolutely spotless. Every surface was polished to perfection. I've never had a cleaning service this thorough!",
+    text: "Pleasant Cleanings transformed my home before a big family event. They were thorough, on time, and so professional. Will definitely be booking again!",
   },
   {
-    name: "Marcus T.",
-    location: "Jacksonville Beach",
+    name: "Marcus D.",
+    location: "Miramar",
     rating: 5,
-    text: "Their attention to detail is unmatched. Used their deep cleaning service and the results were incredible. Highly recommend!",
+    text: "I used their move-out cleaning and got my full security deposit back. They cleaned every corner. Highly recommend to anyone moving in South Florida.",
   },
   {
-    name: "Lisa R.",
-    location: "Ponte Vedra",
+    name: "Jasmine T.",
+    location: "Coral Springs",
     rating: 5,
-    text: "As a busy professional, Point Polish is a lifesaver. The bi-weekly service keeps my home in perfect shape and gives me back my weekends.",
+    text: "As a busy mom running a household and a business, Pleasant Cleanings is a lifesaver. My house is spotless every single time.",
   },
   {
-    name: "David M.",
-    location: "Atlantic Beach",
+    name: "Andre W.",
+    location: "Doral",
     rating: 5,
-    text: "Their move-in cleaning was so thorough, my landlord actually complimented it. Booked again immediately for regular service.",
+    text: "Best Airbnb cleaning service I've found in South Florida. They're fast, reliable, and my guests always leave 5-star reviews on cleanliness.",
   },
   {
-    name: "Jennifer W.",
-    location: "Neptune Beach",
+    name: "Priya M.",
+    location: "Coral Gables",
     rating: 5,
-    text: "I was nervous about letting someone into my home but their background-checked team made me feel completely at ease. Premium quality service.",
+    text: "Tiffany's team is incredibly detail-oriented. They cleaned areas I didn't even think to ask about. My apartment has never looked this good!",
   },
 ];
 
@@ -41,7 +41,6 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
-        {/* Rating summary */}
         <div className="flex items-center justify-center gap-2 mb-4">
           <div className="flex gap-0.5">
             {[...Array(5)].map((_, i) => (
@@ -56,10 +55,9 @@ const Testimonials = () => {
           Real People. Real Clean Homes.
         </h2>
         <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-          Join happy Jacksonville homeowners who trust Point Polish Cleaners.
+          Join happy South Florida homeowners who trust Pleasant Cleanings.
         </p>
 
-        {/* Horizontal scroll carousel */}
         <div
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto scroll-snap-x pb-4 -mx-4 px-4 scrollbar-hide"
@@ -92,13 +90,12 @@ const Testimonials = () => {
           ))}
         </div>
         
-        {/* CTA */}
         <div className="text-center mt-10 space-y-3">
           <Link 
             to="/service-areas"
             className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
           >
-            📍 Serving Jacksonville, FL & surrounding areas →
+            📍 Serving Pembroke Pines, FL & 12+ South Florida cities →
           </Link>
         </div>
       </div>

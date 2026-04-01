@@ -3,19 +3,19 @@ import { MapPin } from "lucide-react";
 
 const serviceAreas = [
   {
-    county: "Jacksonville Metro",
+    county: "Broward County",
     slug: "/service-areas",
-    cities: ["Jacksonville", "Mandarin", "Southside", "Arlington", "Riverside"],
+    cities: ["Pembroke Pines", "Miramar", "Coral Springs", "Davie", "Sunrise"],
   },
   {
-    county: "The Beaches",
+    county: "More South Florida",
     slug: "/service-areas",
-    cities: ["Jacksonville Beach", "Atlantic Beach", "Neptune Beach", "Ponte Vedra Beach"],
+    cities: ["Aventura", "Doral", "Coral Gables", "Boca Raton"],
   },
   {
-    county: "Greater Jacksonville",
+    county: "Miami-Dade",
     slug: "/service-areas",
-    cities: ["Orange Park", "Fleming Island", "San Marco"],
+    cities: ["Homestead", "Coconut Grove", "Miami Beach"],
   },
 ];
 
@@ -28,8 +28,8 @@ const ServiceAreaLinks = () => {
             Professional Cleaning Services Near You
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Point Polish Cleaners provides professional cleaning services throughout 
-            <Link to="/service-areas" className="text-primary hover:underline ml-1">Jacksonville and surrounding areas</Link>. 
+            Pleasant Cleanings provides professional cleaning services throughout 
+            <Link to="/service-areas" className="text-primary hover:underline ml-1">Pembroke Pines and South Florida</Link>. 
             Licensed, insured, and ready to transform your space.
           </p>
         </div>

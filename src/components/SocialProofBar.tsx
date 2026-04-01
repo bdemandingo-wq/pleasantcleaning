@@ -2,11 +2,11 @@ import { Star, Shield, UserCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const microTestimonials = [
-  '"Point Polish Cleaners left my home spotless. Every surface was polished to perfection!" — Sarah K., Jacksonville',
-  '"Their attention to detail is unmatched. Highly recommend for deep cleaning!" — Marcus T., Jacksonville Beach',
-  '"As a busy professional, Point Polish is a lifesaver. My home has never looked better." — Lisa R., Ponte Vedra',
-  '"Used their move-in cleaning service — the place was flawless. 5 stars!" — David M., Atlantic Beach',
-  '"Background-checked team made me feel completely at ease. Premium service." — Jennifer W., Neptune Beach',
+  '"Pleasant Cleanings transformed my home before a big family event. So professional!" — Carmen R., Pembroke Pines',
+  '"I used their move-out cleaning and got my full security deposit back!" — Marcus D., Miramar',
+  '"As a busy mom, Pleasant Cleanings is a lifesaver. My house is spotless every time." — Jasmine T., Coral Springs',
+  '"Best Airbnb cleaning service in South Florida. My guests always leave 5-star reviews." — Andre W., Doral',
+  '"Tiffany\'s team is incredibly detail-oriented. My apartment has never looked this good!" — Priya M., Coral Gables',
 ];
 
 const SocialProofBar = () => {
@@ -31,7 +31,7 @@ const SocialProofBar = () => {
               ))}
             </div>
             <span className="font-semibold">5-Star Rated</span>
-            <span className="opacity-80">· Jacksonville, FL</span>
+            <span className="opacity-80">· South Florida</span>
           </div>
 
           {/* Rotating testimonial */}

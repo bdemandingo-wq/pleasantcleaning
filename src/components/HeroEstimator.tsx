@@ -5,11 +5,13 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ArrowRight } from "lucide-react";
 
 const serviceEstimates: Record<string, Record<string, string>> = {
-  standard: { studio: "$108–$140", "1br": "$143–$178", "2br": "$178–$213", "3br": "$213–$283", "4br": "$283–$368", "5br": "$368–$533" },
-  deep: { studio: "$208–$240", "1br": "$243–$278", "2br": "$278–$313", "3br": "$313–$383", "4br": "$383–$493", "5br": "$493–$658" },
-  moveinout: { studio: "$283–$320", "1br": "$318–$353", "2br": "$353–$388", "3br": "$388–$458", "4br": "$458–$568", "5br": "$568–$733" },
-  carpets: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
+  standard: { studio: "$108–$140", "1br": "$120–$155", "2br": "$155–$190", "3br": "$190–$260", "4br": "$260–$345", "5br": "$345–$510" },
+  deep: { studio: "$208–$240", "1br": "$220–$255", "2br": "$255–$290", "3br": "$290–$360", "4br": "$360–$470", "5br": "$470–$635" },
+  moveinout: { studio: "$280–$315", "1br": "$280–$315", "2br": "$315–$350", "3br": "$350–$420", "4br": "$420–$530", "5br": "$530–$695" },
+  airbnb: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
   upholstery: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
+  office: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
+  postconstruction: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
 };
 
 const HeroEstimator = () => {
@@ -41,8 +43,10 @@ const HeroEstimator = () => {
                 <SelectItem value="standard">Standard Cleaning</SelectItem>
                 <SelectItem value="deep">Deep Cleaning</SelectItem>
                 <SelectItem value="moveinout">Move In/Out</SelectItem>
-                <SelectItem value="carpets">Carpet Cleaning</SelectItem>
+                <SelectItem value="airbnb">Airbnb / Vacation Rental</SelectItem>
                 <SelectItem value="upholstery">Upholstery Cleaning</SelectItem>
+                <SelectItem value="office">Office Cleaning</SelectItem>
+                <SelectItem value="postconstruction">Post-Construction</SelectItem>
               </SelectContent>
             </Select>
           </div>

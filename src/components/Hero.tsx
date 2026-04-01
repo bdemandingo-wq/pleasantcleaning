@@ -4,7 +4,7 @@ import HeroEstimator from "./HeroEstimator";
 
 const trustPills = [
   { icon: Shield, label: "Licensed & Insured" },
-  { icon: Star, label: "Precision Cleaning" },
+  { icon: Star, label: "5-Star Rated" },
   { icon: Leaf, label: "Eco-Friendly Products" },
   { icon: Lock, label: "Satisfaction Guaranteed" },
 ];
@@ -32,15 +32,15 @@ const Hero = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
               </span>
-              <span className="text-sm font-medium">10% Off First Cleaning — Code: POLISH</span>
+              <span className="text-sm font-medium">Booking Available — Schedule Today!</span>
             </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Luxury-Level Cleaning. Every Detail Polished.
+              Fully Insured Cleaning Services You Can Rely On
             </h1>
 
             <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
-              Point Polish Cleaners delivers precision cleaning across Jacksonville, FL — with transparent pricing, vetted professionals, and a flawless finish every time.
+              Pleasant Cleanings delivers professional home and commercial cleaning across Pembroke Pines, Miramar, Coral Springs & 12+ South Florida cities — transparent pricing, vetted cleaners, and a satisfaction guarantee.
             </p>
 
             {/* Trust pills */}
@@ -67,7 +67,7 @@ const Hero = () => {
                 asChild
               >
                 <a href="#booking" className="flex items-center gap-2">
-                  Get My Free Estimate
+                  Get My Instant Quote
                   <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
                 </a>
               </Button>
@@ -78,7 +78,7 @@ const Hero = () => {
                 asChild
               >
                 <a
-                  href="tel:+19045139002"
+                  href="tel:+17867967445"
                   className="flex items-center gap-2"
                   onClick={() => {
                     if (typeof window.gtag === "function") {
@@ -90,7 +90,7 @@ const Hero = () => {
                   }}
                 >
                   <Phone className="w-5 h-5" aria-hidden="true" />
-                  Call (904) 513-9002
+                  Call (786) 796-7445
                 </a>
               </Button>
             </div>

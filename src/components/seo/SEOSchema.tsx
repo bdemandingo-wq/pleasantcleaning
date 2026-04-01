@@ -17,48 +17,55 @@ interface SEOSchemaProps {
   breadcrumbs?: Array<{ name: string; url: string }>;
 }
 
-const WEBSITE = "https://pointpolishcleaners.com";
-const BUSINESS_NAME = "Point Polish Cleaners";
-const PHONE = "+1-904-513-9002";
+const WEBSITE = "https://pleasantcleanings.com";
+const BUSINESS_NAME = "Pleasant Cleanings";
+const PHONE = "+1-786-796-7445";
 
 const cleaningServiceSchema = {
   "@context": "https://schema.org",
   "@type": "CleaningService",
   "@id": `${WEBSITE}/#business`,
   "name": BUSINESS_NAME,
-  "alternateName": ["Point Polish", "Point Polish Cleaning"],
-  "description": "Point Polish Cleaners provides luxury-level residential and commercial cleaning in Jacksonville, FL. We deliver precision cleaning with a polished finish every time.",
+  "alternateName": ["Pleasant Cleanings"],
+  "description": "Pleasant Cleanings offers reliable and professional cleaning services serving South Florida. We specialize in Residential, Commercial, and Airbnb cleanings.",
   "url": WEBSITE,
   "telephone": PHONE,
-  "email": "support@pointpolishcleaners.com",
+  "email": "support@pleasantcleanings.com",
   "foundingDate": "2025",
   "priceRange": "$$",
   "currenciesAccepted": "USD",
   "paymentAccepted": "Cash, Credit Card, Debit Card",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Jacksonville",
+    "addressLocality": "Pembroke Pines",
     "addressRegion": "FL",
     "addressCountry": "US"
   },
   "areaServed": [
-    { "@type": "City", "name": "Jacksonville", "sameAs": "https://en.wikipedia.org/wiki/Jacksonville,_Florida" },
-    { "@type": "City", "name": "Jacksonville Beach" },
-    { "@type": "City", "name": "Atlantic Beach" },
-    { "@type": "City", "name": "Neptune Beach" },
-    { "@type": "City", "name": "Ponte Vedra Beach" },
-    { "@type": "AdministrativeArea", "name": "Duval County", "sameAs": "https://en.wikipedia.org/wiki/Duval_County,_Florida" }
+    { "@type": "City", "name": "Pembroke Pines" },
+    { "@type": "City", "name": "Miramar" },
+    { "@type": "City", "name": "Coral Springs" },
+    { "@type": "City", "name": "Aventura" },
+    { "@type": "City", "name": "Doral" },
+    { "@type": "City", "name": "Boca Raton" },
+    { "@type": "City", "name": "Coral Gables" },
+    { "@type": "City", "name": "Sunrise" },
+    { "@type": "City", "name": "Davie" },
+    { "@type": "City", "name": "Homestead" },
+    { "@type": "City", "name": "Coconut Grove" },
+    { "@type": "City", "name": "Miami Beach" },
+    { "@type": "AdministrativeArea", "name": "Broward County" },
+    { "@type": "AdministrativeArea", "name": "Palm Beach County" }
   ],
-  "knowsAbout": ["House Cleaning", "Deep Cleaning", "Move-In Cleaning", "Move-Out Cleaning", "Carpet Cleaning", "Upholstery Cleaning", "Eco-Friendly Cleaning", "Commercial Cleaning"],
+  "knowsAbout": ["House Cleaning", "Deep Cleaning", "Move-In Cleaning", "Move-Out Cleaning", "Upholstery Cleaning", "Eco-Friendly Cleaning", "Commercial Cleaning", "Airbnb Cleaning", "Post-Construction Cleaning"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Point Polish Cleaning Services",
+    "name": "Pleasant Cleanings Services",
     "itemListElement": [
-      { "@type": "Offer", "name": "Standard House Cleaning", "description": "Regular maintenance cleaning for homes.", "price": "150", "priceCurrency": "USD", "itemOffered": { "@type": "Service", "name": "Standard Cleaning", "serviceType": "House Cleaning" } },
-      { "@type": "Offer", "name": "Deep House Cleaning", "description": "Comprehensive deep cleaning including baseboards, inside cabinets, light fixtures.", "price": "250", "priceCurrency": "USD", "itemOffered": { "@type": "Service", "name": "Deep Cleaning", "serviceType": "Deep House Cleaning" } },
-      { "@type": "Offer", "name": "Move In / Move Out Cleaning", "description": "Complete top-to-bottom cleaning for move-ins and move-outs.", "price": "300", "priceCurrency": "USD", "itemOffered": { "@type": "Service", "name": "Move In/Out Cleaning", "serviceType": "Move Out Cleaning" } },
-      { "@type": "Offer", "name": "Carpet Cleaning", "description": "Professional deep extraction carpet cleaning.", "itemOffered": { "@type": "Service", "name": "Carpet Cleaning", "serviceType": "Carpet Cleaning" } },
-      { "@type": "Offer", "name": "Upholstery Cleaning", "description": "Expert furniture and fabric cleaning.", "itemOffered": { "@type": "Service", "name": "Upholstery Cleaning", "serviceType": "Upholstery Cleaning" } }
+      { "@type": "Offer", "name": "Standard House Cleaning", "price": "120", "priceCurrency": "USD", "itemOffered": { "@type": "Service", "name": "Standard Cleaning" } },
+      { "@type": "Offer", "name": "Deep House Cleaning", "price": "220", "priceCurrency": "USD", "itemOffered": { "@type": "Service", "name": "Deep Cleaning" } },
+      { "@type": "Offer", "name": "Move In / Move Out Cleaning", "price": "280", "priceCurrency": "USD", "itemOffered": { "@type": "Service", "name": "Move In/Out Cleaning" } },
+      { "@type": "Offer", "name": "Upholstery Cleaning", "itemOffered": { "@type": "Service", "name": "Upholstery Cleaning" } }
     ]
   }
 };
@@ -69,38 +76,25 @@ const websiteSchema = {
   "@id": `${WEBSITE}/#website`,
   "url": WEBSITE,
   "name": BUSINESS_NAME,
-  "description": "Professional house cleaning in Jacksonville, FL. Luxury-level cleaning with precision and care.",
+  "description": "Professional house cleaning in Pembroke Pines & South Florida. Quality, consistency & customer satisfaction.",
   "publisher": { "@id": `${WEBSITE}/#business` }
 };
 
-const SEOSchema = ({ 
-  pageTitle, 
-  pageDescription, 
-  canonicalUrl,
-  pageType = 'home',
-  county,
-  cityName,
-  blogMeta,
-  faqItems,
-  breadcrumbs
-}: SEOSchemaProps) => {
+const SEOSchema = ({ pageTitle, pageDescription, canonicalUrl, pageType = 'home', county, cityName, blogMeta, faqItems, breadcrumbs }: SEOSchemaProps) => {
   const isHome = pageType === 'home';
 
   const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": breadcrumbs.map((item, i) => ({
-      "@type": "ListItem",
-      "position": i + 1,
-      "name": item.name,
-      "item": item.url
+      "@type": "ListItem", "position": i + 1, "name": item.name, "item": item.url
     }))
   } : pageType !== 'home' ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": WEBSITE },
-      { "@type": "ListItem", "position": 2, "name": pageTitle.replace(' | Point Polish Cleaners', '').replace(' | POINT POLISH', ''), "item": canonicalUrl }
+      { "@type": "ListItem", "position": 2, "name": pageTitle.replace(' | Pleasant Cleanings', ''), "item": canonicalUrl }
     ]
   } : null;
 
@@ -108,9 +102,7 @@ const SEOSchema = ({
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.q,
-      "acceptedAnswer": { "@type": "Answer", "text": item.a }
+      "@type": "Question", "name": item.q, "acceptedAnswer": { "@type": "Answer", "text": item.a }
     }))
   } : null;
 
@@ -132,11 +124,11 @@ const SEOSchema = ({
   const serviceSchema = pageType === 'service' ? {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": pageTitle.replace(' | Point Polish Cleaners', '').replace(' | POINT POLISH', ''),
+    "name": pageTitle.replace(' | Pleasant Cleanings', ''),
     "description": pageDescription,
     "url": canonicalUrl,
     "provider": { "@id": `${WEBSITE}/#business` },
-    "areaServed": { "@type": "City", "name": "Jacksonville, FL" },
+    "areaServed": { "@type": "City", "name": "Pembroke Pines, FL" },
     "termsOfService": `${WEBSITE}/faq`
   } : null;
 
@@ -146,72 +138,27 @@ const SEOSchema = ({
       <meta name="description" content={pageDescription} />
       <link rel="canonical" href={canonicalUrl} />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-      
-      {/* Open Graph */}
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content={pageType === 'blog' ? 'article' : 'website'} />
       <meta property="og:site_name" content={BUSINESS_NAME} />
       <meta property="og:locale" content="en_US" />
-      
-      {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
-      
-      {/* Geo Tags */}
       <meta name="geo.region" content="US-FL" />
-      <meta name="geo.placename" content="Jacksonville" />
-
-      {/* Hreflang */}
+      <meta name="geo.placename" content="Pembroke Pines" />
       <link rel="alternate" hrefLang="en-us" href={canonicalUrl} />
       <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
       
-      {isHome && (
-        <script type="application/ld+json">
-          {JSON.stringify(cleaningServiceSchema)}
-        </script>
-      )}
-      {isHome && (
-        <script type="application/ld+json">
-          {JSON.stringify(websiteSchema)}
-        </script>
-      )}
-
-      {!isHome && (
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CleaningService",
-            "@id": `${WEBSITE}/#business`,
-            "name": BUSINESS_NAME,
-            "url": WEBSITE,
-            "telephone": PHONE
-          })}
-        </script>
-      )}
-
-      {breadcrumbSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
-      )}
-      {faqSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-      )}
-      {blogPostingSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(blogPostingSchema)}
-        </script>
-      )}
-      {serviceSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(serviceSchema)}
-        </script>
-      )}
+      {isHome && <script type="application/ld+json">{JSON.stringify(cleaningServiceSchema)}</script>}
+      {isHome && <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>}
+      {!isHome && <script type="application/ld+json">{JSON.stringify({ "@context": "https://schema.org", "@type": "CleaningService", "@id": `${WEBSITE}/#business`, "name": BUSINESS_NAME, "url": WEBSITE, "telephone": PHONE })}</script>}
+      {breadcrumbSchema && <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>}
+      {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+      {blogPostingSchema && <script type="application/ld+json">{JSON.stringify(blogPostingSchema)}</script>}
+      {serviceSchema && <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>}
     </Helmet>
   );
 };
