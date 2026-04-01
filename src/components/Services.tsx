@@ -8,7 +8,7 @@ const services = [
     icon: Sparkles,
     title: "Standard Cleaning",
     description: "Perfect for regular maintenance cleaning to keep your home spotless.",
-    price: "From $120",
+    price: "From $150",
     link: "/standard-cleaning",
     badge: "Best Value",
     badgeColor: "bg-success text-success-foreground",
