@@ -11,7 +11,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, ArrowLeft, Upload, X } from "lucide-react";
-import logo from "@/assets/logo.png";
 
 const applicationSchema = z.object({
   name: z.string().min(2).max(100),
@@ -95,7 +94,7 @@ const CleanerApplication = () => {
       <header className="bg-background border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Pleasant Cleanings" className="h-10 w-auto" />
+            
             <span className="font-display text-xl font-bold text-foreground">Pleasant Cleanings</span>
           </Link>
         </div>

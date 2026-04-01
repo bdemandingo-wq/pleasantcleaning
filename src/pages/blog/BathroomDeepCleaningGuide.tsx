@@ -11,11 +11,11 @@ const BathroomDeepCleaningGuide = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Complete Bathroom Deep Cleaning Guide | Point Polish Cleaners"
+        pageTitle="Complete Bathroom Deep Cleaning Guide | Pleasant Cleanings"
         pageDescription="Step-by-step bathroom deep cleaning guide designed for Florida's humid climate. Tackle mold, soap scum, and grime."
-        canonicalUrl="https://pointpolishcleaners.com/blog/bathroom-deep-cleaning-guide"
+        canonicalUrl="https://pleasantcleanings.com/blog/bathroom-deep-cleaning-guide"
         pageType="blog"
-        county="Jacksonville, FL"
+        county="South Florida"
         blogMeta={{ datePublished: "2025-03-01", readTime: "7 min", category: "Guides" }}
       />
       <main className="min-h-screen">

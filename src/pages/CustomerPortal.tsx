@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Loader2, Home, Calendar, MapPin, Phone, Mail, ArrowLeft } from "lucide-react";
-import logo from "@/assets/logo.png";
 
 interface Booking {
   id: string;
@@ -98,8 +97,8 @@ const CustomerPortal = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="Point Polish Cleaners Logo" className="h-10 w-auto" />
-              <span className="font-display text-xl font-bold text-foreground">Point Polish Cleaners</span>
+              
+              <span className="font-display text-xl font-bold text-foreground">Pleasant Cleanings</span>
             </Link>
             <div className="flex items-center gap-4">
               <span className="text-sm text-muted-foreground hidden sm:block">
@@ -249,14 +248,14 @@ const CustomerPortal = () => {
               </div>
               <div className="flex items-center gap-4">
                 <a 
-                  href="tel:9045139002" 
+                  href="tel:7867967445" 
                   className="inline-flex items-center gap-2 text-primary hover:underline"
                 >
                   <Phone className="h-4 w-4" />
-                  (904) 513-9002
+                  (786) 796-7445
                 </a>
                 <a 
-                  href="mailto:support@pointpolishcleaners.com" 
+                  href="mailto:support@pleasantcleanings.com" 
                   className="inline-flex items-center gap-2 text-primary hover:underline"
                 >
                   <Mail className="h-4 w-4" />

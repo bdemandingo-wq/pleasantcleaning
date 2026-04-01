@@ -11,11 +11,11 @@ const PetFriendlyCleaningTips = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Pet-Friendly Home Cleaning Tips for Florida Pet Owners | Point Polish Cleaners"
+        pageTitle="Pet-Friendly Home Cleaning Tips for Florida Pet Owners | Pleasant Cleanings"
         pageDescription="Keep your Florida home fresh with pets! Expert tips for removing pet hair, odors, and stains. Pet-safe cleaning products. Professional pet-friendly cleaning services."
-        canonicalUrl="https://pointpolishcleaners.com/blog/pet-friendly-cleaning-tips"
+        canonicalUrl="https://pleasantcleanings.com/blog/pet-friendly-cleaning-tips"
         pageType="blog"
-        county="Jacksonville, FL"
+        county="South Florida"
         blogMeta={{ datePublished: "2025-01-25", readTime: "7 min", category: "Tips" }}
       />
       <main className="min-h-screen">
@@ -46,7 +46,7 @@ const PetFriendlyCleaningTips = () => {
               
               <p className="text-lg text-muted-foreground">
                 Love your furry friends but struggling with pet hair and odors? Here are expert tips to 
-                keep your Jacksonville, FL home fresh and clean—safely for your pets.
+                keep your South Florida home fresh and clean—safely for your pets.
               </p>
             </header>
 
@@ -103,7 +103,7 @@ const PetFriendlyCleaningTips = () => {
               </ul>
               <p className="text-muted-foreground mb-8">
                 <strong>Safe alternatives:</strong> Vinegar and water solutions, hydrogen peroxide (diluted), 
-                and certified pet-safe cleaning products. At Point Polish Cleaners, we use eco-friendly, pet-safe products 
+                and certified pet-safe cleaning products. At Pleasant Cleanings, we use eco-friendly, pet-safe products 
                 upon request.
               </p>
 
@@ -140,11 +140,11 @@ const PetFriendlyCleaningTips = () => {
                   Pet-Friendly Cleaning Services
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Point Polish Cleaners loves pets! We serve pet owners across 
-                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Duval</Link>,
-                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Jacksonville</Link>, and
-                  <Link to="/service-areas" className="text-primary hover:underline mx-1">St. Johns County</Link>.
-                  Call <a href="tel:+19045139002" className="text-primary font-semibold">(904) 513-9002</a> or 
+                  Pleasant Cleanings loves pets! We serve pet owners across 
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Broward</Link>,
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Pembroke Pines</Link>, and
+                  <Link to="/service-areas" className="text-primary hover:underline mx-1">Palm Beach County</Link>.
+                  Call <a href="tel:+17867967445" className="text-primary font-semibold">(786) 796-7445</a> or 
                   <Link to="/#booking" className="text-primary hover:underline ml-1">book online</Link>!
                 </p>
               </div>

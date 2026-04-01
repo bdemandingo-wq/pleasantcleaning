@@ -45,7 +45,7 @@ const PostConstructionCleaning = () => {
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
                 <a href="tel:+17867967445" className="flex items-center gap-2"><Phone className="w-5 h-5" />Call (786) 796-7445</a>
               </Button>
-              <Button size="lg" variant="outline" asChild><Link to="/#booking">Get Custom Quote</Link></Button>
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold" asChild><Link to="/#booking">Get Custom Quote</Link></Button>
             </div>
           </div>
         </section>

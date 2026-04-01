@@ -86,7 +86,7 @@ const FAQ = () => {
               <Button size="lg" asChild>
                 <a href="tel:+17867967445" className="flex items-center gap-2"><Phone className="w-5 h-5" />Call (786) 796-7445</a>
               </Button>
-              <Button size="lg" variant="outline" asChild><Link to="/#contact">Send a Message</Link></Button>
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold" asChild><Link to="/#contact">Send a Message</Link></Button>
             </div>
           </div>
         </section>

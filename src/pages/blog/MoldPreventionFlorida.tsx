@@ -11,11 +11,11 @@ const MoldPreventionFlorida = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Mold Prevention Guide for Florida Homes | Point Polish Cleaners"
+        pageTitle="Mold Prevention Guide for Florida Homes | Pleasant Cleanings"
         pageDescription="Florida's humidity creates perfect conditions for mold. Learn how to prevent and address mold issues in your home."
-        canonicalUrl="https://pointpolishcleaners.com/blog/mold-prevention-florida-homes"
+        canonicalUrl="https://pleasantcleanings.com/blog/mold-prevention-florida-homes"
         pageType="blog"
-        county="Jacksonville, FL"
+        county="South Florida"
         blogMeta={{ datePublished: "2025-04-15", readTime: "7 min", category: "Tips" }}
       />
       <main className="min-h-screen">
@@ -50,7 +50,7 @@ const MoldPreventionFlorida = () => {
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-6">
                 Florida's warm, humid climate is paradise—for mold. Understanding how to prevent and 
-                address mold is essential for every Jacksonville, FL homeowner.
+                address mold is essential for every South Florida homeowner.
               </p>
 
               <h2 className="font-display text-2xl font-bold text-foreground mt-8 mb-4 flex items-center gap-2">
@@ -126,7 +126,7 @@ const MoldPreventionFlorida = () => {
                   Prevent Mold with Regular Cleaning
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Regular deep cleaning helps prevent mold growth. Point Polish Cleaners cleans mold-prone areas 
+                  Regular deep cleaning helps prevent mold growth. Pleasant Cleanings cleans mold-prone areas 
                   as part of every service, helping keep your Florida home healthy.
                 </p>
                 <Link 

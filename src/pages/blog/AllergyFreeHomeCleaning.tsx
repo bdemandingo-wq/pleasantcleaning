@@ -11,11 +11,11 @@ const AllergyFreeHomeCleaning = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Allergy-Free Home Cleaning Tips for Florida Residents | Point Polish Cleaners"
+        pageTitle="Allergy-Free Home Cleaning Tips for Florida Residents | Pleasant Cleanings"
         pageDescription="Combat Florida's year-round allergens with proper cleaning techniques. Expert tips for allergy sufferers."
-        canonicalUrl="https://pointpolishcleaners.com/blog/allergy-free-home-cleaning"
+        canonicalUrl="https://pleasantcleanings.com/blog/allergy-free-home-cleaning"
         pageType="blog"
-        county="Jacksonville, FL"
+        county="South Florida"
         blogMeta={{ datePublished: "2025-02-20", readTime: "6 min", category: "Tips" }}
       />
       <main className="min-h-screen">
@@ -107,8 +107,8 @@ const AllergyFreeHomeCleaning = () => {
                   Allergy-Friendly Cleaning Services
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Point Polish Cleaners offers allergy-conscious cleaning with HEPA vacuums and hypoallergenic products. 
-                  Breathe easier in your Jacksonville, FL home.
+                  Pleasant Cleanings offers allergy-conscious cleaning with HEPA vacuums and hypoallergenic products. 
+                  Breathe easier in your South Florida home.
                 </p>
                 <Link 
                   to="/#booking"
