@@ -78,7 +78,7 @@ const services = [
     title: "Office Cleaning",
     description: "Professional cleaning for offices, retail spaces, and commercial properties.",
     price: "Custom Quote",
-    link: "/#booking",
+    link: "/office-cleaning",
     features: [
       "Flexible scheduling",
       "OSHA compliant",
