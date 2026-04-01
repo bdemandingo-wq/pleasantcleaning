@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <span className="font-display text-xl font-bold text-foreground">Pleasant Cleanings</span>
+            <img src={logo} alt="Pleasant Cleanings" className="h-10 w-auto" style={{ mixBlendMode: 'multiply' }} />
           </Link>
 
           <div className="hidden md:flex items-center gap-5">
