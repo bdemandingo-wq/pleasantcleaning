@@ -8,10 +8,10 @@ const serviceEstimates: Record<string, Record<string, string>> = {
   standard: { studio: "$108–$140", "1br": "$120–$155", "2br": "$155–$190", "3br": "$190–$260", "4br": "$260–$345", "5br": "$345–$510" },
   deep: { studio: "$208–$240", "1br": "$220–$255", "2br": "$255–$290", "3br": "$290–$360", "4br": "$360–$470", "5br": "$470–$635" },
   moveinout: { studio: "$280–$315", "1br": "$280–$315", "2br": "$315–$350", "3br": "$350–$420", "4br": "$420–$530", "5br": "$530–$695" },
-  airbnb: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
+  airbnb: { studio: "$140–$160", "1br": "$160–$180", "2br": "$180–$200", "3br": "$200–$240", "4br": "$240–$295", "5br": "$295–$470" },
   upholstery: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
   office: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
-  postconstruction: { studio: "Custom", "1br": "Custom", "2br": "Custom", "3br": "Custom", "4br": "Custom", "5br": "Custom" },
+  postconstruction: { studio: "$450–$502", "1br": "$502–$555", "2br": "$555–$607", "3br": "$607–$712", "4br": "$712–$877", "5br": "$877–$1,290" },
 };
 
 const HeroEstimator = () => {

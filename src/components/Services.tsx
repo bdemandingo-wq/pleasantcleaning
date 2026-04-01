@@ -51,8 +51,8 @@ const services = [
     icon: Layers,
     title: "Airbnb / Vacation Rental",
     description: "Turnover cleaning for short-term rental properties.",
-    price: "Custom Quote",
-    link: "/#booking",
+    price: "From $140",
+    link: "/airbnb-cleaning",
     features: [
       "Turnover cleaning between guests",
       "Fresh linens & towels",
@@ -90,8 +90,8 @@ const services = [
     icon: Hammer,
     title: "Post-Construction",
     description: "Thorough cleanup after renovation or construction projects.",
-    price: "Custom Quote",
-    link: "/#booking",
+    price: "From $450",
+    link: "/post-construction-cleaning",
     features: [
       "Dust & debris removal",
       "Window & glass cleaning",
