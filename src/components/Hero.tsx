@@ -27,7 +27,7 @@ const Hero = () => {
           {/* Left — Copy + CTAs */}
           <div className="space-y-6 opacity-0 animate-fade-in">
             {/* Promo badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 text-secondary border border-secondary/30">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/50 text-white border border-white/30">
               <span className="relative flex h-2 w-2" aria-hidden="true">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
