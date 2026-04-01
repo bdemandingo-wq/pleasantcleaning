@@ -9,229 +9,104 @@ import RelatedLinks from "@/components/seo/RelatedLinks";
 
 const StandardCleaning = () => {
   const included = [
-    "Dust all surfaces and furniture",
-    "Vacuum all floors and carpets",
-    "Mop hard floors",
-    "Clean kitchen counters and appliance exteriors",
-    "Sanitize bathrooms (toilet, sink, shower/tub)",
-    "Clean mirrors and glass surfaces",
-    "Make beds and tidy rooms",
-    "Empty trash bins",
-    "Wipe down light switches and door handles",
-    "General tidying and organizing",
-  ];
-
-  const frequencies = [
-    {
-      name: "Weekly",
-      discount: "20% off",
-      description: "Best for busy families and those who want a consistently clean home",
-      popular: false,
-    },
-    {
-      name: "Bi-Weekly",
-      discount: "15% off",
-      description: "Most popular choice—perfect balance of clean and cost",
-      popular: true,
-    },
-    {
-      name: "Monthly",
-      discount: "10% off",
-      description: "Great for maintaining a clean home between deep cleans",
-      popular: false,
-    },
-    {
-      name: "One-Time",
-      discount: "Standard rate",
-      description: "Perfect for special occasions or trying our service",
-      popular: false,
-    },
+    "Dust all surfaces and furniture", "Vacuum all floors and carpets", "Mop hard floors",
+    "Clean kitchen counters and appliance exteriors", "Sanitize bathrooms (toilet, sink, shower/tub)",
+    "Clean mirrors and glass surfaces", "Make beds and tidy rooms", "Empty trash bins",
+    "Wipe down light switches and door handles", "General tidying and organizing",
   ];
 
   return (
     <>
       <SEOSchema
-        pageTitle="Standard House Cleaning Jacksonville, FL | From $150 | Point Polish Cleaners"
-        pageDescription="Affordable standard house cleaning in Jacksonville, Jacksonville Beach & Jacksonville Jacksonville Beach. Starting at $150. Vacuuming, mopping, kitchen & bathroom cleaning. Book online or call (904) 513-9002."
-        canonicalUrl="https://pointpolishcleaners.com/standard-cleaning"
+        pageTitle="Standard Cleaning Services in Pembroke Pines & South Florida | Pleasant Cleanings"
+        pageDescription="Affordable standard house cleaning in Pembroke Pines & South Florida. Starting at $120. Vacuuming, mopping, kitchen & bathroom cleaning. Book online or call (786) 796-7445."
+        canonicalUrl="https://pleasantcleanings.com/standard-cleaning"
         pageType="service"
-        county="Jacksonville, FL"
         breadcrumbs={[
-          { name: "Home", url: "https://pointpolishcleaners.com" },
-          { name: "Standard Cleaning", url: "https://pointpolishcleaners.com/standard-cleaning" }
+          { name: "Home", url: "https://pleasantcleanings.com" },
+          { name: "Standard Cleaning", url: "https://pleasantcleanings.com/standard-cleaning" }
         ]}
       />
       <main className="min-h-screen">
         <Navbar />
-        
         <section className="relative min-h-[60vh] flex items-center justify-center pt-16 bg-gradient-to-br from-primary/10 to-background">
           <div className="container mx-auto px-4 text-center">
             <div className="inline-flex items-center gap-2 bg-primary/20 text-primary px-4 py-2 rounded-full mb-6">
               <Clock className="w-4 h-4" />
               <span className="text-sm font-medium">Regular Maintenance Clean</span>
             </div>
-            
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
-              Standard Cleaning Services
+              Standard Cleaning Services in Pembroke Pines & South Florida
             </h1>
-            
             <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-8">
-              Keep your home consistently clean with our regular maintenance service. 
-              Perfect for homes that are already in good condition and need ongoing upkeep 
-              to stay fresh and tidy.
+              Keep your home consistently clean with our regular maintenance service. Perfect for homes that need ongoing upkeep to stay fresh, tidy, and welcoming for your family.
             </p>
-            
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
-                <a href="tel:+19045139002" className="flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Call (904) 513-9002
-                </a>
+                <a href="tel:+17867967445" className="flex items-center gap-2"><Phone className="w-5 h-5" />Call (786) 796-7445</a>
               </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link to="/#booking">Get Free Quote</Link>
-              </Button>
+              <Button size="lg" variant="outline" asChild><Link to="/#booking">Get Free Quote</Link></Button>
             </div>
-
             <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
               <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> 2-3 Hour Service</span>
-              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Up to 20% Off Recurring</span>
+              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Up to 15% Off Recurring</span>
               <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Same Cleaner Each Visit</span>
             </div>
           </div>
         </section>
 
-        {/* What's Included */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-4">
-              What's Included
-            </h2>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-              Our standard cleaning covers all the essentials to keep your home looking 
-              its best between visits.
-            </p>
-            
+            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-12">What's Included</h2>
             <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
-              {included.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 bg-card p-4 rounded-lg border border-border">
+              {included.map((item, i) => (
+                <div key={i} className="flex items-center gap-3 bg-card p-4 rounded-lg border border-border">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                   <span className="text-foreground">{item}</span>
                 </div>
               ))}
             </div>
-            
-            <p className="text-center mt-8 text-muted-foreground">
-              Need more? Add-ons available: inside oven, inside fridge, window cleaning, and more.
-            </p>
           </div>
         </section>
 
-        {/* Frequency Options */}
         <section className="py-16 bg-muted">
           <div className="container mx-auto px-4">
-            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-4">
-              Choose Your Frequency
-            </h2>
-            <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-              Save money with recurring cleanings. The more often we clean, the less time 
-              it takes—and the more you save!
-            </p>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {frequencies.map((freq, index) => (
-                <div 
-                  key={index} 
-                  className={`bg-card rounded-xl p-6 text-center relative ${
-                    freq.popular ? "border-2 border-primary" : "border border-border"
-                  }`}
-                >
-                  {freq.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
-                      Most Popular
-                    </div>
-                  )}
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">{freq.name}</h3>
-                  <p className="text-primary font-bold text-lg mb-3">{freq.discount}</p>
-                  <p className="text-sm text-muted-foreground">{freq.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-12">
-              Standard Cleaning Pricing
-            </h2>
-            
+            <h2 className="font-display text-3xl font-bold text-foreground text-center mb-12">Standard Cleaning Pricing</h2>
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <div className="bg-card border border-border rounded-xl p-6 text-center">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">1-2 Bedroom</h3>
-                <p className="text-3xl font-bold text-primary mb-2">$120-$160</p>
+                <p className="text-3xl font-bold text-primary mb-2">$120–$190</p>
                 <p className="text-sm text-muted-foreground">2-2.5 hours</p>
               </div>
               <div className="bg-primary/10 border-2 border-primary rounded-xl p-6 text-center relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
-                  Most Common
-                </div>
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">Most Common</div>
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">3 Bedroom</h3>
-                <p className="text-3xl font-bold text-primary mb-2">$160-$220</p>
+                <p className="text-3xl font-bold text-primary mb-2">$190–$260</p>
                 <p className="text-sm text-muted-foreground">2.5-3 hours</p>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 text-center">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">4+ Bedroom</h3>
-                <p className="text-3xl font-bold text-primary mb-2">$220-$300</p>
+                <p className="text-3xl font-bold text-primary mb-2">$260–$510</p>
                 <p className="text-sm text-muted-foreground">3-4 hours</p>
               </div>
             </div>
-            
             <p className="text-center mt-8 text-muted-foreground">
-              Prices shown are one-time rates. Recurring clients save 10-20%!
-              <Link to="/#booking" className="text-primary hover:underline ml-1">Get your personalized quote.</Link>
+              Recurring clients save up to 15%! <Link to="/#booking" className="text-primary hover:underline">Get your personalized quote.</Link>
             </p>
           </div>
         </section>
 
-        {/* Compare Services */}
-        <section className="py-16 bg-muted">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-              Not Sure Which Service You Need?
-            </h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              If your home hasn't been professionally cleaned in a while, we recommend starting 
-              with a Deep Cleaning, then switching to Standard for maintenance.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="outline" asChild>
-                <Link to="/deep-cleaning">View Deep Cleaning</Link>
-              </Button>
-              <Button variant="outline" asChild>
-                <Link to="/blog/deep-cleaning-vs-standard-cleaning">Compare Services</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
         <section className="py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <Star className="w-12 h-12 mx-auto mb-4 opacity-80" />
-            <h2 className="font-display text-3xl font-bold mb-4">
-              Ready for Regular Cleaning?
-            </h2>
-            <p className="text-primary-foreground mb-8 max-w-xl mx-auto">
-              Join hundreds of happy Jacksonville, FL homeowners who trust Point Polish Cleaners for their cleaning needs.
+            <h2 className="font-display text-3xl font-bold mb-4">Ready to Book a Standard Clean?</h2>
+            <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+              Join happy South Florida homeowners who trust Pleasant Cleanings for their regular cleaning needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
-                <Link to="/#booking">Book Standard Cleaning</Link>
-              </Button>
+              <Button size="lg" variant="secondary" asChild><Link to="/#booking">Book Standard Cleaning</Link></Button>
               <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
-                <a href="tel:+19045139002">Call (904) 513-9002</a>
+                <a href="tel:+17867967445">Call (786) 796-7445</a>
               </Button>
             </div>
           </div>
